@@ -1,0 +1,514 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Hello, world!</title>
+    <style>
+        /* .carousel-item {
+            height: 100vh;
+            background: no-repeat center center scroll;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        } */
+
+        .navbarbgcolor1 {
+            color: white !important;
+            background-color: #001466;
+            /* font-weight: 700; */
+            /* font-size: 20px; */
+        }
+
+        .myStyle {
+            background-color: #001466;
+            /* color:black; */
+            /* padding: 16px; */
+        }
+
+        .bannerimgsize {
+            height: 60%;
+            width: 100%;
+        }
+
+
+        .container1 {
+            position: relative;
+            text-align: center;
+            color: white;
+
+        }
+
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 70px;
+            font-weight: 800;
+        }
+
+
+        .hello {
+            /* width: 100px;
+    height: 100px; */
+            /* background: red; */
+            position: relative;
+            animation: mymove 3s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes mymove {
+            from {
+                top: 0px;
+            }
+
+            to {
+                top: 200px;
+            }
+        }
+
+
+        .responsive-iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .container2 {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            padding-top: 56.25%;
+            /* 16:9 Aspect Ratio */
+            height: 444px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="my-nav navbar navbar-expand-lg navbar navbarbgcolor1  fixed-top ">
+            <div class="container-fluid">
+                <a class="navbar-brand navcolor" href="#"><img src="assets/images/logo_apoorvan.jpeg" alt=""
+                        class="img-fluid logoimg"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i class="fa-solid fa-bars text-white"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-sm-0">
+                        <li class="nav-item">
+                            <a class="nav-link active navcolor" aria-current="page" href="index1.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navcolor" href="thematic.html">Thematic parties</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navcolor" href="gallery.html">Gallery</a>
+                        </li>
+
+                        <li class="nav-item">
+
+                            <a class="nav-link navcolor" href="cuisine.html">Cuisine</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link navcolor" href="funactivity.html">Fun Activity</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link navcolor" href="room_and_rates.html">Room & Rates</a>
+                        </li>
+
+
+
+                        <li class="nav-item">
+                            <a class="nav-link navcolor" href="contact.html">Contact Us</a>
+                        </li>
+
+                    </ul>
+                    <form class="d-flex">
+                        <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button> -->
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+
+    </header>
+
+    <section>
+        <div class="container-fluid">
+            <div class="row mt-5">
+                <div class="col-md-12">
+                    <div class="container1 mt-5"
+                        style="background-image: url(assets/images/party2.jpg); height: 450px; background-repeat: no-repeat; background-position: center; background-size: cover;">
+                        <div class="centered hello">Book a Party</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row mt-3">
+                <div class="col-md-12">
+                    <span><a href="book_a_party.html"><button type="button" class="btn btn party_booking_btn" >Book a Party</button></a></span>
+                    <span><a href="contact.html"><button type="button" class="btn party_contact_btn" >Contact Us</button></a></span> 
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-md-12">
+                    <!-- <h4 class="textcolor1"><b>Our Facility</b></h4> -->
+
+                    <!-- <h5 class="textcolor1"><b>Our Facility</b></h5> -->
+                    <h6 class="fontsize1 mt-2">Book A Party
+                    </h6>
+                    <!-- <h2><b>The Versatile Farmhouse Party Venue</b></h2> -->
+                    <p align="justify">If you are looking for a place to Book a party where you can spend quality time
+                        with your loved ones then our Farmhouse is the best place for you. We have available the best
+                        facilities in the town. In our Farmhouse, We will give you the best facilities at minimum
+                        prices. In our farmhouse, we have a very lively environment which will give the feeling like you
+                        are in mountains. We have the facilities of the best food from all over India. You can book our
+                        farmhouse for any occasion like a Holi party, Bachelor party, Daaru party, and farmhouse for
+                        fool party. For more information 
+                        <a href="index1.html"><span class="">Click Here</span></a>.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- <section class="container1" style="background-image: url(assets/images/carousel2.png); height: 500px;">
+        <div class="centered hello">Contact Us</div>
+    </section> -->
+
+    <section>
+        <div class="container" data-aos="fade-up" data-aos-duration="3000">
+            <div class="row mt-3 mb-5">
+                <div class="col-md-2"></div>
+                <div class="col-md-8 ">
+                    <!-- <div class="row">
+                        <div class="col-md-12">
+                            <h1 style="font-size: 64;  font-weight: 600; " class=" "><span
+                                    style="color: #FF1414;">Get</span>
+                                <span style="color: #001466;">into Touch</span>
+                            </h1>
+                        </div>
+                    </div> -->
+
+                    <div class="row">
+                        <div class="col-md-2">
+                            <img src="assets/images/flower2.png" alt="" class="img-fluid" style="width: 250px;">
+
+                        </div>
+                        <div class="col-md-10">
+                            <form action="mail.php" method="post" name="ContactFrm" id="ContactFrm"
+                                onsubmit="return validateForm()">
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label">Your Name<span
+                                            class="statttr">*</span></label>
+                                    <input type="text" class="form-control inputab shadow-none"
+                                        id="exampleInputPassword1" name="User_Name">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Your Mobile Number</label>
+                                    <input type="text" class="form-control inputab shadow-none" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp" name="User_Email">
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label">Email<span
+                                            class="statttr">*</span></label>
+                                    <input type="email" class="form-control inputab shadow-none"
+                                        id="exampleInputPassword1" name="User_Mobile">
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Number of Guest<span
+                                            class="statttr">*</span></label>
+                                    <input type="text" class="form-control inputab shadow-none" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp" name="User_Email">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Event Date<span
+                                            class="statttr">*</span></label>
+                                    <input type="text" class="form-control inputab shadow-none" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp" name="User_Email">
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Event/Occasion</label>
+
+                                    <select class="form-select shadow-none" aria-label="Default select example">
+                                        <option selected></option>
+                                        <option value="1">Birthday Party</option>
+                                        <option value="2">Pool Party</option>
+                                        <option value="3">Daaru Party</option>
+                                        <option value="4">Family Function</option>
+                                        <option value="5">Ring Ceremony</option>
+                                        <option value="6">Bachelor Party</option>
+                                        <option value="7">Freshers Party</option>
+                                        <option value="8">Corporate Party</option>
+                                        <option value="9">Bachelorette Party</option>
+                                        <option value="10">Kids Bday Party</option>
+                                        <option value="11">First Birthday Party</option>
+                                        <option value="12">Childrens Party</option>
+                                        <option value="13">Photo Shoots</option>
+                                        <option value="14">Wedding Reception</option>
+                                        <option value="15">Adventure Party</option>
+                                        <option value="16">Get Together</option>
+                                        <option value="17">Farewell Party</option>
+                                        <option value="18">Photo Shoots</option>
+                                        <option value="19">Kitty Party</option>
+                                        <option value="20">Anniversary Party</option>
+                                        <option value="21">Baby Shower</option>
+                                        <option value="22">Business Dinner</option>
+
+                                        <option value="23">Class Reunion</option>
+                                        <option value="24">Corporate Event</option>
+                                        <option value="25">Dealers Meet</option>
+                                        <option value="26">Others</option>
+
+                                    </select>
+                                </div>
+
+
+
+                                <!-- <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label">Message</label>
+                                    <textarea class="form-control inputab" placeholder="" id="floatingTextarea2"
+                                        style="height: 100px" name="User_Msg"></textarea>
+                                    <b>
+                                        <p class="text-danger" id="emptyMsg" style="display: none;"></p>
+                                    </b>
+                                </div> -->
+
+
+                                <input type="submit" class="btn float-end"
+                                    style="background-color: #00185D; color:white; border-radius: 20px;" name="submit"
+                                    value="Submit">
+                            </form>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-md-2"></div>
+              
+            </div>
+        </div>
+    </section>
+
+    <!-- our faculty -->
+
+
+    <!-- Gallery -->
+
+
+
+
+
+
+    <!-- feature -->
+
+
+    <!-- testimonial -->
+
+
+
+
+    <!-- footer -->
+    <footer>
+        <div class="container-fluid footerbackground">
+            <div class="row">
+                <div class="col-md-1">
+                </div>
+
+                <div class="col-md-3 mt-4">
+                    <img src="assets/images/logo_apoorvan.jpeg" alt="" class="img-fluid logoimg1">
+                    <p align="justify" class="text-white mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Repellendus magni eos aspernatur quam
+                        molestias magnam numquam illum nisi sint deleniti quo reprehenderit suscipit sapiente
+                        perspiciatis delectus volup, rerum molestiae cum, aut est
+                        voluptas dolor reiciendis quo consequatur sapiente, eligendi a.up, rerum molestiae cum, aut est
+                        up, rerum molestiae cum, aut estup, rerum molestiae cum, aut est.</p>
+                </div>
+                <div class="col-md-2 mt-5">
+                    <ul class="listt">
+                        <li class="footertext1 sitemapp">Sitemap</li>
+                        <li class="mt-4 casass1"><a href="index1.html" class="footertext1">Home</a></li>
+                        <li class="mt-2 casass1"><a href="thematic.html" class="footertext1">Thematic Parties</a></li>
+                        <li class="mt-2 casass1"><a href="gallery.html
+                            
+                            
+                            " class="footertext1">Gallery</a></li>
+                        <li class="mt-2 casass1"><a href="cuisine.html" class="footertext1">Cuisine</a></li>
+                        <li class="mt-2 casass1"><a href="funactivity.html" class="footertext1">Fun Activity</a></li>
+                        <li class="mt-2 casass1"><a href="room_and_rates.html" class="footertext1">Room & Rates</a></li>
+                        <li class="mt-2 casass1"><a href="contact.html" class="footertext1">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 mt-5">
+                    <ul class="listt">
+                        <li class="footertext1 sitemapp">Visit Us</li>
+                        <li class="mt-4 casass1"><a href="" class="footertext1">Map & Direction</a></li>
+                        <li class="mt-2 casass1"><a href="" class="footertext1">Book a Party</a></li>
+                        <li class="mt-2 casass1"><a href="" class="footertext1">Virtual Tour</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-md-3 mt-5">
+                    <ul class="listt">
+                        <li class="footertext1 sitemapp">Get in Touch</li>
+                        <li class="mt-4"><a href="" class="footertext1"><i
+                                    class="fa-solid fa-phone fa-xl text-info"></i> +91 9810273764</a></li>
+                        <li class="mt-4"><a href="" class="footertext1"><i class="fa-solid fa-envelope fa-xl "></i>
+                                faramhouse@gmail.com</a></li>
+                        <li class="mt-4"><a href="" class="footertext1"><i
+                                    class="fa-solid fa-location-dot fa-xl text-danger"></i> C-135, Near Pathways World
+                                School, Ansal Aravali,
+                                Teekli Road, Badshahpur, Gurugram, Haryana – 122102</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+            <hr class="text-white">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p style="color:white">Copyright © 2023. Farm House Party. All rights reserved |
+                        <span><a href="" class="iconnn"><i class="fa-brands fa-facebook fa-xl"></i>&nbsp; </a></span>
+                        <span><a href="" class="iconnn"><i class="fa-brands fa-twitter fa-xl"></i>&nbsp;</a></span>
+                        <span><a href="" class="iconnn"><i class="fa-brands fa-linkedin fa-xl"></i>&nbsp;</a></span>
+                        <span><a href="" class="iconnn"><i class="fa-brands fa-instagram fa-xl"></i>&nbsp; </a></span>
+                        <span><a href="" class="iconnn"><i class="fa-brands fa-youtube fa-xl"></i></a></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
+
+    <script>
+        // var swiper = new Swiper(".mySwiper", {
+        //     slidesPerView: 3,
+        //     spaceBetween: 30,
+        //     pagination: {
+        //         el: ".swiper-pagination",
+        //         clickable: true,
+        //     },
+        // });
+        (function () {
+
+            'use strict';
+
+            const mySwiper = new Swiper('#swiper1', {
+
+                loop: true,
+
+                slidesPerView: 'auto',
+                centeredSlides: true,
+
+                a11y: true,
+                keyboardControl: true,
+                grabCursor: true,
+
+                // pagination
+                pagination: '.swiper-pagination',
+                paginationClickable: true,
+
+                // navigation arrows
+                nextButton: '#js-prev1',
+                prevButton: '#js-next1',
+
+            });
+
+
+
+        })(); /* IIFE end */
+
+        // ---------------------------------------------
+
+        (function () {
+
+            'use strict';
+
+            const mySwiper = new Swiper('#swiper2', {
+
+                loop: true,
+
+                slidesPerView: 'auto',
+                centeredSlides: true,
+
+                a11y: true,
+                keyboardControl: true,
+                grabCursor: true,
+
+                // pagination
+                pagination: '.swiper-pagination',
+                paginationClickable: true,
+
+                // navigation arrows
+                nextButton: '#js-prev2',
+                prevButton: '#js-next2',
+
+            });
+
+
+
+        })(); /* IIFE end */
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

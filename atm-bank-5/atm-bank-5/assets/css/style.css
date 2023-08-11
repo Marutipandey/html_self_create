@@ -1,0 +1,288 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+h1 , h2 , h3 , h4 , h5 , h6{
+    font-family: 'Poppins', sans-serif;
+}
+li{
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+
+}
+.head-contact-nav{
+    margin-left: 20%;
+    vertical-align: middle;
+}
+
+.head-contact-nav li{
+    list-style: none;
+
+}
+.nav-ul{
+    margin-left: 4%;
+}
+
+.nav-ul li a{
+
+color: #000;
+font-weight: 700;
+
+}
+
+.nav-ul li a:hover{
+
+    color: rgb(38 172 227);
+  
+    
+    }
+
+.banner{
+    background: url(../images/home-banner.png) no-repeat center center ;
+    background-size: cover;
+    height: 500px;
+}
+.about-banner{
+    background: url(../images/about-us-banner.png) no-repeat center center ;
+    background-size: cover;
+    height: 200px;
+}
+.service-banner{
+    background: url(../images/service-banner.png) no-repeat center center ;
+    background-size: cover;
+    height: 200px;
+}
+.contact-banner{
+    background: url(../images/contac-us-banner.png) no-repeat center center ;
+    background-size: cover;
+    height: 200px;
+}
+.text{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50% , -30%);
+    color: #fff;
+    font-weight: bolder;
+    font-size: 46px;
+}
+
+.bg-img{
+    background: url(../images/home-service-bg.png);
+    background-size: cover;
+    color: #fff;
+    height: 98px;
+    width: 78px;
+    line-height: 98px;
+    text-align: center;
+    font-size: 45px;
+
+}
+
+.service-item:hover h2{
+    color: rgb(38 172 227);
+}
+
+.service-item img{
+    width: 60px;
+    padding-bottom: 14px;
+}
+
+.title-heading h4 , .work-home-section h4{
+    font-size: 29px;
+    font-weight: 600;
+    color: #26ace3;
+}
+.title-heading h3 , .work-home-section h3{
+    font-size: 31px;
+    font-weight: 600;
+    color: #f2b604;
+}
+.title-heading {
+   padding:  69px 0px 44px 0px;
+}
+.service-item h2{
+    font-size: 23px;
+    font-weight: 600;
+    color: #f2b604;
+    padding: 17px 0px 0px 5px;
+}
+.home-work {
+    padding: 72px 0px 10px 0px;
+}
+.home-work img{
+    border-radius: 10px;
+}
+.frenchsee-item{
+    padding: 38px 0 50px 0;
+ 
+}
+
+.franchsee-3{
+    background: #1a56a5;;
+}
+.franchsee-2{
+    background: #023059;
+}
+.franchsee-1{
+    background: #f2b604;
+}
+.frenchsee-item h3{
+ 
+    font-weight: 700;
+    font-size: 46px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.frenchsee-item h2{
+    font-size: 24px;
+    color: #fff;
+    font-size: 44px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.frenchsee{
+    margin: 72px 0px 95px;
+}
+.frenchsee-item h5{
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+    padding-top: 14px;
+}
+
+.name label{
+    display: block;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    padding: 3px 0px;
+}
+.name input , textarea{
+width: 100%;
+padding: 0px 10px;
+border-radius: 3px;
+border: none;
+font-size: 20px;
+}
+
+
+footer{
+    background: #023059;
+    padding: 65px 0 40px 0;
+    color: #fff;
+}
+.about h3 , .links h3 , .contact h3{
+    font-weight: 600;
+}
+
+.about h3{
+    padding: 10px 0px;
+}
+
+.links{
+    text-align: center;
+}
+
+.links ul{
+    padding: 0;
+
+}
+
+.links ul li{
+ list-style: none;
+ line-height: 40px;
+    
+}
+.links ul li a{
+    text-decoration: none;
+    color: #fff;
+   }
+   .links ul li a:hover{
+    
+    color: #f2b604;
+   }
+   .contact-form label{
+       display: block;
+   }
+
+   .contact-form input{
+    width: 100%;
+    padding: 0px 10px;
+    font-size: 20px;
+}
+
+.my-btn button{
+    border: none;
+    padding: 9px 22px;
+    font-size: 19px;
+    color: #fff;
+    border-radius: 7px;
+    background-color: #023059;
+    transition: all 0.6s;
+}
+.my-btn button:hover{
+    background-color: #f2b604;
+    color: #023059;
+}
+
+.my-btn-footer button{
+    border: none;
+    padding: 9px 22px;
+    font-size: 19px;
+    color: #fff;
+    border-radius: 7px;
+    background-color: #f2b604;
+    transition: all 0.6s;
+}
+.my-btn-footer button:hover{
+    background-color: #023059;
+    color: #fff;
+    border: 1px solid #f2b604  ;
+}
+
+.sign-up{
+    width: 400px;
+    height: 375px;
+    box-shadow: 0px 0px 4px 0px rgb(0 0 0 / 15%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    padding: 30px;
+}
+
+.sign-up h4{
+    font-size: 16px;
+    padding-top: 17px;
+    color: #023059;
+}
+.sign-up h3{
+    font-size: 22px;
+ 
+    color: #f2b604 ;
+    text-align: center;
+}
+
+.sign-up input{
+    display: block;
+    width: 100%;
+    margin: 20px 0px;
+    padding: 5px 10px;
+    font-size: 15px;
+    
+}
+.sign-up span {
+    display: block;
+    text-align: end;
+}
+.sign-up span a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}

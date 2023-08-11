@@ -1,0 +1,523 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Side bar</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+            integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <link rel="stylesheet" href="https://brand.workingsolutions.com/components/css/wsol-components.css">
+        <link rel="stylesheet" href="side - Copy.css">
+    </head>
+<style>
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  /* max-width: 960px; */
+  margin: 0 auto;
+  padding: 2vmax;
+  margin-left: 187px !important;
+}
+
+.table-wrapper {
+    height: 500px;
+    overflow: auto;
+    width: 84vw;
+    margin-top: 60px;
+    /* border: 4px solid lightblue; */
+    /* border-radius: 5px; */
+}
+table {
+  border-spacing: 0;
+  width: 100%;
+}
+
+
+.sticky-col {
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 1 !important;
+  /* background-color: white !important; */
+}
+
+.first-col {
+  width: 150px;
+  min-width: 150px;
+  max-width: 150px;
+  left: 0px;
+  z-index: 1;
+}
+
+.second-col {
+  width: 150px;
+  min-width: 150px;
+  max-width: 150px;
+  left: 150px;
+  z-index: 1;
+}
+.third-col{
+  width: 150px;
+  min-width: 150px;
+  max-width: 170px;
+  left: 300px;
+  z-index: 1;
+}
+
+nav.navbar {
+    padding: 0 !important;
+    background-color: #fff;
+}
+
+.basic-table thead tr th {
+    font-weight: 700 !important;
+    font-size: 18px !important;
+    line-height: 19px !important;
+    padding: 5px 17px !important;
+}
+
+.basic-table tbody tr td {
+    padding: 0.313rem 0.75rem !important;
+    font-size: 17px !important;
+    line-height: 26px !important;
+}
+
+
+ body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.8em;
+  width: 400px;
+  margin: 0 auto;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+
+/*  Toggle Switch  */
+
+.toggleSwitch span span {
+  display: none;
+}
+
+@media only screen {
+  .toggleSwitch {
+    display: inline-block;
+    height: 18px;
+    position: relative;
+    overflow: visible;
+    padding: 0;
+    margin: 0px 4px;
+    cursor: pointer;
+    width: 43px;
+  }
+  .toggleSwitch * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .toggleSwitch label,
+  .toggleSwitch > span {
+    line-height: 20px;
+    height: 20px;
+    vertical-align: middle;
+  }
+  .toggleSwitch input:focus ~ a,
+  .toggleSwitch input:focus + label {
+    outline: none;
+  }
+  .toggleSwitch label {
+    position: relative;
+    z-index: 3;
+    display: block;
+    width: 100%;
+  }
+  .toggleSwitch input {
+    position: absolute;
+    opacity: 0;
+    z-index: 5;
+  }
+  .toggleSwitch > span {
+    position: absolute;
+    left: -50px;
+    width: 100%;
+    margin: 0;
+    padding-right: 50px;
+    text-align: left;
+    white-space: nowrap;
+  }
+  .toggleSwitch > span span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    display: block;
+    width: 50%;
+    margin-left: 50px;
+    text-align: left;
+    font-size: 12px;
+    width: 100%;
+    left: 15%;
+    top: -1px;
+    opacity: 0;
+  }
+  .toggleSwitch a {
+    position: absolute;
+    right: 22%;
+    z-index: 4;
+    display: block;
+    height: 79%;
+    padding: 0px;
+    width: 30%;
+    left: -7px;
+    top: 1px;
+    right: 33px !important;
+    background-color: #fff;
+    border: 1px solid #CCC;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 5%);
+  }
+  .toggleSwitch > span span:first-of-type {
+    color: #ccc;
+    opacity: 1;
+    left: 45%;
+  }
+  .toggleSwitch > span:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 50px;
+    top: -2px;
+    color: #fff;
+    background-color: #ff0000;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+  }
+  .toggleSwitch input:checked ~ a {
+    border-color: #fff;
+    left: 100%;
+    margin-left: -8px;
+  }
+  .toggleSwitch input:checked ~ span:before {
+    border-color: #0097D1;
+    box-shadow: inset 0 0 0 30px green;
+  }
+  .toggleSwitch input:checked ~ span span:first-of-type {
+    opacity: 0;
+  }
+  .toggleSwitch input:checked ~ span span:last-of-type {
+    opacity: 1;
+    color: #fff;
+  }
+  /* Switch Sizes */
+  .toggleSwitch.large {
+    width: 60px;
+    height: 27px;
+  }
+  .toggleSwitch.large a {
+    width: 27px;
+  }
+  .toggleSwitch.large > span {
+    height: 29px;
+    line-height: 28px;
+    z-index: -1;
+  }
+  .toggleSwitch.large input:checked ~ a {
+    left: 41px;
+  }
+  .toggleSwitch.large > span span {
+    font-size: 1.1em;
+  }
+  .toggleSwitch.large > span span:first-of-type {
+    left: 50%;
+  }
+  .toggleSwitch.xlarge {
+    width: 80px;
+    height: 36px;
+  }
+  .toggleSwitch.xlarge a {
+    width: 36px;
+  }
+  .toggleSwitch.xlarge > span {
+    height: 38px;
+    line-height: 37px;
+  }
+  .toggleSwitch.xlarge input:checked ~ a {
+    left: 52px;
+  }
+  .toggleSwitch.xlarge > span span {
+    font-size: 1.4em;
+  }
+  .toggleSwitch.xlarge > span span:first-of-type {
+    left: 50%;
+  }
+}
+
+
+/*  End Toggle Switch  */
+
+</style>
+
+
+<body>
+    <nav class="navbar fixed-top  my-nav">
+        <div class="container-fluid my-work">
+            <div class="logo">
+                <!-- <img src="assets/images/logo.png" alt=""> -->
+                <h3>Ayka Logistics</h3>
+                <!-- <span class=" mb-0 h1 hamburger " id="ham"> &#9776; </span> -->
+
+            </div>
+
+            <div class="nav-icons">
+
+
+                <div class="msg-box m-0">
+                    <a class="d-flex align-items-center nav-link dropdown-toggle" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-bell"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end m-0">
+                        <li><span class="details"> <span class="notification-icon deepPink-bgcolor"> <i class="fa fa-check"></i> </span> Congratulations!. </span> <span class="time">just now</span>  
+                        </li>
+                        <li><span class="details"> <span class="notification-icon deepPink-bgcolor"> <i class="fa fa-check"></i> </span> Gaurav Accept your Request</span> <span class="time">just now</span>  
+                        </li>
+                       
+                    </ul>
+                </div>
+                <div class="user-box m-0">
+                    <a class="d-flex align-items-center nav-link dropdown-toggle" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="assets/images/user.jpg" class="user-img" alt="user avatar">
+                        </a>
+                    <ul class="dropdown-menu dropdown-menu-end m-0">
+                        <li><a class="dropdown-item" href="javascript:;"><i
+                                    class="fa fa-user"></i><span>Profile</span></a>
+                        </li>
+                        <li><a class="dropdown-item" href="javascript:;"><i
+                                    class="fa fa-gear"></i><span>Settings</span></a>
+                        </li>
+                        <li><a class="dropdown-item" href="javascript:;"><i
+                                    class='fa fa-home'></i><span>Dashboard</span></a>
+                        </li>
+                        <li><a class="dropdown-item" href="javascript:;"><i
+                                    class="fa-solid fa-sack-dollar"></i><span>Earnings</span></a>
+                        </li>
+                        <li><a class="dropdown-item" href="javascript:;"><i
+                                    class='fa fa-download'></i><span>Downloads</span></a>
+                        </li>
+                        <li>
+                            <div class="dropdown-divider mb-0"></div>
+                        </li>
+                        <li><a class="dropdown-item" href="javascript:;"><i
+                                    class="fa-solid fa-right-from-bracket"></i><span>Logout</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="my-sidebar " id="side">
+        <div class="side-header">
+            <!-- <div class="side-header-item">
+                <img src="assets/images/user.jpg" alt="">
+                <h5>Vikash Sharma</h5>
+            </div> -->
+        </div>
+        <div class="side-menu">
+            <ul class="p-0 my-active">
+                <li >
+                    <i class="fa fa-home"></i><a href="">DASHBOARD</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-gear"></i> <a href="#"> SERICES </a>
+                </li>  
+                <li>
+                    <i class="fa-solid fa-gear"></i> <a href="#"> SERICES </a>
+                </li>
+                <!-- <li  href="#collapseExample"  aria-expanded="false" aria-controls="collapseExample"  data-bs-toggle="collapse" ><i class="fa fa-user"></i>
+                  <a> REPORTS </a>  
+                  <i class="fa-solid fa-caret-down"></i>
+                </li> -->
+
+                <!-- <li href="#report"  aria-expanded="false" aria-controls="report"  data-bs-toggle="collapse">
+                    <span href="#" class=""> <i class="fa fa-user"></i> <a>REPORTS</a> 
+                    <span class="arrow"> <i class="fa-solid fa-caret-down"></i></span> <span class="dcjq-icon"></span></span>
+                </li>
+
+                <ul class="collapse" id="report">
+                    <li ><a href="">DASHBOARD</a> </li>
+                    <li><a href="">DMT REPORT</a></li>
+                    <li><a href="">MONEY TRANSFER</a></li>
+                    
+                </ul>
+                <li> <i class="fa fa-table"></i>
+                    <a href="#"> Users</a>
+                </li>
+                <li><i class="fa fa-chart-bar"></i>
+                    <a href="#">Support</a>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+
+    <div class="" id="main">
+        <div class="table-wrapper">
+                <table class="basic-table  table table-hover">
+                  <thead>
+                    <tr>
+                      <th class="sticky-col first-col">Name</th>
+                      <th class="sticky-col second-col">Stops</th>
+                      <th class="sticky-col third-col">Packages</th>
+                      <th>Van</th> 
+                      <th>Lanes	</th>
+                      <th>STG</th>
+                      <th>Planned RTS</th>
+                      <th>Actual RTS</th>
+                      <th>Met Target</th>
+                      <th>Called Out</th>
+                      <th>Was Late</th>
+                      <th>Wipes</th>
+                      <th>Feul Card</th>
+                      <th>Power Bank</th>
+                      <th>Change Cable</th>
+                      <th>Accidents</th>
+                      <th>Comments</th>
+                      <th>Observed Behaviour</th>
+                      <th>Caching</th>
+                      <th>QA Signoff</th>
+                    </tr>
+                    <tr style="height: 1rem; border: none; box-shadow: none;"></tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="sticky-col first-col">Ahmed Elzahaby</td>
+                      <td class="sticky-col second-col">September 13, 2013</td>
+                      <td class="sticky-col third-col">jhlilk22@yahoo.com</td>
+                      <td>  <label class="toggleSwitch nolabel" onclick="">
+                        <input type="checkbox" checked />
+                        <span>
+                            <span>OFF</span>
+                            <span>ON</span>
+                        </span>
+                        <a></a>
+                    </label></td> 
+                      <td>Crindy Ornadez</td>
+                      <td>September 13, 2013</td>
+                      <td>jhlilk22@yahoo.com</td>
+                      <td>No</td> 
+                      <td>September 13, 2013</td>
+                      <td>jhlilk22@yahoo.com</td>
+                      <td>No</td><td>jhlilk22@yahoo.com</td>
+                      <td>No</td>
+                    </tr> <tr>
+                      <td class="sticky-col first-col">Ahmed Elzahaby</td>
+                      <td class="sticky-col second-col">September 13, 2013</td>
+                      <td class="sticky-col third-col">jhlilk22@yahoo.com</td>
+                      <td>No</td> 
+                      <td>Crindy Ornadez</td>
+                      <td>September 13, 2013</td>
+                      <td>jhlilk22@yahoo.com</td>
+                      <td>No</td> 
+                      <td>September 13, 2013</td>
+                      <td>jhlilk22@yahoo.com</td>
+                      <td>No</td><td>jhlilk22@yahoo.com</td>
+                      <td>No</td>
+                    </tr> <tr>
+                      <td class="sticky-col first-col">Ahmed Elzahaby</td>
+                      <td class="sticky-col second-col">September 13, 2013</td>
+                      <td class="sticky-col third-col">jhlilk22@yahoo.com</td>
+                      <td>No</td> 
+                      <td>Crindy Ornadez</td>
+                      <td>September 13, 2013</td>
+                      <td>jhlilk22@yahoo.com</td>
+                      <td>No</td> 
+                      <td>September 13, 2013</td>
+                      <td>jhlilk22@yahoo.com</td>
+                      <td>No</td><td>jhlilk22@yahoo.com</td>
+                      <td>No</td>
+                    </tr> <tr>
+                      <td class="sticky-col first-col">Ahmed Elzahaby</td>
+                      <td class="sticky-col second-col">September 13, 2013</td>
+                      <td class="sticky-col third-col">jhlilk22@yahoo.com</td>
+                      <td>No</td> 
+                      <td>Crindy Ornadez</td>
+                      <td>September 13, 2013</td>
+                      <td>jhlilk22@yahoo.com</td>
+                      <td>No</td> 
+                      <td>September 13, 2013</td>
+                      <td>jhlilk22@yahoo.com</td>
+                      <td>No</td><td>jhlilk22@yahoo.com</td>
+                      <td>No</td>
+                    </tr> <tr>
+                      <td class="sticky-col first-col">Ahmed Elzahaby</td>
+                      <td class="sticky-col second-col">September 13, 2013</td>
+                      <td class="sticky-col third-col">jhlilk22@yahoo.com</td>
+                      <td>No</td> 
+                      <td>Crindy Ornadez</td>
+                      <td>September 13, 2013</td>
+                      <td>jhlilk22@yahoo.com</td>
+                      <td>No</td> 
+                      <td>September 13, 2013</td>
+                      <td>jhlilk22@yahoo.com</td>
+                      <td>No</td><td>jhlilk22@yahoo.com</td>
+                      <td>No</td>
+                    </tr> <tr>
+                      <td class="sticky-col first-col">Ahmed Elzahaby</td>
+                      <td class="sticky-col second-col">September 13, 2013</td>
+                      <td class="sticky-col third-col">jhlilk22@yahoo.com</td>
+                      <td>  <label class="toggleSwitch nolabel" onclick="">
+                        <input type="checkbox" />
+                        <span>
+                            <span>OFF</span>
+                            <span>ON</span>
+                        </span>
+                        <a></a>
+                    </label></td> 
+                      <td>Crindy Ornadez</td>
+                      <td>September 13, 2013</td>
+                      <td>jhlilk22@yahoo.com</td>
+                      <td>No</td> 
+                      <td>September 13, 2013</td>
+                      <td>jhlilk22@yahoo.com</td>
+                      <td>No</td><td>jhlilk22@yahoo.com</td>
+                      <td>No</td>
+                    </tr>
+                  </tbody>
+                </table>
+          </div>
+
+    </div>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script>
+
+        let ham = document.getElementById("ham");
+        let main = document.getElementById("main")
+        let sidebar = document.getElementById("side")
+        ham.addEventListener("click", function () {
+            sidebar.classList.toggle("side")
+            main.classList.toggle("main-div")
+        })
+
+    </script>
+
+</body>
+
+</html>
+

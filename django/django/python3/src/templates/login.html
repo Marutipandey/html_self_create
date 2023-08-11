@@ -1,0 +1,25 @@
+import "pic1.jpg";
+{% extends 'base.html' %}
+
+{% block title %}  login{% endblock title %}
+
+
+{% block content %}
+<div class="block-center">
+   {% if error_message %}
+   <div class="ui negative message">
+    <i class="close icon"></i>
+    <div class="header">
+        {{ added_message }}
+    </div>
+   </div>
+{% endif %}
+
+
+<form action="" method="POST" class="ui form">
+    {% csrf_token %}
+    {{ form }}
+    <button type="submit" class="ui button positive">Login</button>
+</form>
+</div>
+{% endblock content %}

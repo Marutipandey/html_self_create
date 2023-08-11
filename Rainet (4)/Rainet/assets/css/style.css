@@ -1,0 +1,234 @@
+.navcolor{
+    color: white !important;
+    font-size: 15px;
+}
+
+.text1{
+    font-weight: 600;
+    font-size: 16px;
+    color: #00185D !important;
+    
+}
+
+.text333{
+    color: #00185D;
+}
+
+/* .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  } */
+
+  
+  .lunchbox {
+    position: relative;
+}
+
+@media (min-width: 37.5em) {
+    .lunchbox {
+        margin-left: auto;
+        margin-right: auto;
+        width: 92%;
+
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+}
+
+@media (min-width: 43.75em) {
+    .lunchbox {
+        width: 95%;
+    }
+}
+
+
+
+.swiper-container {
+    margin-top: 2em;
+   
+}
+
+.swiper-wrapper {
+    margin-bottom: 3em;
+
+    width: 73.8%;
+}
+
+@media (min-width: 37.5em) {
+    .swiper-wrapper {
+        width: 100%;
+    }
+}
+
+.swiper-slide.swiper-slide {
+    width: 100%;
+}
+
+
+@media (min-width: 37.5em) {
+    .swiper-slide.swiper-slide {
+        width: 50%; 
+        transform: translateX(-50%);
+    }
+}
+
+@media (min-width: 43.75em) {
+    .swiper-slide.swiper-slide {
+        width: 33.33333333333%;
+
+        transform: translateX(-100%);
+    }
+}
+
+@media (min-width: 53em) {
+    .swiper-slide.swiper-slide {
+        width: 25%;
+        transform: translateX(-150%);
+    }
+}
+
+.swiper-pagination {
+    display: block;
+}
+
+@media (min-width: 37.5em) {
+    .swiper-pagination {
+        display: none;
+    }
+}
+
+.swiper-button-prev {
+    display: none;
+
+    left: 0;
+    top: 0;
+
+    margin-top: 0;
+
+    height: calc(100% - 3em);
+}
+
+@media (min-width: 37.5em) {
+    .swiper-button-prev {
+        display: block;
+    }
+}
+
+.swiper-button-next {
+    display: none;
+
+    right: 0;
+    top: 0;
+
+    margin-top: 0;
+
+    height: calc(100% - 3em);
+}
+
+@media (min-width: 37.5em) {
+    .swiper-button-next {
+        display: block;
+    }
+}
+
+
+
+.product {
+   
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 82%;
+}
+
+.photograph {
+    align-self: center;
+    display: block;
+
+    height: auto;
+    /* width: 100%; */
+    
+}
+
+.product__name.product__name {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    font-size: calc(.5em + 5vw);
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+  
+}
+
+@media (min-width: 37.5em) {
+    .product__name.product__name {
+        font-size: .92em;
+    }
+}
+
+.product__description {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    font-size: calc(.3em + 5vw);
+    font-weight: 300;
+    line-height: 1.1;
+    text-align: center;
+}
+
+@media (min-width: 37.5em) {
+    .product__description {
+        font-size: .92em;
+    }
+}
+
+.card1{
+    border-radius: 40px 0px 40px 0px;
+    background-color: #F0F8FF;
+    box-shadow: 1px 3px 4px -3px black;
+}
+
+.rainet_logo{
+    width: 180px;
+    background-color: white;
+}
+
+.text_footer{
+    color: white;
+    font-size: 14px;
+    
+}
+
+.footer_social_img{
+    width: 20px;
+}
+
+.column_column{
+    text-decoration: none;
+    color: white !important;
+    font-size: 17px;
+}
+
+.column_3{
+    text-decoration: none;
+    color: white !important;
+    font-size: 14px;
+}
+
+
+.colorsecondnav{
+    color: white !important;
+}

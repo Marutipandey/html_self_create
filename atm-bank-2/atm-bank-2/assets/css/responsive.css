@@ -1,0 +1,107 @@
+
+@media (max-width:575px) {
+    .social {
+        text-align: center;
+    }
+
+    .sub-footer span {
+       
+        font-size: 13px;
+        text-align: center;
+    }
+    .banner-area h1 {
+       
+        font-size: 50px;
+    }
+    .area-padding {
+        padding: 59px 0px;
+        margin: 30px 0px;
+    }
+    .home-service {
+        padding: 0px;
+    }
+    .franchise-item {
+       
+        margin: 12px;
+       
+    }
+    .service-box {
+        
+        margin-top: 12px;
+       
+    }
+    .res-hei{
+        height: 254px;
+
+    }
+    .res-hei-1{
+        height: 200px;
+    }
+    .title-heading {
+       
+        padding-top: 35px;
+    }
+    .menu {
+        text-align: start;
+    }
+    .home-banner h1 {
+        padding: 113px 21px;
+        
+    }
+    .home-banner {
+       
+        margin: 0px;
+    }
+    .atm-nav ul {
+        margin-left: 1%;
+    }
+    .box-height {
+        height: 462px;
+    }
+    .nidhi{
+        height: 94px;
+    }
+    .login-page span a {
+      
+        margin: 30px 154px !important;
+    }
+}
+
+@media (max-width:900px) {
+    .home-banner h1 {
+        padding: 174px 41px;
+    }
+    .atm-nav ul {
+        margin-left: 1%;
+    }
+    .res-hei{
+        height: 254px;
+
+    }
+    .res-hei-1{
+        height: 200px;
+    }
+    .title-heading {
+       
+        padding-top: 35px;
+    }
+    .service-box {
+        
+        margin-top: 12px;
+       
+    }
+    .menu {
+        text-align: start;
+    }
+    .home-service {
+        padding: 0px;
+    }
+    .franchise-item {
+        
+        margin-top: 12px;
+       
+    }
+    .social {
+        text-align: center;
+    }
+}

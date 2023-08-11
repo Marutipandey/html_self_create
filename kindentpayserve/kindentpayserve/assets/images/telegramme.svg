@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="116" height="116" viewBox="0 0 116 116">
+  <defs>
+    <filter id="Ellipse_104" x="0" y="0" width="116" height="116" filterUnits="userSpaceOnUse">
+      <feOffset dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feFlood flood-color="#2e4f8e" flood-opacity="0.122"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="payout" transform="translate(18 17)">
+    <g id="payout-2" data-name="payout" transform="translate(-1119 -561)">
+      <g transform="matrix(1, 0, 0, 1, 1101, 544)" filter="url(#Ellipse_104)">
+        <g id="Ellipse_104-2" data-name="Ellipse 104" transform="translate(18 17)" fill="#fff" stroke="#fff" stroke-width="5">
+          <circle cx="40" cy="40" r="40" stroke="none"/>
+          <circle cx="40" cy="40" r="37.5" fill="none"/>
+        </g>
+      </g>
+      <g id="send-check-fill" transform="translate(1135.002 579.501)">
+        <g id="Group_319" data-name="Group 319" transform="translate(-0.002 0.001)">
+          <path id="Path_715" data-name="Path 715" d="M42.9,1.844A1.344,1.344,0,0,0,41.154.1L2.061,15.735h0l-1.215.484A1.344,1.344,0,0,0,.623,18.6l1.1.7,0,.005,13.423,8.54,4.273,6.713c2.075,3.064,2.075.376,2.075-.967A12.093,12.093,0,0,1,35.005,21.58ZM37.975,6.923,17.836,27.062l-.578-.908a1.344,1.344,0,0,0-.414-.414l-.908-.578L36.075,5.023l3.166-1.266L37.978,6.923Z" transform="translate(0.002 -0.001)" fill="#0abcd0"/>
+          <path id="Path_716" data-name="Path 716" d="M45.812,36.406A9.406,9.406,0,1,1,36.406,27a9.406,9.406,0,0,1,9.406,9.406Zm-5.356-4.512a1.344,1.344,0,0,0-1.844.462L35.468,37.6,34,36.126a1.345,1.345,0,0,0-1.9,1.9l2.08,2.077a2.016,2.016,0,0,0,3.155-.387l3.588-5.982a1.344,1.344,0,0,0-.462-1.844Z" transform="translate(-2.812 -2.814)" fill="#e68028"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

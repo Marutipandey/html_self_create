@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/css.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <title>Login</title>
+    <style>
+        /* login form */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+.head-bg,
+.my-btn {
+   background: #26a7dc;
+}
+.login-img {
+   background: url(assets/images/login-img.png);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 458px;
+   position: relative;
+}
+
+.login-form-item {
+   background-color: #fff;
+   padding: 30px;
+   height: 100%;
+   position: relative;
+}
+
+.login-form-item h3 {
+   font-size: 25px;
+   margin-bottom: 19px;
+   font-weight: bolder;
+}
+.other-sign a {
+   padding: 12px;
+   margin-top: 25px;
+   display: block;
+   color: #fff;
+}
+.login {
+   margin-top: 90px;
+}
+.bg-mail {
+   position: absolute;
+   left: 40%;
+   bottom: 0;
+}
+.login-img p {
+   color: #000;
+   font-size: 15px;
+   font-weight: bolder;
+}
+    </style>
+</head>
+<body>
+    <section class="login ">
+        <div class="container">
+            <div class="row justify-content-center g-0 ">
+
+                <div class="col-md-4">
+                    <div class="login-image-item">
+                        <div class="login-img">
+                            <p class="bg-mail">clickncash.in</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="login-form-item">
+                        <h3>Sign In</h3>
+                        <form action="">
+                            <div class="input">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control shadow-none" placeholder="Enter your email">
+                                    <label for="">Enter your email</label>
+                                </div>
+                                <div class="form-floating mt-3">
+                                    <input type="password" class="form-control shadow-none" placeholder="Password">
+                                    <label for="">Password</label>
+                                </div>
+                                <button class="w-100 mt-4 my-btn btn btn-info rounded-0 text-white text-uppercase">Continue</button>
+                            </div>
+                            <div class="form-logo text-center">
+                                <img src="assets/images/logo-clickncash.png" alt="">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script src="assets/js/jquery-3.0.0.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/js.js"></script>
+    <script src="assets/js/scrollIt.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    <script>
+        AOS.init({
+            disable: 'mobile'
+        }); 
+    </script>
+</body>
+
+</html>

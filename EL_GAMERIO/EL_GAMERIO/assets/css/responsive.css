@@ -1,0 +1,35 @@
+@media(max-width:768px){
+    .secondnav{
+        width: 100%;
+       font-size: 8px;
+    }
+    .searchbutton{
+        font-size: 8px;
+    }
+
+    .countdown1{
+        font-size: 30px;
+    }
+   
+}
+
+
+@media(max-width:425px){
+    .searchbutton{
+        font-size: 5px;
+    }
+    
+    .download_apk{
+        font-size: 12px !important;
+    }
+
+    .buttonlogin{
+        font-size: 12px !important;
+    }
+    .buttonjoin{
+        font-size: 12px !important;
+
+    }
+}
+
+

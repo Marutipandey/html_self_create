@@ -1,0 +1,272 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+h1 , h2 , h3 , h4 , h5 , h6{
+    font-family: 'Poppins', sans-serif;
+}
+li{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+
+}
+
+.my-nav{
+    background-color: #fff;
+}
+.nav-ul{
+   margin-left: 20%;
+
+}
+.nav-ul li {
+    padding: 0px 30px;
+}
+
+.nav-ul li a{
+    color: #000;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.banner{
+    background: linear-gradient(rgb(255 255 255 / 0%), rgb(34 30 30) ),url(../images/home-background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+}
+
+.service-section{
+    margin: 70px 0px 0px 0px;
+}
+.title-heading h4{
+    font-size: 25px;
+    font-weight: 600;
+    color: black;
+}
+.title-heading h3{
+    font-size: 29px;
+    color: #c8bba1;
+    font-weight: 900;
+}
+.home-service-icon img{
+    width: 80px;
+}
+.home-service h3{
+    padding: 7px 0px;
+    font-weight: 700;
+    color: #c8bba1;
+    font-size: 21px;
+}
+.home-service p{
+    font-size: 18px;
+}
+
+.home-about{
+    margin-top: 80px;
+}
+
+.franchsee-item img{
+    width: 70px;
+    padding: 10px 0px;
+    transition: box-shadow .3s ease-in-out;
+}
+
+.franchsee{
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+.franchsee-item h3{
+    font-size: 28px;
+    padding: 26px 0px;
+    font-weight: 600;
+    color: #c8bba1;
+}
+
+.franchsee-item h4{
+    font-size: 28px;
+    padding: 26px 0px;
+    font-weight: 600;
+   
+}
+
+.franchsee-item:hover{
+    box-shadow: 0 8px 30px rgb(2 59 109 / 10%);
+    
+}
+
+.talk{
+   
+background-image: url('../images/background.jfif');
+
+
+}
+.talk::before{
+    background-color: rgba(0, 0, 0, 0.37);
+    content: '';
+    display: block;
+    height: 40%;
+    position: absolute;
+    width: 100%;
+}
+
+.background h1{
+    text-align: center;
+    padding: 82px 0px;
+    color: #fff;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+
+.follow span a{
+    font-size: 18px;
+    display: inline-block;
+    background: #ffffff;
+    color: #202020;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 4px;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+}
+.follow span a:hover i{
+    color: blue;
+}
+
+footer{
+   padding: 60px 0px;
+    background-color: #c8bba1;
+}
+
+.sub-footer{
+    padding-top: 10px;
+}
+
+footer h4{
+    font-weight: 700;
+    padding: 10px 0px;
+}
+
+/* About Us */
+
+.page-banner{
+    background-image: url(../images/about-page-banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+}
+.page-banner h2{
+    color: #fff;
+     padding-top: 135px;
+     font-weight: 700;
+     padding-left: 65px;
+}
+
+.about-page{
+    padding: 60px 0px;
+}
+.achivement{
+    background-color: #c8bba1;
+    padding: 60px 0px;
+    margin-bottom: 85px;
+}
+.achivement h2{
+    font-size: 50px;
+    font-weight: 600;
+    color: #fff;
+   }
+   .achivement h3{
+       font-size: 29px;
+       font-weight: 600;
+     color: #fff;
+   }
+
+
+   /* service */
+
+   .service-page-banner{
+    background-image: url(../images/service-banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 250px;
+}
+
+.service-page-banner h2{
+    color: #fff;
+     padding-top: 135px;
+     font-weight: 700;
+     padding-left: 65px;
+}
+
+.service-page-work{
+    box-shadow: 0 8px 30px rgb(2 59 109 / 10%);
+    padding: 20px;
+    height: 240px;
+}
+.service-page-work h4{
+    color: #c8bba1;
+    font-weight: 600;
+}
+
+
+/* contact */
+
+.contact-banner{
+    background-image: url(../images/contact-banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 250px;
+}
+.contact-banner h2{
+    color: #fff;
+     padding-top: 135px;
+     font-weight: 700;
+     padding-left: 65px;
+}
+
+.width-class{
+    width: 330px;
+}
+
+.mt-btn button{
+    margin-top: 20px;
+    padding: 8px 18px;
+    border-radius: 8px;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: none;
+    color: #fff;
+    background-color: #c8bba1;
+    transition: all 0.5s;
+}
+
+.mt-btn button:hover{
+    color:  #c8bba1;
+    background-color: #fff; 
+    border: 1px solid #c8bba1;
+
+}
+.text{
+    box-shadow: 0 8px 30px rgb(2 59 109 / 10%);
+    padding: 30px;
+    margin-bottom: 20px;
+}
+.text h1{
+    font-size: 28px;
+    text-align: center;
+}
+
+.str a{
+  color: #000;
+    text-decoration: none;
+    
+}

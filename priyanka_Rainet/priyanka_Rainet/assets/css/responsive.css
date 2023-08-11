@@ -1,0 +1,149 @@
+@media(max-width:1024px){
+    .text1{
+       width: 100% !important;
+       /* font-size: 27px; */
+       font-size: 12px;
+    }
+
+    
+}
+
+@media(max-width:768px){
+    .photograph{
+       width: 100% !important;
+       text-align: center;
+    }
+    .number{
+        width: 100%;
+        font-size: 12px;
+        
+    }
+
+
+
+    .navbar11 .phone11{
+        width:50%;
+       font-size: 10px;
+       
+    }
+    .drop_width{
+        width: 20px !important; 
+    }
+    .ser_ress{
+        font-size: 10px !important;
+       
+    }
+
+    .drop_width1{
+        width: 30px !important;
+    }
+
+    .ser_ress1{
+        font-size: 10px !important;
+    }
+    
+   
+    
+    /* .texttt{
+        font-size: 15px !important;
+    }
+
+    .texttt1{
+        font-size: 10px !important;
+    } */
+    .imageheadersection{
+        height: 100% !important;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        width: 100%;
+       
+    }
+
+    /* .image1111{
+       height: 50%;
+       width: 70%;
+    } */
+
+    /* .dropdown-menu .dropdown-submenu {
+        display: none;
+        position: absolute;
+        left: 27%;
+        top: 25px;
+        }
+        .dropdown-menu .dropdown-submenu-left {
+      
+        left: auto;
+        } */
+    
+    
+    
+}
+@media(min-width:768px){
+    .photograph{
+       width: 100% !important;
+       text-align: center;
+    }
+
+    
+    
+
+   
+   
+    
+}
+
+@media(max-width:1024px){
+    .location{
+       width: 100% !important;
+       font-size: 14px;
+    }
+
+    .secondnav{
+        font-size: 10px;
+    }
+
+    .centered11{
+        width: 100%;
+        margin-top:40px;
+    }
+   
+    
+}
+
+@media(max-width:425px){
+    .centered {
+        opacity: 0.4;
+    }
+    .centered11{
+        width: 100%;
+        margin-top:30%;
+        opacity: 0.4;
+    }
+
+
+    .dropdown-menu .dropdown-submenu {
+        display: none;
+        position: absolute;
+        left: 27%;
+        top: 25px;
+        }
+        .dropdown-menu .dropdown-submenu-left {
+      
+        left: auto;
+        }
+    
+}
+
+@media(max-width:375px){
+   
+    .centered11{
+        width: 100%;
+        margin-top:37%;
+        opacity: 0.4;
+    }
+
+}
+
+
+
+

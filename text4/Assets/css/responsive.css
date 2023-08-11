@@ -1,0 +1,29 @@
+@media (max-width:768px) {
+    .inner-box-1 img{
+ width: 100%;
+    }
+    .inner-box img{
+        width: 100%;    
+}
+
+.font1{
+    font-size: 30px;
+}
+}
+
+
+@media (max-width:775px) {
+    .name1{
+        font-size:13px;
+        width: 100%;
+    }
+
+    .img1 img{
+        width: 85px;
+    }
+
+    .top1{
+        padding: 10px;
+    }
+    }
+

@@ -1,0 +1,904 @@
+<head>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Api ClicknCash</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet"
+    href="https://api.clickncash.in/tools/assets/vendors/iconfonts/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="https://api.clickncash.in/tools/assets/vendors/iconfonts/ionicons/css/ionicons.css">
+  <link rel="stylesheet" href="https://api.clickncash.in/tools/assets/vendors/iconfonts/typicons/src/font/typicons.css">
+  <link rel="stylesheet"
+    href="https://api.clickncash.in/tools/assets/vendors/iconfonts/flag-icon-css/css/flag-icon.min.css">
+  <link rel="stylesheet" href="https://api.clickncash.in/tools/assets/vendors/css/vendor.bundle.base.css">
+  <link rel="stylesheet" href="https://api.clickncash.in/tools/assets/vendors/css/vendor.bundle.addons.css">
+  <link rel="stylesheet"
+    href="https://api.clickncash.in/tools/assets/vendors/iconfonts/font-awesome/css/font-awesome.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- endinject -->
+  <!-- plugin css for this page -->
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="https://api.clickncash.in/tools/assets/css/shared/style.css">
+  <!-- endinject -->
+  <!-- Layout styles -->
+  <link rel="stylesheet" href="https://api.clickncash.in/tools/assets/css/demo_1/style.css">
+  <!-- End Layout styles -->
+  <link rel="shortcut icon" href="https://api.clickncash.in/tools/assets/images/rsz_1logo2-trans.png" />
+</head>
+
+<body>
+  <div class="container-scroller">
+    <!-- partial:../../partials/_navbar.php -->
+    <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+      <div class="text-center navbar-brand-wrapper d-flex align-items-top justify-content-center">
+        <a class="navbar-brand brand-logo" href="dashboard">
+          <img style="width: 45%;" src="https://api.clickncash.in/tools/assets/images/rsz_1logo2-trans.png"
+            alt="logo" /> </a>
+        <a class="navbar-brand brand-logo-mini" href="dashboard">
+          <img style="width: 100%;" src="https://api.clickncash.in/tools/assets/images/rsz_1logo2-trans.png"
+            alt="logo" /> </a>
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-center">
+        <ul class="navbar-nav">
+          <li class="nav-item font-weight-semibold d-none d-lg-block">
+            <marquee behavior="scroll" direction="left">Welcome To ClicknCash Api Service</marquee>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <!--               <a class="nav-link count-indicator" id="messageDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
+                <i class="mdi mdi-bell-outline"></i>
+                <span class="count">7</span>
+              </a> -->
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0"
+              aria-labelledby="messageDropdown">
+              <a class="dropdown-item py-3">
+                <p class="mb-0 font-weight-medium float-left">You have 7 unread mails </p>
+                <span class="badge badge-pill badge-primary float-right">View all</span>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <img src="https://api.clickncash.in/tools/assets/images/faces/face10.jpg" alt="image"
+                    class="img-sm profile-pic">
+                </div>
+                <div class="preview-item-content flex-grow py-2">
+                  <p class="preview-subject ellipsis font-weight-medium text-dark">Marian Garner </p>
+                  <p class="font-weight-light small-text"> The meeting is cancelled </p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <img src="https://api.clickncash.in/tools/assets/images/faces/face12.jpg" alt="image"
+                    class="img-sm profile-pic">
+                </div>
+                <div class="preview-item-content flex-grow py-2">
+                  <p class="preview-subject ellipsis font-weight-medium text-dark">David Grey </p>
+                  <p class="font-weight-light small-text"> The meeting is cancelled </p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <img src="https://api.clickncash.in/tools/assets/images/faces/face1.jpg" alt="image"
+                    class="img-sm profile-pic">
+                </div>
+                <div class="preview-item-content flex-grow py-2">
+                  <p class="preview-subject ellipsis font-weight-medium text-dark">Travis Jenkins </p>
+                  <p class="font-weight-light small-text"> The meeting is cancelled </p>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <!--               <a class="nav-link count-indicator" id="notificationDropdown" href="#" data-toggle="dropdown">
+                <i class="mdi mdi-email-outline"></i>
+                <span class="count bg-success">3</span>
+              </a> -->
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0"
+              aria-labelledby="notificationDropdown">
+              <a class="dropdown-item py-3 border-bottom">
+                <p class="mb-0 font-weight-medium float-left">You have 4 new notifications </p>
+                <span class="badge badge-pill badge-primary float-right">View all</span>
+              </a>
+              <a class="dropdown-item preview-item py-3">
+                <div class="preview-thumbnail">
+                  <i class="mdi mdi-alert m-auto text-primary"></i>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject font-weight-normal text-dark mb-1">Application Error</h6>
+                  <p class="font-weight-light small-text mb-0"> Just now </p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item py-3">
+                <div class="preview-thumbnail">
+                  <i class="mdi mdi-settings m-auto text-primary"></i>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject font-weight-normal text-dark mb-1">Settings</h6>
+                  <p class="font-weight-light small-text mb-0"> Private message </p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item py-3">
+                <div class="preview-thumbnail">
+                  <i class="mdi mdi-airballoon m-auto text-primary"></i>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject font-weight-normal text-dark mb-1">New user registration</h6>
+                  <p class="font-weight-light small-text mb-0"> 2 days ago </p>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item dropdown d-none d-xl-inline-block user-dropdown">
+            <a class="nav-link dropdown-toggle" id="UserDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
+              <img class="img-xs rounded-circle" src="https://api.clickncash.in/tools/assets/images/faces/computer.png"
+                alt="Profile image"> </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
+              <div class="dropdown-header text-center">
+                <img class="img-md rounded-circle"
+                  src="https://api.clickncash.in/tools/assets/images/faces/computer.png" alt="Profile image">
+
+
+
+                <p class="mb-1 mt-3 font-weight-semibold">Pankajkumar</p>
+
+
+
+
+                <span>User Id</span>
+                <p class="font-weight-light text-muted mb-0">RPAYb77a7ef645</p>
+                <span>User Token</span>
+                <p class="font-weight-light text-muted mb-0">c0884788b5aa30d18b4b9d6558de7e1f</p>
+
+              </div>
+              <a class="dropdown-item">My Profile<i class="dropdown-item-icon ti-dashboard"></i></a>
+              <!--        <a class="dropdown-item">Messages<i class="dropdown-item-icon ti-comment-alt"></i></a>
+                <a class="dropdown-item">Activity<i class="dropdown-item-icon ti-location-arrow"></i></a>
+                <a class="dropdown-item">FAQ<i class="dropdown-item-icon ti-help-alt"></i></a> -->
+              <a class="dropdown-item" href="https://api.clickncash.in/change-password">Change Password<i
+                  class="dropdown-item-icon ti-power-off"></i></a>
+              <!-- <a class="dropdown-item" href="https://api.clickncash.in/update-gst">Update GST<i class="dropdown-item-icon ti-power-off"></i></a> -->
+              <a class="dropdown-item" href="https://api.clickncash.in/update-address">Update Address<i
+                  class="dropdown-item-icon ti-power-off"></i></a>
+              <a class="dropdown-item" href="https://api.clickncash.in/logout">Sign Out<i
+                  class="dropdown-item-icon ti-power-off"></i></a>
+            </div>
+          </li>
+        </ul>
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
+          data-toggle="offcanvas">
+          <span class="mdi mdi-menu"></span>
+        </button>
+      </div>
+    </nav>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <!-- partial:../../partials/_sidebar.php -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul class="nav">
+          <li class="nav-item nav-profile">
+            <a href="#" class="nav-link">
+              <div class="profile-image">
+                <img class="img-xs rounded-circle"
+                  src="https://api.clickncash.in/tools/assets/images/faces/computer.png" alt="profile image">
+                <div class="dot-indicator bg-success"></div>
+              </div>
+              <div class="text-wrapper">
+
+                <p class="profile-name">Pankaj@123</p>
+
+
+
+
+              </div>
+            </a>
+          </li>
+          <center>
+            <p class="profile-name" style="color: white">Wallet Rs. <b>77057.36 / -</b></p>
+          </center>
+          <center>
+            <p class="profile-name" style="color: white">AEPS Rs. <b>0.00 / -</b></p>
+          </center>
+
+          <li class="nav-item nav-category">Main Menu</li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://api.clickncash.in/dashboard">
+              <i class="menu-icon typcn typcn-document-text"></i>
+              <span class="menu-title">Dashboard</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="https://api.clickncash.in/payout-apiuser">
+              <i class="menu-icon typcn typcn-document-text"></i>
+              <span class="menu-title">Sales Payout</span>
+            </a>
+          </li>
+
+
+          <!--             <li class="nav-item">
+              <a class="nav-link" data-toggle="collapse" href="#resaller" aria-expanded="false" aria-controls="resaller">
+                <i class="menu-icon typcn typcn-coffee"></i>
+                <span class="menu-title">Resaller</span>
+                <i class="menu-arrow"></i>
+              </a>
+              <div class="collapse" id="resaller">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="add-resaller.php">Add</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="all-resaller.php">All resaller</a>
+                  </li>
+                </ul>
+              </div>
+            </li> -->
+
+
+          <!--             <li class="nav-item">
+              <a class="nav-link" data-toggle="collapse" href="#wl" aria-expanded="false" aria-controls="wl">
+                <i class="menu-icon typcn typcn-coffee"></i>
+                <span class="menu-title">White Label</span>
+                <i class="menu-arrow"></i>
+              </a>
+              <div class="collapse" id="wl">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="add-wl.php">Add</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="all-wl.php">All wl</a>
+                  </li>
+                </ul>
+              </div>
+            </li> -->
+
+
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#api" aria-expanded="false" aria-controls="api">
+              <i class="menu-icon typcn typcn-coffee"></i>
+              <span class="menu-title">My Commission</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="api">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item">
+                  <a class="nav-link" href="https://api.clickncash.in/commision-list">Service Commision</a>
+                </li>
+                <!--         <li class="nav-item">
+                    <a class="nav-link" href="all-api-user.php">Electricty</a>
+                  </li> -->
+              </ul>
+            </div>
+          </li>
+
+
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#reports" aria-expanded="false" aria-controls="reports">
+              <i class="menu-icon typcn typcn-coffee"></i>
+              <span class="menu-title">Service Reports</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="reports">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item">
+                  <a class="nav-link" href="https://api.clickncash.in/all-report">All Reports</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://api.clickncash.in/recharge-report">Recharge</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://api.clickncash.in/bbps-report">Bill Payment</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://api.clickncash.in/dmt-report">DMT</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://api.clickncash.in/express-dmt-report">Express DMT</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://api.clickncash.in/payout-report">Payout</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="https://api.clickncash.in/cash-deposit-report">Cash Deposit</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="https://api.clickncash.in/aadhaarpay-report">Aadhaar Pay</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="https://api.clickncash.in/acf-report">Account Verify</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="https://api.clickncash.in/aeps-report">AEPS</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="https://api.clickncash.in/pancard-report">Pancard</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="https://api.clickncash.in/upi-report">UPI Report</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://api.clickncash.in/invoice-report">Invoice</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="https://api.clickncash.in/aepsinvoice">AepsInvoice</a>
+                  </li> -->
+
+
+
+
+                <!--           <li class="nav-item">
+                    <a class="nav-link" href="typography.php">Electricty</a>
+                  </li> -->
+              </ul>
+            </div>
+
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#support" aria-expanded="false" aria-controls="reports">
+              <i class="menu-icon typcn typcn-coffee"></i>
+              <span class="menu-title">Support</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="support">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item">
+                  <a class="nav-link" href="https://api.clickncash.in/fund-request">Fund Request</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://api.clickncash.in/fund-request-report">Fund Request Report</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://api.clickncash.in/users-kyc-list">User Kyc</a>
+                </li>
+              </ul>
+            </div>
+
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="https://api.clickncash.in/aeps-to-main">
+              <i class="menu-icon typcn typcn-document-text"></i>
+              <span class="menu-title">Wallet Transfer</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#integrations" aria-expanded="false"
+              aria-controls="reports">
+              <i class="menu-icon typcn typcn-coffee"></i>
+              <span class="menu-title">Integrations</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="integrations">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item">
+                  <a class="nav-link" href="https://api.clickncash.in/all-api">Dev APIs</a>
+                </li>
+
+              </ul>
+            </div>
+
+          </li>
+
+
+          <li class="nav-item">
+            <a class="nav-link" href="https://api.clickncash.in/logout">
+              <i class="menu-icon typcn typcn-document-text"></i>
+              <span class="menu-title">Logout</span>
+            </a>
+          </li>
+
+
+        </ul>
+      </nav>
+      <style>
+        #myDIV {
+          height: auto;
+          width: auto;
+          overflow: auto;
+        }
+
+        #content {
+          height: 800px;
+          width: 2000px;
+          background-color: coral;
+        }
+      </style>
+
+      <!-- partial -->
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="row">
+            <div class="col-lg-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="mt-0 header-title">Personal Details</h4>
+
+                  <hr>
+                  <div class="col-md-12 pull-left">
+                    <form action="https://api.clickncash.in/index.php/change-password" id="myform"
+                      enctype="multipart/form-data" method="post" accept-charset="utf-8">
+                      <div class="row">
+
+                        <div class=" col-md-6">
+
+                          <div class="form-floating mb-3">
+                            <select class="form-select  mb-3" aria-label=" example">
+                              <option selected>Loan Type</option>
+                              <option value="Personal Loan">Personal Loan</option>
+                              <option value="Home Loan">Home Loan</option>
+                              <option value="Bussiness Loan">Bussiness Loan</option>
+                              <!-- <option value="3">Three</option> -->
+                            </select>
+                            <label for="">Select</label>
+                          </div>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingInput" placeholder="Full Name">
+                            <label for="floatingInput">Full Name</label>
+                          </div>
+                        </div>
+
+                      </div>
+
+                      <div class="row">
+
+                        <div class=" col-md-6">
+
+                          <div class="form-floating mb-3">
+                            <input type="date" class="form-control" id="floatingInput" placeholder="Date of Birth">
+                            <label for="floatingInput">Date of Birth</label>
+                          </div>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingInput" placeholder="Father Name">
+                            <label for="floatingInput">Father Name</label>
+                          </div>
+                        </div>
+
+                      </div>
+
+                      <div class="row">
+
+                        <div class=" col-md-6">
+
+                          <div class="form-floating mb-3">
+                            <input type="tel" class="form-control" id="floatingInput" placeholder="Mobile Number">
+                            <label for="floatingInput">Mobile Number</label>
+                          </div>
+                        </div>
+                        <div class=" col-md-6">
+
+                          <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingInput" placeholder="Pan Number">
+                            <label for="floatingInput">Pan Number</label>
+                          </div>
+                        </div>
+
+                      </div>
+
+                      <div class="row">
+
+                        <div class=" col-md-6">
+
+                          <div class="form-floating mb-3">
+                            <input type="number" class="form-control" id="floatingInput" placeholder="Aadhar Number"> 
+                            <label for="floatingInput">Aadhar Number</label>
+                          </div>
+                        </div>
+                       
+                        <div class=" col-md-6">
+
+                          <div class="form-floating mb-3">
+                            <input type="number" class="form-control" id="floatingInput" placeholder="Net Monthly Income"> 
+                            <label for="floatingInput">Net Monthly Income</label>
+                          </div>
+                        </div>
+
+                      </div>
+
+                      <div class="row">
+
+                        <div class=" col-md-6">
+
+                          <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingInput" placeholder="Bank Name"> 
+                            <label for="floatingInput">Bank Name</label>
+                          </div>
+                        </div>
+                        <div class=" col-md-6">
+
+                          <div class="form-floating mb-3">
+                            <select class="form-select  mb-3" aria-label=" example">
+                              <option selected>Marital Status</option>
+                              <option value="Single">Single</option>
+                              <option value="Maried">Maried</option>
+                              <option value="Divorced">Divorced</option>
+                              <option value="Widowed">Widowed</option>
+                            </select>
+                            <label for="">Select</label>
+                          </div>
+                        </div>
+
+                      </div>
+
+                      <div class="row">
+
+
+                        <div class=" col-md-6">
+
+                          <div class="form-floating mb-3">
+                            <select class="form-select  mb-3" aria-label=" example">
+                              <option selected>Select Occupation</option>
+                              <option value="Salaried">Salaried</option>
+                              <option value="Self-Employed">Self-Employed</option>
+                              <option value="Card To Card">Card To Card</option>
+                            </select>
+                            <label for="">Select</label>
+                          </div>
+                        </div>
+
+
+                      
+                        <div class=" col-md-6">
+
+                          <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="Email Id">
+                            <label for="floatingInput">Email Id</label>
+                          </div>
+                        </div>
+                        
+
+                      </div>
+
+
+                      <div class="row">
+                        <div class=" col-md-6">
+
+                          <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingInput" placeholder="Permanenet Address">
+                            <label for="floatingInput">Permanent Address</label>
+                          </div>
+                        </div>
+
+
+                        <div class=" col-md-6">
+
+                          <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingInput" placeholder="Current Address">
+                            <label for="floatingInput">Current Address</label>
+                          </div>
+                        </div>
+
+                       
+
+                      </div>
+
+
+                      <div class="row">
+
+                        <div class=" col-md-6">
+
+                          <div class="form-floating mb-3">
+                            <select class="form-select  mb-3" aria-label=" example">
+                              <option selected>Select Adress Type</option>
+                              <option value="Own">Own</option>
+                              <option value="Rented">Rented</option>
+                              <!-- <option value="Card To Card">Card To Card</option> -->
+                            </select>
+                            <label for="">Select</label>
+                          </div>
+                        </div>
+                        <div class=" col-md-6">
+
+                          <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingInput" placeholder="Loan Amount">
+                            <label for="floatingInput">Loan Amount</label>
+                          </div>
+                        </div>
+
+                      </div>
+
+                      
+                      <div class="row">
+
+                        <div class=" col-md-6">
+
+                          <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingInput" placeholder="Company Name"> 
+                            <label for="floatingInput">Company Name</label>
+                          </div>
+                        </div>
+                        <div class=" col-md-6">
+
+                          <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingInput" placeholder="Company  Address">
+                            <label for="floatingInput">Company  Address</label>
+                          </div>
+                        </div>
+
+                      </div>
+
+                      <div class="row">
+
+                        <div class=" col-md-6">
+
+                          <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingInput" placeholder="No Of Year Stay At Current Address"> 
+                            <label for="floatingInput">No Of Year Stay At Current Address</label>
+                          </div>
+                        </div>
+                      
+
+                      </div>
+
+                    
+                      
+
+                      <div class="form-actions" style="text-align: center;">
+                        <button type="reset" class="btn btn-outline-danger m-r-10"><i class="fa fa-refresh"></i>
+                          Reset
+                        </button>
+                        <button type="submit" class="btn btn-outline-primary"><i class="fa fa-save"></i>
+                          Submit
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <div class="row">
+            <div class="col-lg-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="mt-0 header-title">Running Loan Details</h4>
+
+                  <hr>
+                  <div class="col-md-12 pull-left">
+                    <form action="https://api.clickncash.in/index.php/change-password" id="myform"
+                      enctype="multipart/form-data" method="post" accept-charset="utf-8">
+                      <div class="row">
+
+                        <div class="form-group col-md-6">
+                          <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingInput" placeholder="Bank Name">
+                            <label for="floatingInput">Bank Name</label>
+                          </div>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <div class="form-floating mb-3">
+                            <input type="number" class="form-control" id="floatingInput" placeholder="Loan Amount Taken">
+                            <label for="floatingInput">Loan Amount Taken</label>
+                          </div>
+                        </div>
+
+                      </div>
+
+                      <div class="row">
+
+                        <div class=" col-md-6">
+
+                          <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingInput" placeholder="Rate Of Interest">
+                            <label for="floatingInput">Rate Of Interest</label>
+                          </div>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingInput" placeholder="Tenure Of Running Loan">
+                            <label for="floatingInput">Tenure Of Running Loan</label>
+                          </div>
+                        </div>
+
+                      </div>
+
+                      <div class="row">
+
+                        <div class=" col-md-6">
+
+                          <div class="form-floating mb-3">
+                            <input type="tel" class="form-control" id="floatingInput" placeholder="Emi Paid">
+                            <label for="floatingInput">Emi Paid</label>
+                          </div>
+                        </div>
+
+                   
+                      
+
+                      </div>
+
+
+
+                      <div class="form-actions" style="text-align: center;">
+                        <button type="reset" class="btn btn-outline-danger m-r-10"><i class="fa fa-refresh"></i>
+                          Reset
+                        </button>
+                        <button type="submit" class="btn btn-outline-primary"><i class="fa fa-save"></i>
+                          Submit
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+          <div class="row">
+            <div class="col-lg-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="mt-0 header-title">KYC Bank Details</h4>
+
+                  <hr>
+                  <div class="col-md-12 pull-left">
+                    <form action="https://api.clickncash.in/index.php/change-password" id="myform"
+                      enctype="multipart/form-data" method="post" accept-charset="utf-8">
+                      <div class="row">
+                       <div class="col-md-6">
+                        <div>
+                          <label for="formFileLg mt-3" class="form-label">Salary Slip Of Last 3 Month's</label>
+                          <input class="form-control form-control-lg" id="formFileLg" type="file" style=" line-height: 18px;">
+                        </div>
+                       </div>
+                       <div class="col-md-6">
+                        <div>
+                          <label for="formFileLg mt-3" class="form-label">Bank Statement Of Last 6 Months Of Salary Account</label>
+                          <input class="form-control form-control-lg" id="formFileLg" type="file" style=" line-height: 18px;">
+                        </div>
+                       </div>
+  
+
+                      </div>
+
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div>
+                            <label for="formFileLg mt-3" class="form-label">Photo</label>
+                            <input class="form-control form-control-lg" id="formFileLg" type="file" style=" line-height: 18px;">
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div>
+                            <label for="formFileLg mt-3" class="form-label">Pan Iamge</label>
+                            <input class="form-control form-control-lg" id="formFileLg" type="file" style=" line-height: 18px;">
+                          </div>
+                        </div>
+   
+ 
+                       </div>
+
+                       <div class="row">
+                        <div class="col-md-6">
+                          <div>
+                            <label for="formFileLg mt-3" class="form-label">Current Address Proof </label>
+                            <input class="form-control form-control-lg" id="formFileLg" type="file" style=" line-height: 18px;"> 
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div>
+                            <label for="formFileLg mt-3" class="form-label">Form 16 Form Employer</label>
+                            <input class="form-control form-control-lg" id="formFileLg" type="file" style=" line-height: 18px;">
+                          </div>
+                        </div>
+   
+ 
+                       </div>
+                    
+                      
+
+                      <div class="form-actions mt-5" style="text-align: center;">
+                        <button type="reset" class="btn btn-outline-danger m-r-10"><i class="fa fa-refresh"></i>
+                          Reset
+                        </button>
+                        <button type="submit" class="btn btn-outline-primary"><i class="fa fa-save"></i>
+                          Submit
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <!-- content-wrapper ends -->
+          <!-- partial:partials/_footer.html -->
+          <footer class="footer">
+            <div class="container-fluid clearfix">
+              <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">All Rights Reserved © 2020
+                Powered By Rainet Technology Private Limited.</span>
+
+            </div>
+          </footer>
+          <!-- partial -->
+        </div>
+        <!-- main-panel ends -->
+      </div>
+      <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="https://api.clickncash.in/tools/assets/vendors/js/vendor.bundle.base.js"></script>
+    <script src="https://api.clickncash.in/tools/assets/vendors/js/vendor.bundle.addons.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page-->
+    <!-- End plugin js for this page-->
+    <!-- inject:js -->
+    <script src="https://api.clickncash.in/tools/assets/js/shared/off-canvas.js"></script>
+    <script src="https://api.clickncash.in/tools/assets/js/shared/misc.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page-->
+    <!-- End custom js for this page-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.6.2/js/dataTables.buttons.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.6.2/js/buttons.html5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+      var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+      (function () {
+        var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = 'https://embed.tawk.to/5f4a80271e7ade5df4450fdb/default';
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
+      })();
+    </script>
+    <!--End of Tawk.to Script-->
+</body>

@@ -1,0 +1,243 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Download</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+        header {
+            background: linear-gradient(302deg, rgba(145, 35, 208, 1) 0%, rgba(32, 89, 125, 1) 99%);
+            padding: 10px;
+        }
+        .header-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo img {
+            width: 100px;
+            background: #fff;
+        }
+        .center-text {
+            color: #fff;
+        }
+        .download-button i {
+            background: #fff;
+            padding: 14px;
+            font-size: 18px;
+            border-radius: 6px;
+            color: red;
+        }
+        .another-mar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            margin: 0px 20px;
+        }
+        .item {
+            text-align: center;
+            font-size: 25px;
+            margin-top: 10px;
+        }
+        .item h6{
+            color: red;
+            padding-top: 10px;
+        }
+        .item i{
+            color: rgb(7, 7, 116);
+        }
+        .accordion-item:first-of-type .accordion-button {
+            color: #000 !important;
+            background-color: #fff !important;
+        }
+        .accordion-body {
+            padding: 0.5rem 0.25rem !important;
+        }
+        .accordion-button {
+            padding: 0.5rem 0.25rem !important;
+        }
+        th,
+        td {
+            width: 100px !important;
+        }
+        .accordion-item { 
+            border: none !important;
+            }
+            @media (max-width: 992px) {
+            .another-mar{
+            flex-direction: column !important;
+        } 
+            .header-item{
+            flex-direction: column;
+        }   
+    }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-item">
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="">
+            </div>
+            <div class="center-text">
+                <h4 class="">Google Excel Report</h4>
+                <p class="p-0 m-0">Wednesday 27 2022 </p>
+            </div>
+            <div class="download-button">
+                <button class="border-0"><i class="fa fa-download"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <div class="subheader bg-white shadow-sm">
+        <div class="another-mar">
+            <div class="item1 item">
+                <span><i class="fa fa-code-branch"></i></span>
+                <h6>Branches</h6>
+            </div>
+            <div class="item2 item">
+                <span><i class="fa fa-building"></i></span>
+                <h6>Item1</h6>
+            </div>
+            <div class="item3 item">
+                <span><i class="fa fa-coins"></i></span>
+                <h6>Finance</h6>
+            </div>
+            <div class="item4 item">
+                <span><i class="fa fa-users-viewfinder"></i></span>
+                <h6>Ownership</h6>
+            </div>
+            <div class="item5 item">
+                <span><i class="fa fa-building"></i></span>
+                <h6>Item1</h6>
+            </div>
+            <div class="item6 item">
+                <span><i class="fa fa-circle-info"></i></span>
+                <h6>Source Information</h6>
+            </div>
+            <div class="item7 item">
+                <span><i class="fa-solid fa-circle-user"></i></span>
+                <h6>Share Holders</h6>
+            </div>
+            <div class="item8 item">
+                <span><i class="fa-solid fa-comments"></i></span>
+                <h6>KYC Questions</h6>
+            </div>
+        </div>
+    </div>
+
+    <section class="main-table mt-4">
+        <div class="container-fluid">
+            <div class="card">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Job Title</th>
+                                <th>Date Of Birth</th>
+                                <th>Nationality</th>
+                                <th>Apponitment Date</th>
+                            </tr>
+                        </thead>
+                    </table>
+                    <div class="brands filter-pad">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header table" id="headingOne">
+                                    <span class="accordion-button shadow-none " type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#dataOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <td>Vikash</td>
+                                                    <td>Developer</td>
+                                                    <td>NaN</td>
+                                                    <td>Indian</td>
+                                                    <td>NaN</td>
+                                                </tr>
+                                            </thead>
+                                        </table>
+                                    </span>
+                                </h2>
+                                <div id="dataOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <table class="table">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Email </td>
+                                                    <td>Phone </td>
+                                                    <td>20-01-2000</td>
+                                                    <td>Indian</td>
+                                                    <td>20 Aug 2022</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="brands filter-pad">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header table" id="headingOne">
+                                    <span class="accordion-button shadow-none " type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#dataTwo" aria-expanded="true" aria-controls="collapseOne">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <td>Vikash</td>
+                                                    <td>Developer</td>
+                                                    <td>NaN</td>
+                                                    <td>Indian</td>
+                                                    <td>NaN</td>
+                                                </tr>
+                                            </thead>
+                                        </table>
+                                    </span>
+                                </h2>
+                                <div id="dataTwo" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <table class="table">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Email</td>
+                                                    <td>Phone</td>
+                                                    <td>20-01-2000</td>
+                                                    <td>Indian</td>
+                                                    <td>20 Aug 2022</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+</html>

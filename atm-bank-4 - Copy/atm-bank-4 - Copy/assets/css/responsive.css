@@ -1,0 +1,26 @@
+
+@media (max-width:575px) {
+    .nav-ul {
+        margin: 0;
+        text-align: center !important;
+    }
+    .talk::before {
+       
+        height: 0 !important;
+      
+    }
+    input{
+        margin-top: 10px;
+        width: 100% !important;
+    }
+
+  
+}
+
+@media (max-width:900px) {
+    .talk::before {
+       
+        height: 0 !important;
+      
+    }
+}

@@ -1,0 +1,141 @@
+.logoimgg{
+    width: 130px;
+}
+
+.navbarbg{
+    background-color: #588fc1;;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /* background-color: #0055A3; */
+  }
+  /* .navbar-fixed-top {
+    position: sticky;
+    top: 0;
+    height: 60px;
+}
+
+.navbar-fixed-top--scrolled {
+    background-color: gray !important;
+    
+} */
+
+
+.navbarcolor{
+    color:white !important;
+}
+
+.Wallet{
+    font-size:40px;
+    font-weight: 800px;
+}
+
+.hometext{
+    color:white;
+}
+
+.buttonlogin{
+    background-color: white;
+    border-radius: 20px;
+    color:#12CC69 !important;
+    width: 100px;
+}
+
+.menuicon{
+  color:white;
+}
+
+.contactbg{
+    background-color: #0264BD;
+}
+
+.aboutus{
+    font-size: 34px;
+}
+
+.contactimg{
+    /* height: 400px; */
+}
+
+.aboutbutton{
+    background-color: #12CC69;
+    border-radius: 20px;
+    color:white !important;
+    
+}
+
+.aboutbutton1{
+    background-color: #12CC69;
+    border-radius: 20px;
+    color:white !important;
+    /* width: 150px; */
+}
+
+.imagecard{
+    width: 60px;
+    /* position: relative;
+    bottom:50px; */
+}
+
+.card1{
+    border: 1px solid #13CC6A !important;
+    background-color: rgb(0 85 163) ;
+    color: white;
+}
+
+/* .servicebg{
+    background-color: #0055A3;
+} */
+
+.bluetext{
+    color:#005BAE;
+}
+
+.multibg{
+    background-color: #0264BD;
+}
+
+.card2{
+    border: 2px dotted #13CC6A !important;
+    background-color: #0264BD;
+    color: white;
+}
+
+.get{
+    color: #12CC69;
+}
+
+.contactbutton{
+    background-color: #005BAE;
+    color:white !important;
+    border-radius: 20px;
+    width: 100px;
+    /* text-align: center; */
+}
+
+.imgtext{
+    /* font-size: 18px; */
+}
+
+
+.footerbg{
+    background-color: #0055A3;
+}
+
+.ullifooter{
+    list-style: none;
+}
+
+.footericoncolor{
+    color:#12CC69 !important;
+}
+
+.box_home{
+    transition: all 1.1;
+}
+.box_home:hover{
+    transform: scale(1.1);
+}

@@ -1,0 +1,138 @@
+.navbar-brand img{
+    width: 165px;
+       
+}
+
+
+
+.IMG-1{
+    width: 150px;
+    height:50px;
+    margin-left: 7rem;
+}
+
+.NAV-1{
+    margin-right: 10rem;
+   
+    
+}
+
+.CO{
+    color: black;
+}
+
+.SLIDE-1{
+    height: 26rem;
+    width: 100%;
+}
+
+.SLIDE-2{
+    height: 27rem;
+    width: 100%;
+}
+.BG{
+    background-color: rgb(253, 226, 226);
+    padding: 30px;
+}
+
+.SEC{
+    margin-top:7%;
+    
+}
+
+.IMG{
+    width: 80%;
+    height: 95%;
+    border-radius: 2rem;
+    margin-left:7rem;
+}
+
+.HE{
+    font-size: 35px;
+    color: #000;
+    font-weight: 600;
+    font-family: poppins;
+}
+
+.TE{
+    font-family: poppins;
+}
+
+.services-img1{
+width: 350px;
+height: 200px;
+border-radius: 2rem;
+
+}
+
+.services-img2{
+    width:350px;
+    height: 200px;
+    border-radius: 2rem;
+    
+     }
+
+.services-img3{
+    width:350px;
+    height: 200px;
+    border-radius: 2rem;
+         }
+
+.H1{
+    margin-top: 2rem;
+    color: rgb(7, 7, 109);
+}
+
+.SEC1 h4{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+    font-family: poppins;
+
+}
+
+.SEC1 h4 span{
+    color: #fdd415;
+}
+
+.SEC1{
+    background: #012f5c; 
+    margin-top: 70px;
+    padding: 40px;   
+}
+
+.COL1{
+    color: #fff;
+}
+
+
+.BU{
+    border: none;
+    border-radius: 1rem;
+    background-color: #fdd415;
+}
+
+.IMGLAST{
+    width: 13rem;
+}
+
+.SECTI{
+    font-size: 21px;
+    line-height: 1rem;
+    font-family: poppins;
+    color: #fff;
+}
+
+.SEC2{
+    background: #01162b; 
+    margin-top: -10px;
+    padding: 20px;   
+}
+
+.IMGLAST1{
+    width: 30px;
+    height: 30px;
+    
+}

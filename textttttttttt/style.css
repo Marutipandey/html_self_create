@@ -1,0 +1,62 @@
+ul li .HOV:hover{
+    background-color: green;
+}
+
+/* .active  ,.BAS ul li:hover{
+background: blue;
+} */
+
+.BAS{
+    /* background: rgb(80, 82, 80); */
+    text-align: center;
+}
+
+.BAS ul{
+    display: inline-flex;
+    list-style: none;
+    /* color: #fff; */
+}
+
+.BAS ul li{
+    width: 140px;
+    margin: 15px;
+    padding: 15px;
+}
+.BAS ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+ .BAS ul li:hover{
+    background: #d4ddd2;
+
+}
+
+
+.BAS_1{
+    display: none;
+}
+
+.BAS ul li:hover .BAS_1{
+display: block;
+position: absolute;
+background: #d4ddd2;
+margin-top: 15px;
+margin-left: -500px;
+align-items: center;
+width: 626px;
+z-index: 2;
+}
+
+.SHADOW:hover{
+      box-shadow: 0px 8px 30px;
+}
+
+.CO{
+    color: rgb(139, 207, 13);
+}
+
+.copyright {
+    background: #eaeaea;
+}
+

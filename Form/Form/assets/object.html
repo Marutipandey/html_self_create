@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Objects</title>
+</head>
+<body>
+    <h1>Javascript Objetcs</h1>
+
+    <button id="print" onclick="print()" style="background-color: #4CAF50;border: none;color: white;padding: 10px 25px;text-align: center;text-decoration: none;display: inline-block;font-size: 16px;margin: 4px 2px;cursor: pointer;">Print my object</button>
+
+
+
+    <script>
+        const Obj1 = {
+            Name : "  Junaid Alam  ",
+            Age :   20,
+            Designation : "  Designer",
+            Company : "  Rainet Technology Pvt. Ltd.",
+            detail : function() {
+                return this.Name + " "  + this.Designation
+            }
+        }
+            Obj1.Nationality = "  Indian";
+            // console.log(Obj1)
+            // console.log("Name of person is " +  Obj1.name )
+            // console.log("Age of person is " + Obj1.age)
+            // console.log("Designation of person is " + Obj1.designation)
+            // console.log("Person working in " + Obj1.company)
+            // console.log(Obj1["name"])
+            // console.log(Obj1.Name + " is " + Obj1.Age + " Years old" + " working in " + Obj1.Company + " since 6 months")
+            // console.log(Obj1.nationality)
+            delete Obj1.nationality;
+            // console.log(Obj1.car)
+            let result = Obj1.detail();
+            // console.log(result)
+            // let print = document.getElementById("print");
+            function print(){
+                for(const property in Obj1){
+                    document.write(` ${property} : <strong> ${Obj1[property]} </strong> <br>`)
+                } 
+
+                // document.write(Object.values(Obj1))
+                // document.write(JSON.stringify(Obj1))
+            }
+   
+            // Constructor
+
+
+            function Person(Name , Age , Work){
+                this.firstName = Name;
+                this.Age = Age;
+                this.Work = Work;
+            }
+            Person.prototype.nationality = "Indian"
+            const one = new Person("XYZ1" , 24 , "Engineer");
+            const two = new Person("XYZ2" , 32 , "Sales Person" );
+            // console.log(one)
+            // console.log(two)
+            // console.log(one.nationality)
+            
+            // Set
+
+            let name = new Set(["Gaurav" , "Vikash Sir" , "Priti"])
+            // console.log(name)
+            // console.log(name.size)
+            let empty = new Set();
+            empty.add("Vikash Sir")
+            empty.add("Priti")
+            empty.add("Gaurav")
+            empty.add("Amit")
+            // console.log(empty)
+            // console.log(empty.size)
+            // console.log(typeof name)
+
+    </script>
+</body>
+</html>

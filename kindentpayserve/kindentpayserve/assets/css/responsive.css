@@ -1,0 +1,49 @@
+
+@media(max-width:768px){
+    .main{
+        width:140px;
+        height:140px;
+        border:1px solid #109294;
+        position:absolute;
+        top:0; bottom:0; left:0;right:0;
+        margin:auto;
+        border-radius:50%; 
+        display: none;
+      }
+
+      .circle{
+        width:20px;
+        height:20px;
+        background:#0abcd0;
+        border-radius:50%;
+        position:absolute;
+        top:0; bottom:0; left:0;right:0;
+        overflow:hidden;
+        margin:auto;
+        animation: circle 6s linear infinite;
+        
+      }
+
+      .rowmarginres{
+        margin-top: 100px;
+      }
+
+      .cardbodyyyy{
+        font-size: 10px;
+      }
+
+      .producttext1{
+        font-size: 15px;
+      }
+
+      .we_offerres{
+        font-size: 12px;
+      }
+}
+
+
+@media(max-width:1024px){
+  .blkjkkojjkn{
+    width: 100%;
+  }
+}

@@ -1,0 +1,155 @@
+.logo {
+    width: 100px;
+    height: 37px;
+}
+
+.navbackground {
+    background-color: black;
+}
+
+.navcolor {
+    color: white !important;
+    font-size: 18px;
+}
+
+.buttonlogin {
+    background-color: #e05b32 !important;
+    color: white !important;
+}
+.buttonjoin{
+    background-color: green !important;
+    color: white !important;
+}
+
+/* .container1 {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  } */
+
+.hundred {
+    font-size: 50px;
+    font-weight: 800;
+    color: white;
+}
+
+.joinnow {
+    font-size: 25px !important;
+    font-weight: 700 !important;
+    background-color: green !important;
+    color: white ;
+}
+
+.secondnav {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    color: white;
+
+}
+
+.secondcontainer {
+    background-color: black;
+    backdrop-filter: 100%;
+}
+
+.ONLINE_CASINO_INDIA {
+    font-size: 30px;
+    font-weight: 500;
+    color: white;
+}
+
+.onlinetextfontsize{
+    font-size: 23px;
+}
+
+.cardtextt {
+    font-size: 15px;
+}
+
+.Total_Jackpots {
+    /* font-size: 30px;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 3px; */
+    font-size: 40px;
+    font-family: CaslonAntique, sans-serif;
+    font-weight: 400;
+    color: #ED8B00 ;
+    text-transform: capitalize;
+    font-variant: small-caps;
+
+}
+
+.countdown1{
+    color: white;
+    font-size: 70px;
+    font-weight: 500;
+}
+
+.powred_by_mansion{
+    color: white;
+}
+
+.playforreal{
+    color:#66210c
+}
+
+.largest{
+    color:white;
+}
+.play_at{
+    color:white;
+    font-weight: 700px;
+    font-size: 27px;
+}
+
+.powred_by{
+    color: white;
+}
+
+.table{
+    font-size: 20px;
+}
+
+/* .paymentlogo{
+    width: 80px;
+} */
+
+.container3{
+    background-color: black;
+}
+
+.online{
+    
+    color: white !important;
+    text-decoration: none;
+    
+}
+
+.casino_com{
+    color:white;
+    font-size: 12px;
+
+}
+
+.lastupcontainer{
+    background-color: black;
+}
+
+/* .navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+} */
+
+.textcolornew1{
+    color:white !important;
+}

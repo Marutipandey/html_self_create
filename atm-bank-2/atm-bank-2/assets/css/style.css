@@ -1,0 +1,389 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+p{
+    font-family: 'Poppins', sans-serif;
+}
+h1 , h2 , h3 , h4 , h5 , h6{
+    font-family: 'Poppins', sans-serif;
+}
+li{
+    font-family: 'Poppins', sans-serif;
+
+}
+.atm-nav ul{
+    margin-left: 60%;
+
+}
+.nav-class{
+    background: linear-gradient(238deg, #c0ade3,#c9c9c9);
+}
+.atm-nav li a{
+    padding: 0px 12px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+.atm-nav li a:hover{
+    color: #B01C56;
+}
+.title-heading h3{
+    color: #B01C56;
+    font-weight: 600;
+}
+.title-heading h2{
+    color: #280071;
+    font-weight: 600;
+}
+.home-banner{
+    /* background: url(../images/atm-home-banner.png); */
+    Background: linear-gradient(rgb(0 0 0 / 50%), rgb(70 70 70 / 50%)), url(../images/atm-home-banner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    margin: 65px 0px;
+}
+.about-banner{
+
+    Background: linear-gradient(rgb(0 0 0 / 50%), rgb(70 70 70 / 50%)), url(../images/about-us-banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    margin: 65px 0px;
+}
+.service-banner{
+
+    Background: linear-gradient(rgb(0 0 0 / 50%), rgb(70 70 70 / 50%)), url(../images/service-banner.jfif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    margin: 65px 0px;
+}
+.contact-banner{
+
+    Background: linear-gradient(rgb(0 0 0 / 50%), rgb(70 70 70 / 50%)), url(../images/contact-banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    margin: 65px 0px;
+}
+.taxation-banner{
+
+    Background: linear-gradient(rgb(0 0 0 / 50%), rgb(70 70 70 / 50%)), url(../images/banner-services-taxation.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    margin: 65px 0px;
+}
+.loan-banner{
+
+    Background: linear-gradient(rgb(0 0 0 / 50%), rgb(70 70 70 / 50%)), url(../images/loan-banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    margin: 65px 0px;
+}
+.home-banner h1{
+    padding: 150px 100px;
+    color: #B01C56;
+    font-size: 51px;
+    font-weight: 700;
+    animation-name: slide;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+@keyframes slide {
+
+    0%{
+        transform: translate(-80px);
+        opacity: 0;
+    }
+    
+}
+
+.service-box{
+    background: #fff;
+    position: relative;
+    box-shadow: 0 5px 25px rgb(0 0 0 / 10%);
+    padding: 25px;
+    overflow: hidden;
+    border-radius: 3px;
+    transition: 5s !important
+  
+}
+.service-box:hover{
+    background:  linear-gradient(238deg, #280071,#B01C56);
+  
+}
+.service-box:hover h4 , .service-box:hover p{
+    color: #fff;
+} 
+
+.home-service{
+    padding: 80px 0px 0px 30px;
+}
+
+.service-img img{
+    width: 78px;
+   
+    padding-top: 20px;
+}
+.service-box h4{
+    padding-top: 25px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #280071;
+}
+.title-heading{
+    padding-bottom: 35px;
+}
+
+.rainbow{
+    background-color: #5a5a5a;
+    border-radius: 4px;  
+    color: #fff;
+    cursor: pointer;
+    padding: 8px 16px;
+    border: none;
+ 
+    
+  }
+.rainbow:hover{
+    background: linear-gradient(90deg, #280071,#B01C56);
+    animation:slidebg 5s linear infinite;
+    
+ }
+
+ @keyframes slidebg {
+    to {
+      background-position:20vw;
+    }
+  }
+
+  .about{
+    background: #fafafa;
+    padding: 50px 0px;
+    margin: 75px 0px;
+  }
+
+  .franchise-item{
+    box-shadow: 0 5px 25px rgb(0 0 0 / 10%);
+    background: #fff;
+    padding: 40px 20px;
+    transition: all 0.6s ease-in-out !important;
+  }
+  .franchise-item:hover{
+    background:  linear-gradient(238deg, #280071,#B01C56);
+  
+}
+.franchise-item:hover h2 , .franchise-item:hover h4 , .franchise-item:hover h1 , .franchise-item:hover p{
+   color: #fff;
+  
+}
+  .franchise-item h2{
+    font-size: 33px;
+    font-weight: 600;
+    color: #b8061c;
+  }
+  .franchise-item h1{
+    font-size: 33px;
+    font-weight: 600;
+    color: #07165a;
+    padding-top: 18px;
+  }
+  .franchise-item h4{
+    font-size: 21px;
+    font-weight: 600;
+    color: #07165a;
+  
+    padding-top: 18px;
+  }
+
+  .banner-area{
+    background: rgba(0, 0, 0, 0) url(../images/talk-bg.jpg) no-repeat scroll  center / cover;
+    position: relative;
+    z-index: 1;
+   
+  }
+
+  .banner-area::after{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-position: bottom top 100px, right 800px;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 24, 40, 0.90) none repeat scroll 0 0;
+    content: "";
+    z-index: -1;
+  }
+  .area-padding{
+    padding: 100px 0px;
+    margin: 90px 0px;
+  }
+  .banner-area h1{
+      color: #fff;
+      text-align: center;
+      font-size: 80px;
+  }
+ 
+.menu{
+    text-align: center;
+}
+  .menu ul{
+    
+     padding: 0;
+  }
+  .menu li{
+      list-style: none;
+  }
+  .menu li a{
+      text-decoration: none;
+      line-height: 30px;
+      color: #000;
+      font-weight: 600;
+  }
+  .menu li a:hover{
+      color: #c70714;
+  }
+  .address span{
+    color: #c70714;
+    font-weight: 600;
+       
+  }
+  .address{
+      font-size: 18px;
+  }
+  
+  footer h4{
+    font-weight: 700;
+    color: #01175f;
+  }
+  footer{
+    background: #f1f1f1;
+      padding: 57px 0px 0px 0px;
+  }
+  .social{
+      text-align: end;
+  }
+  .social span{
+   padding: 0px 10px;
+  
+  }
+  .social i{
+      color: #5a5a5a;
+  }
+  .social i:hover{
+    color: #B01C56;
+}
+  .sub-footer span{
+    font-weight: 600;
+    
+   }
+   .sub-footer{
+    /* padding: 20px 0px; */
+   }
+   hr{
+       margin: 0;
+   }
+   .sub-pad{
+       padding-top: 10px;
+       padding-bottom: 10px;
+   }
+.res-hei{
+    height: 165px;
+}
+.res-hei-1{
+    height: 149px;
+}
+.nidhi{
+    height: 285px;
+}
+
+   /* About */
+
+   .about-banner h1{
+      position: absolute; 
+      top: 25%;
+      left: 20%;
+      transform: translate(-20% , -20%);
+      color: #fff;
+      font-weight: bold;
+   }
+   .about-page li{
+       font-size: 18px;
+   }
+
+   /* services */
+
+   .service-banner h1{
+    position: absolute; 
+    top: 25%;
+    left: 20%;
+    transform: translate(-20% , -20%);
+    color: #fff;
+    font-weight: bold;
+ }
+
+ .service-page{
+     padding: 90px 0px 0px 0px;
+ }
+
+ /* contact */
+
+ .contact-banner h1{
+    position: absolute; 
+    top: 25%;
+    left: 20%;
+    transform: translate(-20% , -20%);
+    color: #fff;
+    font-weight: bold;
+ }
+
+ /* login page */
+
+ .login-page{
+     padding: 150px 0px;
+ }
+
+ .login-page span a{
+     text-decoration: none;
+     margin: 30px 293px !important;
+     margin-right: 32px !important;
+     display: block;
+     color: #000;
+     font-weight: bold;
+     
+ }
+
+ .box-height{
+     height: 325px;
+    
+ }
+
+ .taxation-banner h1{
+    position: absolute; 
+    top: 25%;
+    left: 20%;
+    transform: translate(-20% , -20%);
+    color: #fff;
+    font-weight: bold;
+ }
+
+ .loan-banner h1{
+    position: absolute; 
+    top: 25%;
+    left: 20%;
+    transform: translate(-20% , -20%);
+    color: #fff;
+    font-weight: bold;
+ }

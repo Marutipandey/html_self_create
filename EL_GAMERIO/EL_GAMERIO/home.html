@@ -1,0 +1,771 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <title>Hello, world!</title>
+    <style>
+        /* .active,
+        .tn:hover {
+            background-color: #e05b32 !important;
+            color: white !important;
+            padding-left: 8px;
+            padding-right: 8px;
+            padding-top: 5px;
+           
+        } */
+
+        .textcolornew1 {
+            color: white !important;
+        }
+
+        .secondcontainer {
+            background-color: black;
+            backdrop-filter: 100%;
+        }
+
+        .navbackground {
+            background-color: black;
+        }
+
+        .btn.btn:focus,
+        .btn:active {
+            outline: none !important;
+            box-shadow: none !important;
+        }
+
+        .joinnow1 {
+            font-size: 25px !important;
+            font-weight: 700 !important;
+            background-color: #df481a !important;
+            color: white !important;
+        }
+
+        .play_at {
+            color: white;
+            font-weight: 700px;
+            font-size: 27px;
+        }
+
+        .largest {
+            color: white !important;
+        }
+
+        @media(max-width:425px) {
+            .searchbutton {
+                font-size: 5px;
+            }
+
+            .download_apk {
+                font-size: 12px !important;
+            }
+
+            .buttonlogin {
+                font-size: 12px !important;
+            }
+
+            .buttonjoin {
+                font-size: 12px !important;
+
+            }
+
+            .powred_by {
+                color: white;
+            }
+
+            .onlinetextfontsize {
+                font-size: 23px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand navbar-light navbackground">
+            <div class="container-fluid">
+                <a class="navbar-brand navcolor" href="#" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasExample"><i class="fa-solid fa-bars fa-xl"></i></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#"><img src="assets/images/Game_logo2.png"
+                                    alt="" class="img-fluid logo"></a>
+                        </li>
+
+
+                    </ul>
+                    <form class="d-flex">
+
+                        <button type="button" class="btn btn-warning download_apk " style="color:white">Download Apk<svg
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-arrow-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z" />
+                            </svg></button>&nbsp;
+
+                        <button type="button" class="btn buttonlogin">Login</button>&nbsp;
+                        <button type="button" class="btn btn buttonjoin">Join</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <section>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/images/img2.png" class="d-block w-100" alt="..." height="400px">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/images/img4.png" class="d-block w-100" alt="..." height="400px">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/images/img5.png" class="d-block w-100" alt="..." height="400px">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <section class="secondcontainer">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-12 mt-3 text-center">
+                    <P class="ONLINE_CASINO_INDIA">ONLINE CASINO INDIA</P>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 ">
+                    <div class="col-md-12 ">
+                        <!-- <div class="d-grid gap-2 col-6 mx-auto">
+                            <button class="btn btn-success" type="button">MORE GAMES</button>
+                          </div> -->
+                        <button type="button" class="btn  btn-lg mt-3 joinnow1">Top Games</button>
+
+                    </div>
+
+                    <!-- <div id="myDIV1">
+                        <ul class="secondnav">
+                            <li class="tn " id="mybtn1" onclick="cangecolor();">Top Games</li>
+                            <li class="tn active" id="mybtn2" onclick="cangecolor();">Premium Casino</li>
+                            <li class="tn" id="mybtn3" onclick="cangecolor();">Live Casino</li>
+                            <li class="tn" id="mybtn4" onclick="cangecolor();">Daily Jackpots</li>
+                            <li class="tn" id="mybtn5" onclick="cangecolor();">Megaways</li>
+                            <li class="tn" id="mybtn6" onclick="cangecolor();">Slots</li>
+                            <li class="tn" id="mybtn7" onclick="cangecolor();">Table Games</li>
+                            <li class="tn" id="mybtn8" onclick="cangecolor();">Jackpots</li>
+                            <li class="tn" id="mybtn9" onclick="cangecolor();">A-Z</li>
+                            <li>
+                                <button class="btn btn-outline-success searchbutton" type="submit">Search</button>
+
+                            </li>
+                        </ul>
+
+                    </div> -->
+
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-12">
+                    <div class="card-group">
+                        <div class="card me-2">
+                            <img src="assets/images/img1.png" class="card-img-top" alt="..." style="height: 170px;">
+                            <div class="card-body text-center text-center">
+                                <span class="card-text">Redtiger</span>
+                                <h5 class="card-title cardtextt">Blood Suckers Megaways</h5>
+                                <button type="button" class="btn btn-warning playforreal mt-2">Play for real</button>
+                            </div>
+                        </div>
+                        <div class="card me-2">
+                            <img src="assets/images/img2.png" class="card-img-top" alt="..." style="height: 170px;">
+                            <div class="card-body text-center">
+                                <span class="card-text">Microgaming</span>
+                                <h5 class="card-title cardtextt">Wolf Blaze Megaways</h5>
+                                <button type="button" class="btn btn-warning playforreal mt-2">Play for real</button>
+                            </div>
+                        </div>
+                        <div class="card me-2">
+                            <img src="assets/images/img3.png" class="card-img-top" alt="..." style="height: 170px;">
+                            <div class="card-body text-center">
+                                <span class="card-text">SG</span>
+                                <h5 class="card-title cardtextt">Raging Rhino Megaways</h5>
+                                <button type="button" class="btn btn-warning playforreal mt-2">Play for real</button>
+                            </div>
+                        </div>
+                        <div class="card ">
+                            <img src="assets/images/img4.png" class="card-img-top" alt="..." style="height: 170px;">
+                            <div class="card-body text-center">
+                                <span class="card-text">Redtiger</span>
+                                <h5 class="card-title cardtextt">10,001 Nights Megaways</h5>
+                                <button type="button" class="btn btn-warning playforreal mt-2">Play for real</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-12">
+                    <div class="card-group">
+                        <div class="card me-2">
+                            <img src="assets/images/img5.png" class="card-img-top" alt="..." style="height: 170px;">
+                            <div class="card-body text-center">
+                                <span class="card-text">Playtech</span>
+                                <h5 class="card-title cardtextt">Age of the Gods™: King of Olym...</h5>
+                                <button type="button" class="btn btn-warning playforreal mt-2">Play for real</button>
+                            </div>
+                        </div>
+                        <div class="card me-2">
+                            <img src="assets/images/img6.png" class="card-img-top" alt="..." style="height: 170px;">
+                            <div class="card-body text-center">
+                                <span class="card-text">SG</span>
+                                <h5 class="card-title cardtextt">Stargate Megaways</h5>
+                                <button type="button" class="btn btn-warning playforreal mt-2">Play for real</button>
+                            </div>
+                        </div>
+                        <div class="card me-2">
+                            <img src="assets/images/img7.png" class="card-img-top" alt="..." style="height: 170px;">
+                            <div class="card-body text-center">
+                                <span class="card-text">Playtech</span>
+                                <h5 class="card-title cardtextt">Cash Collect™: Sahara Riches M...</h5>
+                                <button type="button" class="btn btn-warning playforreal mt-2">Play for real</button>
+                            </div>
+                        </div>
+                        <div class="card ">
+                            <img src="assets/images/img8.png" class="card-img-top" alt="..." style="height: 170px;">
+                            <div class="card-body text-center">
+                                <span class="card-text">SG</span>
+                                <h5 class="card-title cardtextt">Rainbow Riches Megaways</h5>
+                                <button type="button" class="btn btn-warning playforreal mt-2">Play for real</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-md-12 text-center">
+                    <!-- <div class="d-grid gap-2 col-6 mx-auto">
+                        <button class="btn btn-success" type="button">MORE GAMES</button>
+                      </div> -->
+                    <button type="button" class="btn  btn-lg mt-3 joinnow">MORE GAMES</button>
+
+                </div>
+            </div>
+
+            <div class="row ">
+                <div class="col-md-12 mt-3 text-center">
+                    <P class="Total_Jackpots">Total Jackpots</P>
+                </div>
+            </div>
+
+            <div class="row ">
+                <div class="col-md-12  text-center">
+                    <div class="countdown1">
+                        <span> ₹ 3,651,020,<span id="counter"></span></span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row mt-3">
+                <div class="col-md-12">
+                    <img src="assets/images/onlinecasino1.png" alt="" class="img-fluid">
+
+                </div>
+            </div>
+
+            <div class="row mt-3 ">
+                <div class="col-md-12 powred_by_mansion text-center">
+                    <p class="text-white">Powered by Mansion – Online Casino Operator of the Year 2018</p>
+                    <p  class="text-white">We have firmly established ourselves as a leading provider of
+                        online gambling and
+                        entertainment
+                        in India and are constantly striving to be the very best in the industry.</p>
+                </div>
+            </div>
+
+            <div class="row ">
+                <div class="col-md-12 text-center">
+
+                    <!-- <button type="button" class="btn btn-success btn-lg mt-3 joinnow mb-5">PLAY NOW</button> -->
+                    <button type="button" class="btn  btn-lg mt-3 joinnow mb-5">PLAY NOW</button>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class=" " style="background-color: black;">
+        <div class="container-fluid ">
+            <div class="row">
+                <div class="col-md-12 mt-5">
+                    <p class="play_at textcolornew1">PLAY AT THE BEST ONLINE CASINO IN INDIA</p>
+                    <p class="powred_by table textcolornew1"><span>Table of Contents:</span> </p>
+                    <p class="largest textcolornew1" align="justify">Largest Variety of Games <span
+                            class="powred_by textcolornew1"> | </span>
+                        Software
+                        Providers<span class="powred_by textcolornew1"> | </span> Bonuses & Promotions<span
+                            class="powred_by textcolornew1"> |
+                        </span> Payment Methods<span class="powred_by textcolornew1"> | </span> Casino VIP<span
+                            class="powred_by textcolornew1"> |
+                        </span> Customer Service <span class="powred_by textcolornew1"> | </span> Play for Real Money
+                    </p>
+                    <p class="powred_by textcolornew1" align="justify"> Play online casino games at Casino.com India to
+                        enjoy the
+                        ultimate gaming
+                        experience. Whether you’re
+                        in the comfort of your own home, or out and about with your mobile phone, Casino.com IN is
+                        easily
+                        accessible for you to enjoy anywhere!</p>
+                    <p class="powred_by textcolornew1" align="justify">Our extensive list of over 300 <span
+                            class=" textcolornew1" style="text-decoration: underline;">casino games</span>
+                        includes some of the classics, as
+                        well as a huge
+                        number of slots which offer progressive jackpot games.</p>
+                    <p class="powred_by textcolornew1" align="justify">Experience state of the art online casino games
+                        24/7. If online
+                        slots are your
+                        thing, we have a wide range of themes and designs for you to play with, from Greek mythology to
+                        the depths of the rainforest. We also offer a wide variety of unique and innovative alternatives
+                        including retro-style arcade games and the hugely popular Megaways. Our vast number of themes
+                        and jackpots means there’s something to enjoy for every player.</p>
+                    <p align="justify" class="textcolornew1">If you’re ready to join our <span class="textcolornew1"
+                            style="text-decoration: underline;">Real Money
+                            casino</span> , you’ll get the chance to win big with some of the very best games. Our most
+                        loyal customers are rewarded with VIP status which offers some of the best benefits. As a VIP,
+                        you will enjoy regular deposit bonuses and exclusive promotions, as well as your own personal
+                        Account Manager.</p>
+                    <p class="play_at textcolornew1">LARGEST VARIETY OF GAMES</p>
+                    <p class="powred_by textcolornew1" align="justify">Casino.com not only has the very best games, but
+                        whether you’re
+                        new to the
+                        casino or an experienced player, there’s something to suit everyone. Our players can play a wide
+                        range of games that will satisfy their every need and no matter what you prefer, there’s bound
+                        to be a game for you:</p>
+                    <p>
+                    <ul>
+                        <p>
+                            <li class="table powred_by textcolornew1"><span class="largest">Slots</span><span
+                                    style="font-size: 16px;">–
+                                    Spin the reels on our outstanding slots including our incredibly popular Kingdoms
+                                    Rise
+                                    series which offers incredible progressive jackpots.
+                        </p> </span></li>
+                        <p>
+                            <li class="table textcolornew1 "><span class="largest textcolornew1">Roulette</span><span
+                                    style="font-size: 16px;">– Not only can you try your luck on this classic casino
+                                    game,
+                                    but there are awesome alternatives such as French and American Roulette. </span>
+                            </li>
+                        </p>
+                        <p>
+                            <li class="table powred_by textcolornew1"><span class="largest">Blackjack</span><span
+                                    style="font-size: 16px;">– Can you beat the dealer? Casino.com offers a number of
+                                    Blackjack variations, meaning it’s easy to discover a new favourite. </span> </li>
+                        </p>
+                        <p>
+                            <li class="table powred_by textcolornew1"><span class="largest textcolornew1">Live Casino
+                                </span><span style="font-size: 16px;">– If you prefer the action of a real-life casino,
+                                    then look
+                                    no
+                                    further! Sit down and enjoy favourites like Live Baccarat, Roulette, Blackjack, and
+                                    more
+                                    in the Live Casino from anywhere and everywhere.</span> </li>
+                        </p>
+                        <p>
+                            <li class="table powred_by textcolornew1"><span class="textcolornew1">Video Poker
+                                </span><span style="font-size: 16px;">– Fancy poker with a twist? Video poker is a
+                                    unique and
+                                    thrilling adventure where you can test your strategic skills to win big.</span>
+                            </li>
+                        </p>
+                        <p>
+                            <li class="table powred_by textcolornew1"><span
+                                    class="largest textcolornew1">Jackpots</span><span style="font-size: 16px;"> –
+                                    Including daily drops, fixed jackpots and our
+                                    outstanding
+                                    progressive jackpots, there are huge amounts to be won.</span> </li>
+                        </p>
+                    </ul>
+                    </p>
+
+                    <p class="powred_by textcolornew1" align="justify">Whether you want to go for gold on our slots or
+                        settle down for
+                        a game of
+                        Roulette, our inviting online casino experience makes Casino.com IN one of India’s favourite
+                        gaming sites.</p>
+                    <p class="play_at textcolornew1">TOP ONLINE CASINO SOFTWARE PROVIDERS</p>
+                    <p class="powred_by textcolornew1" align="justify">We use some of the best and most trustworthy
+                        software providers
+                        around to
+                        ensure the time you spend at our online casino is the best it can be.</p>
+                    <p align="justify" class="textcolornew1">By using multiple software providers, players have a wide
+                        selection of games to
+                        play, with unique
+                        features and many different ways to win. You will discover some of the biggest and best slots in
+                        the business, such as the progressive slot Age of the Gods by Playtech and Wolf Gold by
+                        Pragmatic Play. Even with such a variety of choices, all of our games are of a high-quality and
+                        are tested vigorously before going live.</p>
+                    <p align=" justify" class="textcolornew1">Below is a list of just a few of our first-rate software
+                        providers:</p>
+                    <ul class="textcolornew1">
+                        <li><a href="" style="text-decoration: none;" class="largest">Playtech</a></li>
+                        <li><a href="" style="text-decoration: none;" class="largest">NetEnt</a></li>
+                        <li><a href="" style="text-decoration: none;" class="largest">Microgaming</a></li>
+                        <li><a href="" style="text-decoration: none;" class="largest">Blueprint</a></li>
+                        <li><a href="" style="text-decoration: none;" class="largest">Realistic Games</a></li>
+                        <li><a href="" style="text-decoration: none;" class="largest">Pragmatic Play</a></li>
+                        <li><a href="" style="text-decoration: none;" class="largest">Red Tiger Gaming</a></li>
+                    </ul>
+                    <p align="justify" class="textcolornew1">All of our providers use the latest and most innovative
+                        software, so no matter
+                        where you are or
+                        what device you’re playing with, you can easily access our variety of games.</p>
+                    <p class="play_at textcolornew1">WE HAVE THE VERY BEST BONUSES AND PROMOTIONS</p>
+                    <p align="justify" class="textcolornew1">At Casino.com, we offer the best <span
+                            class="largest textcolornew1" style="text-decoration: underline;">casino
+                            bonuses</span> and promotions to reward our all of our players in India. Our new players can
+                        enjoy our Welcome Package, whereas established players have regular promotions that you won’t
+                        find anywhere else.</p>
+
+                    <ul>
+                        <li class="textcolornew1">Recurring promotions across weekdays and weekends.</li>
+                        <li class="textcolornew1">Bonuses include chances to win <span class="largest textcolornew1"
+                                style="text-decoration: underline;">free spins</span>, reloads and even cash prizes.
+                        </li>
+                        <li class="textcolornew1">Loyalty points can see you become a VIP in no time.</li>
+                    </ul>
+                    <p align="justify" class="textcolornew1">Our bonuses and promotions are changing regularly, so keep
+                        an eye on our
+                        Promotions page to check
+                        out our current offers.</p>
+                    <p class="play_at textcolornew1">CHOOSE THE PAYMENT METHOD THAT BETTER SUITS YOU</p>
+                    <p align="justify" class="textcolornew1">It’s easy and stress-free to move money in and out of your
+                        Casino.com account as
+                        we use a range
+                        of trusted payment methods available to Indian players. All of our methods are safe and secure,
+                        so you can rest assured knowing you’re protected. Below are some of the payment methods you can
+                        use with us:</p>
+                    <p>
+                    <ul class="textcolornew1">
+                        <li>Visa</li>
+                        <li>MasterCard
+                        </li>
+                        <li> Maestro</li>
+                        <li>Skrill</li>
+                        <li> Neteller</li>
+                        <li> EcoPayz</li>
+                        <li> Muchbetter</li>
+                        <li>Visa voucher</li>
+                    </ul>
+                    </p>
+                    <p align="justify" class="textcolornew1">All of our payment methods come with their own way of
+                        depositing, such as with an
+                        e-Wallet or
+                        prepaid card. No matter your preference, your transfers will be quick and without hassle.</p>
+
+                    <p class="play_at textcolornew1">WE OFFER A CASINO VIP EXPERIENCE LIKE NO OTHER</p>
+                    <p align="justify" class="textcolornew1">Our most loyal players are rewarded with VIP status. If you
+                        progress through
+                        Bronze, Silver and
+                        Gold, you can become a VIP which opens you up to exclusive benefits such as VIP-only
+                        leaderboards and promotions, higher deposit limits and even your own personalised Account
+                        Manager.</p>
+                    <p align="justify" class="textcolornew1">If you reach VIP Elite status, you’ll even have invitations
+                        to our VIP-only
+                        events with days out
+                        or weekends away. To learn more, visit our <span class="largest"
+                            style="text-decoration: underline;">Casino VIP</span> page and see if you can be on your way
+                        to
+                        becoming a VIP!</p>
+                    <p class="play_at textcolornew1">ENJOY 24/7 CUSTOMER SERVICE</p>
+                    <p align="justify" class="textcolornew1">We’ve made it our mission to continue being the leaders in
+                        Customer Support in
+                        India – we were
+                        even awarded Best Customer Service Company at the 2020 International Gaming Awards. Our
+                        knowledgeable team will assist you with any of your queries, whether it be about deposits and
+                        withdrawals, or questions about any of our games, we’re here to help.</p>
+                    <p align="justify" class="textcolornew1">You can contact our <span class="largest textcolornew1"
+                            style="text-decoration: underline;">
+                            Customer
+                            Support</span> via Live Chat, telephone or <span class="largest textcolornew1"
+                            style="text-decoration: underline;">email </span>24/7. We’re just one click or call away so
+                        whatever you query, get in touch!</p>
+
+                    <p class="play_at textcolornew1">PLAY NOW FOR REAL MONEY</p>
+                    <p align="justify" class="textcolornew1">To register an account, log-in and play for real money,
+                        click on the button below
+                        to get started
+                        and you can enjoy our great Welcome Package right away! From our wide variety of games to our
+                        fantastic Customer Support, Casino.com IN is the best online casino to play at from India.
+                        Create an account and play now to be in with a chance to win big prizes!</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section>
+        <div class="container-fluid secondcontainer">
+            <div class="row">
+                <div class="col-md-2">
+
+                </div>
+                <div class="col-md-8 mt-4 mb-4 text-center">
+                    <div>
+                        <!-- <i class="fa-brands fa-cc-visa"></i> -->
+                        <img src="assets/images/visa.png" alt="" class="img-fluid pe-2 " style="width: 80px;">
+                        <img src="assets/images/mastercard.png" alt="" class="img-fluid pe-2" style="width: 50px;">
+                        <img src="assets/images/Skrill.png" alt="" class="img-fluid pe-2" style="width: 80px;">
+                        <!-- <img src="assets/images/eco1.png" alt="" class="img-fluid" style="width: 20px;"> -->
+
+                        <img src="assets/images/Paysafecard.png" alt="" class="img-fluid pe-2" style="width: 140px;">
+                        <img src="assets/images/Neteller.png" alt="" class="img-fluid " style="width: 90px;">
+
+                    </div>
+                </div>
+                <div class="col-md-2">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="text-white">
+    <section class="container3">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-1">
+                </div>
+                <div class="col-md-4 mt-5">
+                    <ul style="list-style: none;">
+                        <li><img src="assets/images/Game_logo2.png" alt="" class="img-fluid" style="width: 200px;"></li>
+                        <!-- <li><a href="" style="display: none;">Online Blackjack </a></li> -->
+
+                        <li class="mt-4 textcolornew1">This game involves an element of financial risk and may be
+                            addictive. Please play responsibly and at your own risk. T&amp;C Apply. For 18+ only.</li>
+
+                        <!-- <li class="mt-3"><a href="" class="online"><i class="fa-brands fa-facebook me-2 fa-xl"></i><i
+                                    class="fa-brands fa-square-twitter me-2 fa-xl"></i><i
+                                    class="fa-brands fa-square-youtube fa-xl"></i></a></li> -->
+                    </ul>
+                </div>
+
+                <div class="col-md-1"></div>
+
+
+                <div class="col-md-3 mt-5">
+                    <ul style="list-style: none;">
+                        <li> <a href="" class="online onlinetextfontsize"><b>Quick Links</b></a></li>
+                        <!-- <li><a href="" style="display: none;">Online Blackjack </a></li> -->
+
+                        <li class="mt-4"><a href="about.html" class="online">About Us</a></li>
+                        <li class="mt-2"><a href="" class="online">Contact Us</a></li>
+                        <li class="mt-2"><a href="" class="online">Privacy Policy</a></li>
+                        <li class="mt-2"><a href="" class="online">Terms & Conditions</a></li>
+
+
+
+                    </ul>
+                </div>
+
+                <div class="col-md-2 mt-5">
+                    <ul style="list-style: none;">
+                        <li> <a href="" class="online onlinetextfontsize"><b>Contact Us</b></a></li>
+                        <!-- <li><a href="" style="display: none;">Online Blackjack </a></li> -->
+
+                        <li class="mt-4"><a href="" class="online"><i class="fa-solid fa-phone"></i> 91+6776677667</a></li>
+                        <li class="mt-2"><a href="" class="online"><i class="fa-solid fa-envelope"></i> abc@gmail.com</a></li>
+                        <li class="mt-4"><a href="" class="online"><i class="fa-brands fa-facebook me-2 fa-xl"></i></a><a href="" class="online"><i
+                            class="fa-brands fa-square-youtube fa-xl"></i></a>&nbsp;&nbsp;<a href="" class="online"><i
+                                class="fa-brands fa-square-twitter me-2 fa-xl"></i></a><a href=""  class="online fa-xl"><i class="fa-brands fa-instagram"></i></a></li>
+
+
+                    </ul>
+                </div>
+
+                <div class="col-md-1">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="lastupcontainer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mt-5 mb-5 text-center">
+                    <p class="casino_com" style="text-align: center;">
+                        Casino.com is licensed and regulated to offer online casino gaming services under the
+                        jurisdiction of Gibraltar. ©2023 Casino.com is an internationally registered trademark. <br>
+                        Casino.com is operated by ONISAC Ltd of Suite 741 Europort, Gibraltar under a license issued by
+                        the Gibraltar Licensing Authority, RGL No.053 and regulated by the Gibraltar Gambling
+                        Commissioner. <br>
+                        Only players above the age of 18 are permitted to play our games. Underage gambling is an
+                        offence.
+
+                    </p>
+                    <p style="color:#a6a89c">2023 Casino.com © All Rights Reserved </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- sssssssssss -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel"
+        style="width: 300px;">
+        <div class="offcanvas-header" style="background-color: black
+        ;">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel"><img src="assets/images/Game_logo1.jpg" alt=""
+                    style="width: 80px;"></h5>
+            <button type="button" class="btn-close text-reset btn-close-white" data-bs-dismiss="offcanvas"
+                aria-label="Close" style="opacity: 2.1;"></button>
+        </div>
+
+        <div class="offcanvas-body " style="background-color: black;;">
+            <div>
+                <p class=" "><a href="" style="text-decoration: none; color: white; ">&nbsp;&nbsp;&nbsp;&nbsp;JOIN
+                        NOW</a> </p>
+                <hr>
+                <li class="nav-item dropdown" style="list-style: none !important; ">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        CASINO GAMES
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown"
+                        style="list-style: none !important; background-color: #e2e4db;">
+                        <li><a class="dropdown-item" href="#" style="color: black;">Action</a></li>
+                        <li><a class="dropdown-item" href="#" style="color: black;">Another action</a></li>
+                        <!-- <li><hr class="dropdown-divider"></li> -->
+                        <li><a class="dropdown-item" href="#" style="color: black;">Something else here</a></li>
+                    </ul>
+                </li>
+                <hr>
+
+                <li class="nav-item dropdown" style="list-style: none !important; ">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        LIVE CASINO
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown"
+                        style="list-style: none !important; background-color: #e2e4db;">
+                        <li><a class="dropdown-item" href="#" style="color: black;">Action</a></li>
+                        <li><a class="dropdown-item" href="#" style="color: black;">Another action</a></li>
+                        <!-- <li><hr class="dropdown-divider"></li> -->
+                        <li><a class="dropdown-item" href="#" style="color: black;">Something else here</a></li>
+                    </ul>
+                </li>
+                <hr>
+
+                <li class="nav-item dropdown" style="list-style: none !important; ">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        PAYMENT METHODS
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown"
+                        style="list-style: none !important; background-color: #e2e4db;">
+                        <li><a class="dropdown-item" href="#" style="color: black;">Action</a></li>
+                        <li><a class="dropdown-item" href="#" style="color: black;">Another action</a></li>
+                        <!-- <li><hr class="dropdown-divider"></li> -->
+                        <li><a class="dropdown-item" href="#" style="color: black;">Something else here</a></li>
+                    </ul>
+                </li>
+                <hr>
+                <p class=" "><a href="about.html"
+                        style="text-decoration: none; color: white; ">&nbsp;&nbsp;&nbsp;&nbsp;ABOUT
+                        US</a> </p>
+                <hr>
+                <p class=" "><a href="" style="text-decoration: none; color: white; ">&nbsp;&nbsp;&nbsp;&nbsp;CONTACT US
+                    </a> </p>
+            </div>
+
+        </div>
+    </div>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script>
+        var header = document.getElementById("myDIV1");
+        var btns = header.getElementsByClassName("tn");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+
+
+
+        let counts = setInterval(updated);
+        let upto = 1;
+        function updated() {
+            var count = document.getElementById("counter");
+            count.innerHTML = ++upto;
+            if (upto === 150000) {
+                clearInterval(counts);
+            }
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

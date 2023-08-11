@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>clickncash</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/side.css">
+</head>
+
+<body>
+
+    <!-- header start -->
+    <div class="container ">
+        <nav class="navbar fixed-top  my-nav">
+
+            <!-- logo -->
+            <div class="logo">
+                <a href="index.html"> <img src="assets/images/logo-clickncash.png" alt=""></a>
+            </div>
+            <!--  -->
+
+
+            <!-- hamburger for responsive  mobile-->
+            <div class="ham" onclick="openNav()">
+
+                <img src="assets/images/ham.webp" alt="" onclick="openNav()">
+            </div>
+
+            <div id="mySidenav" class="sidenav desktop-none">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <li><a href="index.html" style=" color: #fff;"> Dashboard</a></li>
+
+                <div class="reports">
+                    <a class="text-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Services <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu m-0 reports-ul sub-menu">
+                        <li><a class="dropdown-item" href="money-transfer.html"><i
+                                    class="fa-solid fa-circle-arrow-right "></i>Money
+                                Transfer</a></li>
+                        <li><a class="dropdown-item" href="dmt.html"><i class="fa-solid fa-circle-arrow-right "></i>
+                                DMT</a>
+                        </li>
+                        <li><a class="dropdown-item" href="aeps-more.html"><i
+                                    class="fa-solid fa-circle-arrow-right "></i> AEPS</a>
+                        </li>
+                        <li><a class="dropdown-item" href="recharge-more.html"><i
+                                    class="fa-solid fa-circle-arrow-right "></i>
+                                Recharge</a></li>
+                        <li><a class="dropdown-item" href="upi.html"><i class="fa-solid fa-circle-arrow-right "></i>
+                                UPI</a></li>
+                        <li><a class="dropdown-item" href="bill-more.html"><i
+                                    class="fa-solid fa-circle-arrow-right "></i>
+                                Bill Payment</a></li>
+                        <li><a class="dropdown-item" href=""><i class="fa-solid fa-circle-arrow-right "></i> BBPs</a>
+                        </li>
+                        <li><a class="dropdown-item" href="credit-card.html"><i
+                                    class="fa-solid fa-circle-arrow-right "></i> Credit
+                                Fund</a></li>
+                        <li><a class="dropdown-item" href="wallet-to-wallet.html"><i
+                                    class="fa-solid fa-circle-arrow-right "></i> Wallet to Wallet</a></li>
+                        <li><a class="dropdown-item" href="travel-more.html"><i
+                                    class="fa-solid fa-circle-arrow-right "></i> Travel</a></li>
+                    </ul>
+                </div>
+
+                <div class="reports">
+                    <a class=" dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Reports <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu m-0 reports-ul">
+                        <li><a class="dropdown-item" href="report-ledger.html"><i
+                                    class="fa-solid fa-circle-arrow-right "></i>
+                                Ledger</a></li>
+                        <li><a class="dropdown-item" href="report-dmt.html"><i
+                                    class="fa-solid fa-circle-arrow-right "></i>
+                                DMT</a></li>
+                        <li><a class="dropdown-item" href="report-aeps.html"><i
+                                    class="fa-solid fa-circle-arrow-right "></i>
+                                AEPS</a></li>
+                        <li><a class="dropdown-item" href="report-recharge.html"><i
+                                    class="fa-solid fa-circle-arrow-right "></i>
+                                Recharge</a></li>
+                        <li><a class="dropdown-item" href="report-bbps.html"><i
+                                    class="fa-solid fa-circle-arrow-right "></i>
+                                BBPs</a></li>
+                        <li><a class="dropdown-item" href="report-credit-fund.html"><i
+                                    class="fa-solid fa-circle-arrow-right "></i> Credit
+                                Fund</a></li>
+                        <li><a class="dropdown-item" href="report-debit-fund.html"><i
+                                    class="fa-solid fa-circle-arrow-right "></i> Debit
+                                Fund</a></li>
+                        <li><a class="dropdown-item" href="report-wallet-to-wallet.html"><i
+                                    class="fa-solid fa-circle-arrow-right "></i> Wallet
+                                To Wallet</a></li>
+                        <li><a class="dropdown-item" href="report-pending-request.html"><i
+                                    class="fa-solid fa-circle-arrow-right "></i> All
+                                Pending Request</a></li>
+                        <li><a class="dropdown-item" href="report-fund-request.html"><i
+                                    class="fa-solid fa-circle-arrow-right "></i> All
+                                Fund Request</a></li>
+                    </ul>
+                </div>
+                <li><a href="add-money.html" class=" text-white p-0 ms-4">Add Money</p>
+                </li>
+                <li><a href="fund-request.html" class=" text-white p-0 ms-4">Fund Request</p>
+                </li>
+
+            </div>
+
+
+            <!-- navbar start -->
+            <div class="my-menu" id="">
+                <ul class="m-0 main">
+                    <li><a href="add-money.html" class="btn btn-sm btn-primary shadow-none text-white rounded-pill">Add
+                            Money</a></li>
+                    <li><a href="" class="btn btn-sm btn-warning shadow-none text-white rounded-pill">Fund Request</a>
+                    </li>
+                    <ul class="aeps">
+                        <li>AEPS : 2020</li>
+                        <li>Main : 2020 </li>
+                    </ul>
+                </ul>
+            </div>
+            <!-- navbar end -->
+
+            <ul class="aeps desktop-aeps-none">
+                <li>AEPS : 2020</li>
+                <li>Main : 2020 </li>
+            </ul>
+
+            <div class="nav-icons">
+                <!-- notification start -->
+                <div class="msg-box m-0">
+                    <a class="d-flex align-items-center nav-link dropdown-toggle" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-bell"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end m-0">
+                        <li><span class="details"> <span class="notification-icon deepPink-bgcolor"> <i
+                                        class="fa fa-check"></i> </span> Congratulations!. </span> <span
+                                class="time">just now</span>
+                        </li>
+                        <li><span class="details"> <span class="notification-icon deepPink-bgcolor"> <i
+                                        class="fa fa-check"></i> </span> Gaurav Accept your Request</span> <span
+                                class="time">just now</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- notification end -->
+
+                <!-- user profile start-->
+                <div class="user-box m-0">
+                    <a class="d-flex align-items-center nav-link dropdown-toggle" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="assets/images/user.jpg" class="user-img" alt="user avatar">
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end m-0">
+                        <li><a class="dropdown-item" href="profile.html"><i
+                                    class="fa fa-user"></i><span>Profile</span></a>
+                        </li>
+                        <li><a class="dropdown-item" href="javascript:;"><i
+                                    class="fa fa-gear"></i><span>Settings</span></a>
+                        </li>
+                        <li><a class="dropdown-item" href="manage-pin.html"><i class='fa fa-user-gear'></i><span>Manage
+                                    Tpin</span></a>
+                        </li>
+                        <li><a class="dropdown-item" href="change-password.html"><i
+                                    class="fa-solid fa-user-gear"></i><span>Change Password</span></a>
+                        </li>
+                        <li><a class="dropdown-item" href="certificate.html"><i
+                                    class="fa-solid fa-certificate"></i><span>Certificate</span></a>
+                        </li>
+                        </li>
+                        <li>
+                            <div class="dropdown-divider mb-0"></div>
+                        </li>
+                        <li><a class="dropdown-item" href="javascript:;"><i
+                                    class="fa-solid fa-right-from-bracket"></i><span>Logout</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- user profile end -->
+            </div>
+        </nav>
+    </div>
+    <!-- header end -->
+
+    <div class="subheader">
+        <div class="my-menu" id="menu">
+            <ul class="m-0 main">
+                <li><a href="index.html" style=" color: #fff;"> Dashboard</a></li>
+
+
+                <div class="reports">
+                    <a class="text-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Services <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu m-0 reports-ul sub-menu">
+                        <li><a class="dropdown-item" href=""><i class="fa-solid fa-circle-arrow-right "></i>Money
+                                Transfer</a></li>
+                        <li><a class="dropdown-item" href="dmt.html"><i class="fa-solid fa-circle-arrow-right "></i>
+                                DMT</a></li>
+                        <li><a class="dropdown-item" href="aeps-more.html"><i
+                                    class="fa-solid fa-circle-arrow-right "></i> AEPS</a></li>
+                        <li><a class="dropdown-item" href=""><i class="fa-solid fa-circle-arrow-right "></i>
+                                Recharge</a></li>
+                        <li><a class="dropdown-item" href=""><i class="fa-solid fa-circle-arrow-right "></i> BBPs</a>
+                        </li>
+                        <li><a class="dropdown-item" href=""><i class="fa-solid fa-circle-arrow-right "></i> Credit
+                                Fund</a></li>
+                        <li><a class="dropdown-item" href=""><i class="fa-solid fa-circle-arrow-right "></i> Debit
+                                Fund</a></li>
+                        <li><a class="dropdown-item" href=""><i class="fa-solid fa-circle-arrow-right "></i> Wallet To
+                                Wallet</a></li>
+
+                    </ul>
+                </div>
+                <div class="reports">
+                    <a class="text-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Reports <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu m-0 reports-ul sub-menu">
+                        <li><a class="dropdown-item" href="report-ledger.html"><i
+                                    class="fa-solid fa-circle-arrow-right "></i> Ledger</a></li>
+                        <li><a class="dropdown-item" href="report-dmt.html"><i
+                                    class="fa-solid fa-circle-arrow-right "></i> DMT</a></li>
+                        <li><a class="dropdown-item" href="report-aeps.html"><i
+                                    class="fa-solid fa-circle-arrow-right "></i> AEPS</a></li>
+                        <li><a class="dropdown-item" href="report-recharge.html"><i
+                                    class="fa-solid fa-circle-arrow-right "></i> Recharge</a></li>
+                        <li><a class="dropdown-item" href="report-bbps.html"><i
+                                    class="fa-solid fa-circle-arrow-right "></i> BBPs</a></li>
+                        <li><a class="dropdown-item" href="report-credit-fund.html"><i
+                                    class="fa-solid fa-circle-arrow-right "></i> Credit Fund</a></li>
+                        <li><a class="dropdown-item" href="report-debit-fund.html"><i
+                                    class="fa-solid fa-circle-arrow-right "></i> Debit Fund</a></li>
+                        <li><a class="dropdown-item" href="report-wallet-to-wallet.html"><i
+                                    class="fa-solid fa-circle-arrow-right "></i> Wallet To Wallet</a></li>
+                        <li><a class="dropdown-item" href="report-pending-request.html"><i
+                                    class="fa-solid fa-circle-arrow-right "></i> All Pending Request</a></li>
+                        <li><a class="dropdown-item" href="report-fund-request.html"><i
+                                    class="fa-solid fa-circle-arrow-right "></i> All Fund Request</a></li>
+                    </ul>
+                </div>
+                <marquee behavior="" direction="">All Banks are fine</marquee>
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 margin-phone">
+                <div class="card shadow-sm rounded my-3">
+                    <div class="px-3 py-2 head-bg text-white">
+                        <span class="fw-bold"><i class="fal fa-credit-card-front"></i>New User</span>
+                    </div>
+
+                    <div class="p-3">
+                        <form action="" method="post">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control shadow-none" id="" name=""
+                                            placeholder="Full Name" required="">
+                                        <label for="">Full Name</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control shadow-none" id="" name=""
+                                            placeholder="User Name" required="">
+                                        <label for="">User Name</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="form-floating mb-3">
+                                        <input type="number" class="form-control shadow-none" id="" name=""
+                                            placeholder="Mobile Number" required="">
+                                        <label for="">Mobile Number</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control shadow-none" id="" name=""
+                                            placeholder="Email" required="">
+                                        <label for="">Email</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control shadow-none" id="" name=""
+                                            placeholder="Shop" required="">
+                                        <label for="">Shop</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="form-floating mb-3">
+                                        <input type="password" class="form-control shadow-none" id="" name=""
+                                            placeholder="Password" required="">
+                                        <label for="">Password</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="form-floating mb-3">
+                                        <input type="file" class="form-control shadow-none" id="" accept="image/*"
+                                            name="">
+                                        <label for="">Aadhra Front</label>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="form-floating mb-3">
+                                        <input type="file" class="form-control shadow-none" id=" " accept="image/*"
+                                            name=" ">
+                                        <label for=" ">Aadhar Back</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control shadow-none" id="" name=""
+                                            placeholder="Pan Number" required="">
+                                        <label for="">Pan Number</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="form-floating mb-3">
+                                        <input type="file" class="form-control shadow-none" id=" " accept="image/*"
+                                            name=" ">
+                                        <label for=" ">Pan Image</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="form-floating mb-3">
+                                        <input type="date" class="form-control shadow-none" id="" name=""
+                                            placeholder="Date" required="">
+                                        <label for="">Date</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control shadow-none" id="" name=""
+                                            placeholder="Address" required="">
+                                        <label for="">Address</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control shadow-none" id="" name=""
+                                            placeholder="State" required="">
+                                        <label for="">State</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control shadow-none" id="" name=""
+                                            placeholder="Pin code" required="">
+                                        <label for="">Pin code</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control shadow-none" id="" name=""
+                                            placeholder="City" required="">
+                                        <label for="">City</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="form-floating mb-3">
+                                        <select class="form-select shadow-none" name="Payment_Mode" id="Payment_Mode"
+                                            aria-label="Floating label select example">
+                                            <option selected="" value="">--SELECT---</option>
+                                            <option selected="">Choose...</option>
+                                            <option value="Cedit Card">Cedit Card</option>
+                                            <option value="Debit Card">Debit Card</option>
+                                            <option value="UPI">UPI</option>
+                                            <option value="QR">QR</option>
+                                            <option value="Net Banking">Net Banking</option>
+                                        </select>
+                                        <label for="Select">Purpose*</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <ul class="d-flex p-0">
+                                        <li><button type="submit"
+                                                class="btn my-btn text-light rounded-pill shadow-none px-4">Move</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        /* Set the width of the side navigation to 0 */
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+
+</body>
+
+</html>

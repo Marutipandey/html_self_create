@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Color Game</title>
+</head>
+<style>
+    .btn.btn:focus,
+    .btn:active {
+        outline: none !important;
+        box-shadow: none !important;
+    }
+
+    @media(max-width:775px) {
+        .button_res {
+            max-width: 100%;
+            text-align: center;
+        }
+
+        .paritysap {
+            text-align: center;
+        }
+
+        .hello {
+            width: 100%;
+        }
+    }
+
+    /* .parityyy:hover {
+        color: rgb(255, 145, 0);
+        text-decoration: underline;
+        text-decoration-thickness: 3px;
+        text-underline-position: under 20px;
+    } */
+
+
+    /* .active,
+    .tn:hover {
+        background-color: #b49d1a;
+        color: white;
+        color: rgb(78, 83, 14);
+
+    } */
+
+
+    /* Style the active class, and buttons on mouse-over */
+
+    .active,
+    .tn:hover {
+        background-color: #cc6339;
+        color: black;
+        padding: 8px 1px;
+    }
+</style>
+<body>
+
+
+
+    
+
+    <section style="background-color: rgb(245, 244, 244);">
+        <div class="container-fluid mb-5">
+            <div class="card" style="background-color: #4141a7
+            ; color: white;">
+                <div class="card-body">
+                    <div class="row ">
+                        <div class="col-md-12">
+                            <p> Available balance: &nbsp; 0 &nbsp;&nbsp;<i class="fa-solid fa-arrows-rotate"></i></p>
+                        </div>
+                    </div>
+                    <div class="row g-3 button_res">
+                        <div class="col-md-12 ">
+                            <button type="button" class="btn btn-warning text-white">Recharge</button>
+                            <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal"
+                                style="border: 1px solid rgb(184, 136, 4); color: white;">Read
+                                Rule</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mt-3 " id="myDIV">
+                <div class="card-body ">
+                    <div class="row ">
+                        <div class="col-3 ">
+                            <span class="parity parityyy tn active">Parity</span>
+                        </div>
+                        <div class="col-3  ">
+                            <span class="spare parityyy tn">Sapre</span>
+                        </div>
+                        <div class="col-3 ">
+                            <span class="bcone parityyy tn">Bcone</span>
+                        </div>
+                        <div class="col-3  ">
+                            <span class="emerd parityyy tn">Emerd</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mt-3" style="background-color: rgb(211, 218, 224); border: none;">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-8">
+                            <span class="parity"><i class="fa-solid fa-trophy"></i>Period</span>
+                        </div>
+                        <div class="col-4">
+                            <span class="spare">Count Down</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-8">
+                            <span class="parity" style="font-size: 25px;">20230130296</span>
+                        </div>
+                        <div class="col-4">
+                            <span class="spare" style="font-size: 25px;" id="counter"></span>
+                        </div>
+                    </div>
+
+                    <div class="row text-center mt-2 g-3">
+                        <div class="col-4">
+                            <button type="button" class="btn btn-success" style="font-size: 14px !important;">Join
+                                Green</button>
+                        </div>
+                        <div class="col-4">
+                            <button type="button" class="btn "
+                                style="background-color: rgb(136, 37, 136); color: white; font-size: 15px !important;">Join
+                                Violet</button>
+                        </div>
+                        <div class="col-4">
+                            <button type="button" class="btn btn-danger">Join Red</button>
+                        </div>
+                    </div>
+
+                    <div class="row text-center mt-2 g-3">
+                        <div class="d-grid  col-1">
+                        </div>
+                       
+                        <div class="d-grid  col-2">
+                            <button type="button" class="btn btn ps-3 pe-3"
+                                style="background-image: linear-gradient(160deg,rgb(99, 16, 99) 50%,rgb(212, 27, 27) 0);color: white;">0</button>
+                        </div>
+                        <div class="d-grid  col-2">
+                            <button type="button" class="btn btn-success ps-3 pe-3">1</button>
+                        </div>
+                        <div class="d-grid  col-2">
+                            <button type="button" class="btn btn-danger ps-3 pe-3">2</button>
+                        </div>
+                        <div class="d-grid  col-2">
+                            <button type="button" class="btn btn-success ps-3 pe-3">3</button>
+                        </div>
+                        <div class="d-grid  col-2">
+                            <button type="button" class="btn btn-danger ps-3 pe-3">4</button>
+                        </div>
+                        <div class="d-grid  col-1">
+                        </div>
+                    </div>
+
+                    <div class="row text-center mt-2 g-3">
+                        <div class="d-grid  col-1">
+                        </div>
+                        <div class="d-grid  col-2">
+                            <button type="button" class="btn btn ps-3 pe-3"
+                                style=" 
+                            background-image: linear-gradient(160deg , rgb(99, 16, 99) 50%, rgb(42, 133, 42) 0) ; color: white;">5</button>
+                        </div>
+                        <div class="d-grid  col-2">
+                            <button type="button" class="btn btn-danger ps-3 pe-3">6</button>
+                        </div>
+                        <div class="d-grid  col-2">
+                            <button type="button" class="btn btn-success ps-3 pe-3">7</button>
+                        </div>
+                        <div class="d-grid  col-2">
+                            <button type="button" class="btn btn-danger ps-3 pe-3">8</button>
+                        </div>
+                        <div class="d-grid  col-2">
+                            <button type="button" class="btn btn-success ps-3 pe-3">9</button>
+                        </div>
+                        <div class="d-grid  col-1">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mt-3">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <span class="parity"><i class="fa-solid fa-trophy"></i>Parity Record</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Period</th>
+                                        <th scope="col">Price</th>
+                                        <th scope="col">Number</th>
+                                        <th scope="col">Result</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>@mdo</td>
+                                        <td><i class="fa-solid fa-circle" style="color:purple"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>@mdo</td>
+                                        <td><i class="fa-solid fa-circle" style="color:purple"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>@mdo</td>
+                                        <td><i class="fa-solid fa-circle" style="color:purple"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Otto</td>
+                                        <td>Otto</td>
+                                        <td>@mdo</td>
+                                        <td><i class="fa-solid fa-circle" style="color:red"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>@mdo</td>
+                                        <td><i class="fa-solid fa-circle" style="color:green"></i></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+
+    <footer>
+        <div class="card mt-5 fixed-bottom ">
+            <div class="card-body " style="background-color: white
+            ;">
+                <div class="row g-3 ">
+                    <div class="col-4 text-center">
+                        <a href="index.html" style="text-decoration: none; color:black"> <svg
+                                xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                class="bi bi-house-door" viewBox="0 0 16 16">
+                                <path
+                                    d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146ZM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5Z" />
+                            </svg>Home</a>
+                    </div>
+                    <div class="col-4 text-center">
+                        <a href="win.html" style="text-decoration: none; color: black;"> <svg
+                                xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                class="bi bi-flower1" viewBox="0 0 16 16">
+                                <path
+                                    d="M6.174 1.184a2 2 0 0 1 3.652 0A2 2 0 0 1 12.99 3.01a2 2 0 0 1 1.826 3.164 2 2 0 0 1 0 3.652 2 2 0 0 1-1.826 3.164 2 2 0 0 1-3.164 1.826 2 2 0 0 1-3.652 0A2 2 0 0 1 3.01 12.99a2 2 0 0 1-1.826-3.164 2 2 0 0 1 0-3.652A2 2 0 0 1 3.01 3.01a2 2 0 0 1 3.164-1.826zM8 1a1 1 0 0 0-.998 1.03l.01.091c.012.077.029.176.054.296.049.241.122.542.213.887.182.688.428 1.513.676 2.314L8 5.762l.045-.144c.248-.8.494-1.626.676-2.314.091-.345.164-.646.213-.887a4.997 4.997 0 0 0 .064-.386L9 2a1 1 0 0 0-1-1zM2 9l.03-.002.091-.01a4.99 4.99 0 0 0 .296-.054c.241-.049.542-.122.887-.213a60.59 60.59 0 0 0 2.314-.676L5.762 8l-.144-.045a60.59 60.59 0 0 0-2.314-.676 16.705 16.705 0 0 0-.887-.213 4.99 4.99 0 0 0-.386-.064L2 7a1 1 0 1 0 0 2zm7 5-.002-.03a5.005 5.005 0 0 0-.064-.386 16.398 16.398 0 0 0-.213-.888 60.582 60.582 0 0 0-.676-2.314L8 10.238l-.045.144c-.248.8-.494 1.626-.676 2.314-.091.345-.164.646-.213.887a4.996 4.996 0 0 0-.064.386L7 14a1 1 0 1 0 2 0zm-5.696-2.134.025-.017a5.001 5.001 0 0 0 .303-.248c.184-.164.408-.377.661-.629A60.614 60.614 0 0 0 5.96 9.23l.103-.111-.147.033a60.88 60.88 0 0 0-2.343.572c-.344.093-.64.18-.874.258a5.063 5.063 0 0 0-.367.138l-.027.014a1 1 0 1 0 1 1.732zM4.5 14.062a1 1 0 0 0 1.366-.366l.014-.027c.01-.02.021-.048.036-.084a5.09 5.09 0 0 0 .102-.283c.078-.233.165-.53.258-.874a60.6 60.6 0 0 0 .572-2.343l.033-.147-.11.102a60.848 60.848 0 0 0-1.743 1.667 17.07 17.07 0 0 0-.629.66 5.06 5.06 0 0 0-.248.304l-.017.025a1 1 0 0 0 .366 1.366zm9.196-8.196a1 1 0 0 0-1-1.732l-.025.017a4.951 4.951 0 0 0-.303.248 16.69 16.69 0 0 0-.661.629A60.72 60.72 0 0 0 10.04 6.77l-.102.111.147-.033a60.6 60.6 0 0 0 2.342-.572c.345-.093.642-.18.875-.258a4.993 4.993 0 0 0 .367-.138.53.53 0 0 0 .027-.014zM11.5 1.938a1 1 0 0 0-1.366.366l-.014.027c-.01.02-.021.048-.036.084a5.09 5.09 0 0 0-.102.283c-.078.233-.165.53-.258.875a60.62 60.62 0 0 0-.572 2.342l-.033.147.11-.102a60.848 60.848 0 0 0 1.743-1.667c.252-.253.465-.477.629-.66a5.001 5.001 0 0 0 .248-.304l.017-.025a1 1 0 0 0-.366-1.366zM14 9a1 1 0 0 0 0-2l-.03.002a4.996 4.996 0 0 0-.386.064c-.242.049-.543.122-.888.213-.688.182-1.513.428-2.314.676L10.238 8l.144.045c.8.248 1.626.494 2.314.676.345.091.646.164.887.213a4.996 4.996 0 0 0 .386.064L14 9zM1.938 4.5a1 1 0 0 0 .393 1.38l.084.035c.072.03.166.064.283.103.233.078.53.165.874.258a60.88 60.88 0 0 0 2.343.572l.147.033-.103-.111a60.584 60.584 0 0 0-1.666-1.742 16.705 16.705 0 0 0-.66-.629 4.996 4.996 0 0 0-.304-.248l-.025-.017a1 1 0 0 0-1.366.366zm2.196-1.196.017.025a4.996 4.996 0 0 0 .248.303c.164.184.377.408.629.661A60.597 60.597 0 0 0 6.77 5.96l.111.102-.033-.147a60.602 60.602 0 0 0-.572-2.342c-.093-.345-.18-.642-.258-.875a5.006 5.006 0 0 0-.138-.367l-.014-.027a1 1 0 1 0-1.732 1zm9.928 8.196a1 1 0 0 0-.366-1.366l-.027-.014a5 5 0 0 0-.367-.138c-.233-.078-.53-.165-.875-.258a60.619 60.619 0 0 0-2.342-.572l-.147-.033.102.111a60.73 60.73 0 0 0 1.667 1.742c.253.252.477.465.66.629a4.946 4.946 0 0 0 .304.248l.025.017a1 1 0 0 0 1.366-.366zm-3.928 2.196a1 1 0 0 0 1.732-1l-.017-.025a5.065 5.065 0 0 0-.248-.303 16.705 16.705 0 0 0-.629-.661A60.462 60.462 0 0 0 9.23 10.04l-.111-.102.033.147a60.6 60.6 0 0 0 .572 2.342c.093.345.18.642.258.875a4.985 4.985 0 0 0 .138.367.575.575 0 0 0 .014.027zM8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                            </svg>Win</a>
+                    </div>
+                    <div class="col-4 text-center">
+                        <a href="indexold.html" style="text-decoration: none; color: black;"> <svg
+                                xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                class="bi bi-person" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
+                            </svg>My</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- endfooter -->
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title " id="exampleModalLabel">Rule of Guess</h5>
+                </div>
+                <div class="modal-body">
+                    <p style="font-size: 13px;">3 minutes 1 issue, 2 minutes and 30 seconds to order, 30 seconds to show
+                        the lottery result. It opens all day. The total number of trade is 480 issues</p>
+                    <p style="font-size: 13px;">If you spend 100 to trade, after deducting 2 service fee, your contract
+                        amount is 98:</p>
+                    <p style="font-size: 13px;">1. JOIN GREEN: if the result shows 1,3,7,9, you will get (98*2) 196</p>
+                    <p style="font-size: 13px;">If the result shows 5, you will get (98*1.5) 147</p>
+                    <p style="font-size: 13px;">2. JOIN RED: if the result shows 2,4,6,8, you will get (98*2) 196; If
+                        the result shows 0, you will get (98*1.5) 147</p>
+                    <p style="font-size: 13px;">3. JOIN VIOLET: if the result shows 0 or 5, you will get (98*4.5) 441
+                    </p>
+                    <p style="font-size: 13px;">4.SELECT NUMBER:if the result is the same as the number you selected,
+                        you will get(98*9)882</p>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal end -->
+    <script>
+        let counts = setInterval(updated);
+        let upto = 0;
+        function updated() {
+            var count = document.getElementById("counter");
+            count.innerHTML = ++upto;
+            if (upto === 500) {
+                clearInterval(counts);
+            }
+        }
+
+
+
+        // sdffggghhhhh
+        var header = document.getElementById("myDIV");
+        var btns = header.getElementsByClassName("tn");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+
+    </script>
+
+
+
+    <!-- text code -->
+
+    <!--end text code -->
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

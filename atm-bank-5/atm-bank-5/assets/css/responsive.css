@@ -1,0 +1,44 @@
+
+@media (max-width:575px) {
+ .head-contact-nav{
+     display: none !important;
+ }
+ .text {
+   
+    font-size: 37px !important;
+}
+.inp-res{
+    margin-bottom: 12px;
+}
+.res-width{
+    width: 100% !important;
+}
+.sign-up {
+    width: 310px !important;
+    margin: 20px !important;
+  
+    top: 50% !important;
+    left: 44% !important;
+    
+    padding: 13px !important;
+}
+
+.banner {
+
+    height: 172px !important;
+}
+  
+}
+
+@media (max-width:900px) {
+    .head-contact-nav{
+        display: none !important;
+    }
+    .banner {
+
+        height: 200px !important;
+    }
+    .inp-res{
+        margin-bottom: 12px;
+    }
+}

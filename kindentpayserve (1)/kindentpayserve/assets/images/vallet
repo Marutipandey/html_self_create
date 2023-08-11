@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="116" height="116" viewBox="0 0 116 116">
+  <defs>
+    <filter id="Ellipse_103" x="0" y="0" width="116" height="116" filterUnits="userSpaceOnUse">
+      <feOffset dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feFlood flood-color="#2e4f8e" flood-opacity="0.122"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="cards" transform="translate(18 17)">
+    <g transform="matrix(1, 0, 0, 1, -18, -17)" filter="url(#Ellipse_103)">
+      <g id="Ellipse_103-2" data-name="Ellipse 103" transform="translate(18 17)" fill="#fff" stroke="#fff" stroke-width="5">
+        <circle cx="40" cy="40" r="40" stroke="none"/>
+        <circle cx="40" cy="40" r="37.5" fill="none"/>
+      </g>
+    </g>
+    <g id="card-outline" transform="translate(16.5 16)">
+      <rect id="Rectangle_54" data-name="Rectangle 54" width="39" height="30" rx="5.25" transform="translate(4.5 9)" fill="none" stroke="#0abcd0" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="Path_717" data-name="Path 717" d="M4.5,18h39" fill="none" stroke="#0abcd0" stroke-linejoin="round" stroke-width="5.625"/>
+      <path id="Path_718" data-name="Path 718" d="M12,28.125h4.5V30H12Z" fill="none" stroke="#e68028" stroke-linejoin="round" stroke-width="5.625"/>
+    </g>
+  </g>
+</svg>

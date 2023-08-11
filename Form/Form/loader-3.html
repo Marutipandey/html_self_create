@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loader Three</title>
+    <style type="text/css">
+      *{
+      margin:0;
+      padding:0;
+    }
+    body{
+      background-color: black;
+       display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+ 
+   
+    .box{
+      height:100px;
+      width:100px;
+      border:1px solid;
+      position: relative;
+    }
+    .load1{
+      height:50px;
+      width:50px;
+      background-color: red;
+      border-radius: 50%;
+      animation:load1 1.5s normal infinite;
+    }
+    .load2{
+      height:50px;
+      width:50px;
+      background-color: blue;
+      border-radius: 50%;
+      position: absolute;
+      top:0;
+      left:80%;
+      animation:load2 1.5s normal infinite;
+    }
+    .load3{
+      height:50px;
+      width:50px;
+      background-color: green;
+      border-radius: 50%;
+      position: absolute;
+      top:80%;
+      left:80%;
+      animation:load3 1.5s normal infinite;
+    }
+    .load4{
+      height:50px;
+      width:50px;
+      background-color: #fff000;
+      border-radius: 50%;
+      position: absolute;
+      top:80%;
+      left:0%;
+      animation:load4 1.5s normal infinite;
+    }
+    @keyframes load1{
+      0%{
+        position: absolute;
+        top:0;
+        left:0%;
+      }
+      25%{
+        position: absolute;
+        top:0%;
+        left:80%;
+      }
+      50%{
+        position: absolute;
+        top:80%;
+        left:80%;
+      }
+      100%{
+        position: absolute;
+        top:80%;
+        left:0%;
+      }
+    }
+    @keyframes load2{
+      0%{
+        position: absolute;
+        top:0;
+        left:80%;
+      }
+      25%{
+        position: absolute;
+        top:80%;
+        left:80%;
+      }
+      50%{
+        position: absolute;
+        top:80%;
+        left:0%;
+      }
+      100%{
+        position: absolute;
+        top:0%;
+        left:0%;
+      }
+    }
+    @keyframes load3{
+      0%{
+        position: absolute;
+        top:80%;
+        left:80%;
+      }
+      25%{
+        position: absolute;
+        top:80%;
+        left:0%;
+      }
+      50%{
+        position: absolute;
+        top:0%;
+        left:0%;
+      }
+      100%{
+        position: absolute;
+        top:0%;
+        left:80%;
+      }
+    }
+    @keyframes load4{
+      0%{
+        position: absolute;
+        top:80%;
+        left:0%;
+      }
+      25%{
+        position: absolute;
+        top:0%;
+        left:0%;
+      }
+      50%{
+        position: absolute;
+        top:0%;
+        left:80%;
+      }
+      100%{
+        position: absolute;
+        top:80%;
+        left:80%;
+      }
+    }
+
+    </style>
+</head>
+<body>
+
+  <div class="big-box">
+  <div class="box">
+    <div class="load1"></div>
+    <div class="load2"></div>
+    <div class="load3"></div>
+    <div class="load4"></div>
+  </div>
+  </div>
+
+    
+
+</body>
+</html>

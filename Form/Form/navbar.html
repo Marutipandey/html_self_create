@@ -1,0 +1,197 @@
+<html>
+<head>
+<title>Navbar</title>
+<style>
+
+*{
+margin:0;
+padding:0;
+}
+
+a{
+text-decoration:none;
+}
+li{
+list-style:none;
+}
+
+
+nav{
+display: flex;
+
+}
+.navbar{
+display:flex;
+align-items: center;
+justify-content: space-between;
+background-color:#9a8bb2;
+color:#fff;
+    padding: 20px;
+height: 20px;
+}
+
+.menu {
+display:flex;
+gap:2em;
+position: relative;
+
+}
+
+.menu li a{
+color:#fff;
+}
+
+input[type=checkbox]{
+display:none;
+}
+.hamburger{
+display:none;
+font-size: 66px;
+
+}
+
+.demo-img img{
+    width: 100%;
+    object-fit: cover;
+    height: 500px;
+}
+
+.about{
+    max-width:800px;
+    justify-content: center;
+    display: flex;
+}
+
+@media (max-device-width: 775px){
+
+.menu {
+ display:none;
+position:absolute;
+width:50%;
+height: 100%;
+left:0px;
+top: 137px;
+text-align:center;
+padding:20px 0px;
+background-color:#9a8bb2;
+
+
+}
+
+input[type=checkbox]:checked ~ .menu{
+ display: block;
+
+}
+.hamburger{
+display:block;
+}
+
+.menu  li  {
+    font-size: 40px;
+
+    padding: 39px;
+}
+#menu{
+
+animation-name: slide;
+animation-duration: 0.5s;
+/* animation-timing-function: ease-in-out; */
+
+}
+
+@keyframes slide {
+    0%{
+        width: 0px;
+    }
+    50%{
+        width: 50%;
+    }
+}
+
+h2{
+font-size:85px;
+}
+}
+
+
+::-webkit-scrollbar{
+    width: 10px;
+  
+}
+
+::-webkit-scrollbar-track{
+    background-color: #efeff0;
+    
+}
+
+::-webkit-scrollbar-thumb{
+    width: 2px;
+    background-color: gainsboro;
+    border-radius: 20px;
+   
+    padding: 10px;
+}
+
+.dropdown ul{
+    background-color: rgb(255, 123, 123);
+    padding: 10px;
+}
+.dropdown ul li{
+   
+    padding: 10px 0px;
+}
+
+.dropdown{
+    width: 100px;
+    display: none;
+    transition: all 0.4s;
+   position: absolute;
+}
+
+.menu:hover .dropdown{
+    display: block;
+}
+
+</style>
+</head>
+<body>
+
+<nav class="navbar">
+
+<div class="logo">
+<h2>Logo</h2>
+</div>
+<ul class="nav-links">
+
+    <input type="checkbox" id="checkbox_toggle"/>
+    <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+<div class="menu " id="menu">
+<li><a href="">Home</a></li>
+<li><a href="">About</a></li>
+<li>Services
+    <div class="dropdown">
+
+        <ul>
+            <li><a href=""> Services1</li></a>
+            <li><a href=""> Services2</li></a>
+            <li><a href=""> Services3</li></a>
+            <li><a href=""> Services4</li></a>
+        </ul>
+    </div>
+
+</li>
+<li><a href="">Contact</a></li>
+</div>
+</ul>
+</nav>
+
+
+<section class="demo">
+    <div class="demo-img">
+        <img src="assets/images/demo.jpg" alt="">
+    </div>
+</section>
+
+</body>
+</html>

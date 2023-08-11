@@ -1,0 +1,18 @@
+
+@media (max-width:992px) {
+    .toggle-icon {
+        padding: 16px;
+    } 
+    .search input {
+        display: none;
+    }
+    .search {
+        padding: 16px 15px;
+    }
+    .user-edit h4 {
+        display: none;
+    }
+    .navigation-menu {
+        margin: 0px;
+    }
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/js/bootstrap.min.js">
+    <link rel="stylesheet" href="static/js/popper.min (1).js">
+    <link rel="stylesheet" href="static/js/popper.min.js">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <h1>this is template for html in home page </h1>
+    {% if hii %}
+    <h2>{{ hii }}</h2>
+    this is page real
+    {% else %}
+    <h1>this is template for not available </h1>
+    {% endif %}
+
+    <ul>
+        {% for fr in fru %}
+          <li>{{ fr }}</li>
+          {% endfor %}
+    </ul>
+</body>
+</html>

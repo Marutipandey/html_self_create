@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/css.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <style>
+       
+    </style>
+    <title>CLICKnCASH</title>
+</head>
+
+<body>
+
+    <div class="navigation2">
+
+    </div>
+    <!-- contact -->
+
+    <section id="contact-home" class="all-item-margin">
+        <div class="container">
+
+            <form action="">
+                <div class="form-home text-center">
+                    <div class="row mt-4 g-3">
+                        
+                        <div class="col-md-12 svghover">
+                            <img id="Image"
+                            onclick="turnOnOff()"
+                            src=
+                  "assets/images/treeimgfirst.jpg" style="width:80%">
+                        </div>
+                        
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- CLICK TO CHANGE COLOR -->
+    <!-- Modal -->
+<script>
+  function turnOnOff() {
+        var image=document.getElementById('Image');
+        if(image.src.match("ONbulb"))
+            image.src=
+"assets/images/treeimgfirst.jpg";
+        else
+            image.src=
+"assets/images/treeimgsec.jpg";
+    }
+</script>
+
+
+
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script src="assets/js/jquery-3.0.0.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/js.js"></script>
+    <script src="assets/js/scrollIt.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    <script>
+        AOS.init({
+            disable: 'mobile'
+        }); 
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,753 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>IMPS :: DMT API Provider | DMT Platform | Domestic Money Transfer</title>
+        <meta name="description" content="The only full stack financial infrastructure company to providing payment acquiring, issuing, accounts, lending, withdrawal, deposit, remittance, insurance, customer KYC.">
+        <meta name="keywords" content="IMPS, IMPS API Provider, DMT, Domestic Money Transfer, DMT API Provider, DMT Platform, Money Transfer, money transfer API, dmt portal, dmt service provider, dmt api, Domestic Money Transfer api, instant money transfer api , instant money transfer api provider, dmt provider company, white label dmt portal, dmt service provider, dmt service provider company, best dmt api provider company, best dmt api provider">
+        <meta name="generator" content="">
+        <meta name="author" content="iserveu technology pvt ltd">
+        <meta name="publisher" content="iserveu">
+        <meta content="General" name="Rating">
+        <meta http-equiv="reply-to" content="info@iserveu.in">
+        <meta name="copyrights" content="iServeU technology Pvt Ltd">
+        <meta name="classification" content="Neobanking">
+        <meta name="language" content="English">
+        <meta name="robots" content="ALL">
+        <meta name="distribution" content="Global 24-hour response">
+        <meta name="google-site-verification" content="" />
+		<link rel="shortcut icon" type="image/x-icon" href="../assets/img/favicon.ico?ver=1.0">
+<!-- fonts  -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+		<!-- CSS here -->
+            <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+            <link rel="stylesheet" href="../assets/css/owl.carousel.min.css">
+            <!--<link rel="stylesheet" href="assets/css/flaticon.css">-->
+            <link rel="stylesheet" href="../assets/css/slicknav.css">
+            <link rel="stylesheet" href="../assets/css/animate.min.css">
+            <!--<link rel="stylesheet" href="assets/css/magnific-popup.css">-->
+            <!--<link rel="stylesheet" href="assets/css/fontawesome-all.min.css">-->
+            <link rel="stylesheet" href="../assets/css/themify-icons.css">
+            <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+            <!--https://cdn.jsdelivr.net/themify-icons/0.1.2/css/themify-icons.css-->
+            <link rel="stylesheet" href="../assets/css/slick.css">
+            <!--<link rel="stylesheet" href="assets/css/nice-select.css">-->
+            <link rel="stylesheet" href="../assets/css/style.css?ver=1.0.3">
+            
+            <!-- Google tag (gtag.js) --> 
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-WMML38X0JV"></script> 
+            <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-WMML38X0JV'); 
+            </script>
+            
+            <!-- Google Tag Manager -->
+            <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-MZPVPV6');</script>
+            <!-- End Google Tag Manager -->
+            <style>
+                .help-block.with-errors li {
+                    color: red !important;
+                    font-size: 14px;
+                }
+                .btn-reset {
+    padding: 13px 30px;
+    border: 0;
+    border-radius: 5px;
+}
+            </style>
+   </head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MZPVPV6"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- Preloader Start -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="../assets/img/logo/isu.png" alt="iserveu" title="iserveu">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader Start-->
+
+     <header>
+        <!-- Header Start -->
+       <div class="header-area header-transparrent ">
+            <div class="main-header header-sticky">
+                <div class="topHead">
+                    <div class="container">
+                        <!--topNav-->
+                        <div class="topNav">
+                            <div class="isu_news">
+                                🚀  iServeU Technology bags USD 13 million funding 👏 <a href="../funding-alert">Know More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- new nav  -->
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container">
+                    <a href="/" class="navbar-brand">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="220" height="auto" viewBox="0 0 411.24 77.197">
+                                        <g id="isu-iserveu" transform="translate(-1667.957 -1417.303)">
+                                          <path id="Intersection_2" data-name="Intersection 2" d="M157.872-3524.941q-4.323-3.794-4.323-10.892v-24.546h9.963v23.978q0,4,1.678,5.962t5.447,1.961q3.717,0,5.433-1.884t1.716-6.04v-23.978h9.963v24.52q0,7.124-4.336,10.918t-12.776,3.794Q162.195-3521.146,157.872-3524.941ZM121-3525.1q-4.646-3.923-4.646-11.176,0-7.176,4.4-11.37t12.067-4.194q7.072,0,10.634,3.574t3.562,10.286v3.252H125.75a6.686,6.686,0,0,0,2.594,5.214q2.387,1.807,7.033,1.806a15.807,15.807,0,0,0,5.7-1.058,17.885,17.885,0,0,0,4.363-2.271h1.032v7.459a34.515,34.515,0,0,1-5.937,1.833,30.974,30.974,0,0,1-6.169.568q-8.724,0-13.37-3.923Zm6.659-19.538a5.946,5.946,0,0,0-1.936,4.465h12.054a6.5,6.5,0,0,0-1.445-4.388,5.558,5.558,0,0,0-4.259-1.471,6.81,6.81,0,0,0-4.414,1.394ZM25.269-3525.1q-4.646-3.923-4.646-11.176,0-7.176,4.4-11.37t12.067-4.194q7.072,0,10.634,3.574t3.562,10.286v3.252H30.018a6.686,6.686,0,0,0,2.594,5.214Q35-3527.7,39.645-3527.7a15.807,15.807,0,0,0,5.7-1.058,17.885,17.885,0,0,0,4.363-2.271h1.032v7.459a34.513,34.513,0,0,1-5.936,1.833,30.974,30.974,0,0,1-6.169.568q-8.724,0-13.37-3.923Zm6.659-19.538a5.946,5.946,0,0,0-1.936,4.465H42.046a6.5,6.5,0,0,0-1.445-4.388,5.558,5.558,0,0,0-4.259-1.471,6.81,6.81,0,0,0-4.414,1.394Zm-41.671,22.545a42.924,42.924,0,0,1-6.646-2.13v-9.214h1.084a22.961,22.961,0,0,0,6.879,3.769,22.367,22.367,0,0,0,7.317,1.316q1.19-.018,2.375-.155a9.5,9.5,0,0,0,2.4-.516,5.985,5.985,0,0,0,1.871-1.162,2.712,2.712,0,0,0,.736-2.065,2.786,2.786,0,0,0-1.071-2.181,7.434,7.434,0,0,0-3.136-1.406q-2.168-.516-4.581-.968a35.158,35.158,0,0,1-4.53-1.149q-4.852-1.574-6.982-4.271a10.474,10.474,0,0,1-2.129-6.7,10.307,10.307,0,0,1,4.814-8.763q4.814-3.394,12.376-3.394a38.407,38.407,0,0,1,7.5.736,35.083,35.083,0,0,1,6.414,1.846v8.853H13.886a20.439,20.439,0,0,0-5.691-3.11A19.6,19.6,0,0,0,1.317-3554a18.185,18.185,0,0,0-2.468.168,9.689,9.689,0,0,0-2.359.632,4.519,4.519,0,0,0-1.729,1.174,2.58,2.58,0,0,0-.723,1.794A2.678,2.678,0,0,0-4.8-3547.9a13,13,0,0,0,4.388,1.484q2.117.439,4.065.852a42.638,42.638,0,0,1,4.194,1.136,14.013,14.013,0,0,1,6.517,3.936,9.679,9.679,0,0,1,2.1,6.466,10.964,10.964,0,0,1-4.814,9.227q-4.814,3.549-13.073,3.549A36.519,36.519,0,0,1-9.743-3522.088Zm101.346.142-11.1-28.985h9.834l6.711,19.926,6.633-19.927h9.627l-11.175,28.986Zm-33.76,0v-28.985h9.292v4.259a19.4,19.4,0,0,1,5.343-3.5,11.837,11.837,0,0,1,4.181-.865q.49,0,1.11.026t1.084.078v8.853h-.826a8.351,8.351,0,0,0-1.91-.31q-1.316-.1-2.194-.1a21.2,21.2,0,0,0-3.51.258,19.915,19.915,0,0,0-3.278.877v19.41Zm-90.725,0v-28.985h9.292v28.985Zm-.258-33.115v-7.046h9.808v7.046Z" transform="translate(1855.116 5001.805)" fill="#00bed4" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1"/>
+                                          <line id="Line_1" data-name="Line 1" y2="42.403" transform="translate(1805.272 1439.061)" fill="none" stroke="#13abad" stroke-linecap="round" stroke-width="3"/>
+                                          <g id="isu" transform="translate(1667.957 1418.5)">
+                                            <g id="Group_2" data-name="Group 2" transform="translate(0 0)">
+                                              <g id="Component_1_11" data-name="Component 1 – 11" transform="translate(18.846)">
+                                                <text id="su" transform="translate(0 63)" fill="#109294" font-size="63" font-family="Verdana-Bold, Verdana" font-weight="700"><tspan x="0" y="0">su</tspan></text>
+                                              </g>
+                                              <path id="Path_1" data-name="Path 1" d="M2298.47,892.2v-1.3l12.97-3.884,2.156-.35-4.273,29.545s-.239,2.952.8,2.832a3.251,3.251,0,0,0,2.626-1.749c.836-1.276,2.544-4.529,2.544-4.529l1.238.467s-2.1,5.048-3.782,7.006a14.931,14.931,0,0,1-4.618,4.023c-1.547.73-4.6,1.065-6.354,0s-2.4-3.5-2.11-5.9,3.325-23.3,3.325-23.3.062-2.55-1.684-2.853A7.069,7.069,0,0,0,2298.47,892.2Z" transform="translate(-2298.47 -859.228)" fill="#109192"/>
+                                            </g>
+                                            <path id="Intersection_1" data-name="Intersection 1" d="M246.831,390.711c-1.754-1.065-2.4-3.5-2.11-5.9.062-.513.249-1.87.5-3.688,3.069-.782,6.3-1.485,9.673-2.1l-.526,3.64s-.239,2.952.8,2.832a3.25,3.25,0,0,0,2.626-1.749c.836-1.276,2.544-4.528,2.544-4.528l1.238.467s-2.1,5.048-3.782,7.006a14.938,14.938,0,0,1-4.618,4.022,8.548,8.548,0,0,1-3.421.679A5.76,5.76,0,0,1,246.831,390.711ZM308,387.033q-3.106-3.307-3.106-9.767v-.751c3.979.279,7.854.669,11.593,1.158a6.245,6.245,0,0,0,.554,1.478,3.55,3.55,0,0,0,1.777,1.669,8.441,8.441,0,0,0,3.323.526,10.941,10.941,0,0,0,3.152-.526,13.389,13.389,0,0,0,2.8-1.221c4.134.841,8.036,1.815,11.662,2.905v6.877H328.631V385.55a33.112,33.112,0,0,1-5.656,3.57,14.127,14.127,0,0,1-6.12,1.221Q311.107,390.341,308,387.033Zm-36.641,2.442a32.051,32.051,0,0,1-6.058-1.916V378.41h1.02q.835.587,1.932,1.283a19.566,19.566,0,0,0,3.106,1.5,25.621,25.621,0,0,0,3.925,1.221,20.717,20.717,0,0,0,4.7.51,12.219,12.219,0,0,0,4.852-.726,2.311,2.311,0,0,0,1.576-2.148,2,2,0,0,0-.927-1.839,12.094,12.094,0,0,0-3.524-1.1q-1.236-.278-3.354-.6-.487-.075-.954-.157C281.675,376.12,285.8,376,290,376q3.83,0,7.566.131a11.09,11.09,0,0,1,.219,2.248,10.06,10.06,0,0,1-4.822,8.67q-4.822,3.292-13.2,3.292A37.683,37.683,0,0,1,271.359,389.475Z" transform="translate(-243.52 -325.682)" fill="#004d4e" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1"/>
+                                            <g id="Group_1" data-name="Group 1" transform="translate(5.193 13.14)">
+                                              <path id="Subtraction_1" data-name="Subtraction 1" d="M4.665,24.531a4.684,4.684,0,0,1-.489-9.342,3.48,3.48,0,0,0,5.159,4.3c.009.12.013.241.013.36a4.68,4.68,0,0,1-4.684,4.684Z" transform="translate(0.021 -14.788)" fill="#075455"/>
+                                              <path id="Subtraction_2" data-name="Subtraction 2" d="M4.665,24.531a4.684,4.684,0,0,1-.489-9.342,3.48,3.48,0,0,0,5.159,4.3c.009.12.013.241.013.36a4.68,4.68,0,0,1-4.684,4.684Z" transform="translate(0.557 -15.189)" fill="#a5431c"/>
+                                            </g>
+                                          </g>
+                                          <g id="Group_5" data-name="Group 5" transform="translate(1701.415 1423.405) rotate(-3)">
+                                            <g id="Group_4" data-name="Group 4" transform="translate(54.191 0)">
+                                              <path id="Path_2" data-name="Path 2" d="M0,.056S22.45-2.106,31.471,20.4" transform="translate(0)" fill="none" stroke="#e4791b" stroke-width="3"/>
+                                              <path id="Path_3" data-name="Path 3" d="M0,.034S13.592-1.275,19.055,12.349" transform="translate(2.02 8.611)" fill="none" stroke="#a5431c" stroke-width="3"/>
+                                            </g>
+                                            <path id="Path_4" data-name="Path 4" d="M0,19.114,33.986,0,79.864,31.3l-4.4,1.866L33.986,5.818,10.507,20.249Z" transform="translate(0.105 0.328)" fill="#004d4e"/>
+                                          </g>
+                                          <g id="Group_10" data-name="Group 10" transform="translate(2047.48 1419.236)">
+                                            <path id="Intersection_3" data-name="Intersection 3" d="M-5.421-3910.175v-6.189l-1.713,4.017H-8.78l-1.713-4.017v6.189H-12.74v-9.243h2.769l2.079,4.637,2.073-4.637H-3.05v9.243Zm-14.023,0v-7.455h-2.887v-1.788h8.157v1.788h-2.886v7.455Z" transform="translate(28.072 3931.185)" fill="#606060" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1"/>
+                                            <g id="Ellipse_6" data-name="Ellipse 6" transform="translate(0 0)" fill="none" stroke="#606060" stroke-width="2">
+                                              <circle cx="15.858" cy="15.858" r="15.858" stroke="none"/>
+                                              <circle cx="15.858" cy="15.858" r="14.858" fill="none"/>
+                                            </g>
+                                          </g>
+                                        </g>
+                                      </svg>
+                    </a>
+                    <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#isuNav" aria-controls="isuNavContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button> -->
+                    <div class="hamburger navbar-toggler" id="hamburger-6" data-target="#isuNav" data-toggle="collapse">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                      </div>
+                    <div class="collapse navbar-collapse" id="isuNav">
+                      <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown mega-menu-full">
+                          <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                            Products
+                          </a>
+                          <div class="dropdown-menu mega-menu">
+                            <!-- nav tabs -->
+                                <div class="menu-row">
+                                  <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                    <a class="nav-link active" id="v-pills-tab1-tab" data-toggle="pill" href="#v-pills-tab1" role="tab" aria-controls="v-pills-tab1" aria-selected="true">
+                                        <h4>Financial Inclusion as a Service</h4>
+                                        <div>We are innovating next generation API, SDK and Plug n Play</div>
+                                    </a>
+                                    <a class="nav-link" id="v-pills-tab2-tab" data-toggle="pill" href="#v-pills-tab2" role="tab" aria-controls="v-pills-tab2" aria-selected="false">
+                                        <h4>Neobanking as a Service</h4>
+                                        <div>We are innovating next generation API, SDK and Plug n Play</div>
+                                    </a>
+                                    <a class="nav-link" id="v-pills-tab3-tab" data-toggle="pill" href="#v-pills-tab3" role="tab" aria-controls="v-pills-tab3" aria-selected="false">
+                                        <h4>Transactional Banking</h4>   
+                                        <div>We are innovating next generation API, SDK and Plug n Play</div> 
+                                    </a>
+                                    <a class="nav-link" id="v-pills-tab4-tab" data-toggle="pill" href="#v-pills-tab4" role="tab" aria-controls="v-pills-tab4" aria-selected="false">
+                                        <h4>Lending as a Service</h4>
+                                         <div>We are innovating next generation API, SDK and Plug n Play</div>
+                                    </a>
+                                  </div>
+                                    <!-- /.col -->
+                            
+                                  <div class="tab-content" id="v-pills-tabContent">
+                                        <div class="card tab-pane fade show active" id="v-pills-tab1" role="tabpanel" aria-labelledby="v-pills-tab1-tab">
+                                            <div class="card-header" role="tab" id="v-collapse-heading-tab1">
+                                            <a data-toggle="collapse" href="#v-collapse-tab1" data-parent="#v-pills-tabContent" aria-expanded="true" aria-controls="v-collapse-tab1">
+                                                Financial Inclusion as a Service
+                                            </a>
+                                        </div>
+                                        <div id="v-collapse-tab1" class="collapse show" role="tabpanel" aria-labelledby="v-collapse-heading-tab1" data-parent="#v-pills-tabContent">
+                                            <div class="card-body">
+                                                <div class="service-menu">
+                                                    <div class="alert alert-success">
+                                                        <small>We are offering access to a wide range of financial services through API, SDKs & Platforms.</small>
+                                                      </div>
+                                                      <!-- items  -->
+                                                      <div class="serviceItems">
+                                                        <ul class="list-unstyled m-0">
+                                                        <li>
+                                                            <a href="../dmt">
+                                                                <img src="../assets/img/icons/imps.svg" class="img-fluid" alt="imps" title="imps iServeU">
+                                                                <h5>IMPS</h5>
+                                                            </a>
+                                                        </li>
+                                                            <li>
+                                                                <a href="../aeps">
+                                                                    <img src="../assets/img/icons/adhaar.png" class="img-fluid" alt="aeps iServeU" title=" aeps">
+                                                                    <h5>AEPS</h5>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="../adhaarpay">
+                                                                    <img src="../assets/img/icons/adhaar.png" class="img-fluid" alt="aeps iServeU" title=" aeps">
+                                                                    <h5>Aadhaarpay</h5>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="../matm">
+                                                                    <img src="../assets/img/icons/matm.png" class="img-fluid" alt="matm" title="matm">
+                                                                    <h5>Micro ATM</h5>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="../insurance">
+                                                                    <img src="../assets/img/icons/insurance.png" class="img-fluid" alt="insurance" title="insurance">
+                                                                    <h5>Insurance</h5>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="../micro-credit/">
+                                                                    <img src="../assets/img/icons/micro-credit.png" class="img-fluid" alt="micro-credit" title="micro-credit">
+                                                                    <h5>Micro Credit</h5>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                      </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                            <!-- /.tab-pane -->
+                            
+                                            <div class="card tab-pane fade" id="v-pills-tab2" role="tabpanel" aria-labelledby="v-pills-tab2-tab">
+                                                <div class="card-header" role="tab" id="v-collapse-heading-profile">
+                                        <a data-toggle="collapse" href="#v-collapse-tab2" data-parent="#v-pills-tabContent" aria-expanded="false" aria-controls="v-collapse-profile">
+                                            Neobanking as a Service
+                                        </a>
+                            
+                                      </div>
+                                      <div id="v-collapse-tab2" class="collapse" role="tabpanel" aria-labelledby="v-collapse-heading-tab2" data-parent="#v-pills-tabContent">
+                                        <div class="card-body">
+                                            <div class="service-menu">
+                                                <div class="alert alert-info">
+                                                    <small>We are providing digital banking solutions through API, SDKs & Platforms.</small>
+                                                  </div>
+                                                  <!-- items  -->
+                                                  <div class="serviceItems">
+                                                    <ul class="list-unstyled m-0">
+                                                    <li>
+                                                        <a href="../digital-banking">
+                                                            <img src="../assets/img/icons/neobanking.png?ver=1.0" class="img-fluid" alt="Digital Banking" title="Digital Banking iServeU">
+                                                            <h5>Digital Banking</h5>
+                                                        </a>
+                                                    </li>
+                                                        <li>
+                                                            <a href="../prepaid-card">
+                                                                <img src="../assets/img/prepaidcradi.png" class="img-fluid" alt="Lending iServeU" title=" Lending">
+                                                                <h5>Prepaid Cards</h5>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="../debit-card">
+                                                                <img src="../assets/img/icons/credit-card.png" class="img-fluid" alt="Debit-card" title="Debit-card">
+                                                                <h5>Debit Card</h5>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="../investment">
+                                                                <img src="../assets/img/icons/investment.png" class="img-fluid" alt="investments" title="investments">
+                                                                <h5>Investments</h5>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                  </div>
+                                            </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                            <!-- /.tab-pane -->
+                            
+                                            <div class="card tab-pane fade" id="v-pills-tab3" role="tabpanel" aria-labelledby="v-pills-tab3-tab">
+                                                <div class="card-header" role="tab" id="v-collapse-heading-messages">
+                                        <a data-toggle="collapse" href="#v-collapse-tab3" aria-expanded="false" aria-controls="v-collapse-tab3">
+                                            Transactional Banking
+                                        </a>
+                                      </div>
+                                      <div id="v-collapse-tab3" class="collapse" role="tabpanel" aria-labelledby="v-collapse-heading-tab3" data-parent="#v-pills-tabContent">
+                                        <div class="card-body">
+                                            <div class="service-menu">
+                                                  <!-- items  -->
+                                                  <div class="serviceItems">
+                                                    <ul class="list-unstyled m-0">
+                                                    <li>
+                                                        <a href="../payout">
+                                                            <img src="../assets/img/icons/payout.png" class="img-fluid" alt="payout" title="payout iServeU">
+                                                            <h5>Payout</h5>
+                                                        </a>
+                                                    </li>
+                                                        <li>
+                                                            <a href="../upi">
+                                                                <img src="../assets/img/icons/upi.png" class="img-fluid" alt="UPI iServeU" title=" UPI">
+                                                                <h5>UPI</h5>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#link">
+                                                                <img src="../assets/img/icons/fastag.png" class="img-fluid" alt="fastag" title="fastag">
+                                                                <h5>Fastag</h5>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="../bbps">
+                                                                <img src="../assets/img/icons/bbps.png" class="img-fluid" alt="bbps" title="BBPS">
+                                                                <h5>BBPS</h5>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="../cms">
+                                                                <img src="../assets/img/icons/cms.png" class="img-fluid" alt="CMS" title="CMS">
+                                                                <h5>CMS</h5>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#link">
+                                                                <img src="../assets/img/icons/nach.png" class="img-fluid" alt="nach" title="nach">
+                                                                <h5>ENACH</h5>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="../virtual-account">
+                                                                <img src="../assets/img/icons/neobanking.png" class="img-fluid" alt="financial" title="financial">
+                                                                <h5>Virtual Accounts</h5>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="../pos">
+                                                                <img src="../assets/img/icons/pos.png" class="img-fluid" alt="pos" title="pos">
+                                                                <h5>POS</h5>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                  </div>
+                                            </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                            <!-- /.tab-pane -->
+                                            <div class="card tab-pane fade" id="v-pills-tab4" role="tabpanel" aria-labelledby="v-pills-tab4-tab">
+                                                <div class="card-header" role="tab" id="v-collapse-heading-lending">
+                                        <a data-toggle="collapse" href="#v-collapse-tab4" aria-expanded="false" aria-controls="v-collapse-tab4">
+                                            Lending as a Service
+                                        </a>
+                                      </div>
+                                      <div id="v-collapse-tab4" class="collapse" role="tabpanel" aria-labelledby="v-collapse-heading-tab4" data-parent="#v-pills-tabContent">
+                                        <div class="card-body">
+                                            <div class="service-menu">
+                                                <div class="alert alert-primary">
+                                                    <small>We are providing lending solutions for your business through API, SDKs & Platforms.</small>
+                                                  </div>
+                                                  <!-- items  -->
+                                                  <div class="serviceItems">
+                                                    <ul class="list-unstyled m-0">
+                                                    <li>
+                                                        <a href="../bnpl">
+                                                            <img src="../assets/img/icons/pay.svg" class="img-fluid" alt="Pay Later" title="Pay Later">
+                                                            <h5>BNPL</h5>
+                                                        </a>
+                                                    </li>
+                                                        <li>
+                                                            <a href="#link">
+                                                                <img src="../assets/img/lending.svg" class="img-fluid" alt="Lending iServeU" title=" Lending">
+                                                                <h5>Loan lead generation CRM</h5>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#link">
+                                                                <img src="../assets/img/transaction.svg" class="img-fluid" alt="transaction" title="transaction">
+                                                                <h5>Retail Establishment</h5>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                  </div>
+                                            </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                        <!-- /.tab-content -->
+                                    <!-- /.col -->
+                              </div>
+                            <!-- end tab  -->
+                        </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                              Solutions
+                            </a>
+                            <div class="dropdown-menu mega-menu-column">
+                                <a href="../bc-program/">
+                                    <img src="../assets/img/icons/neobanking.png" class="img-fluid" alt="Neo banking" title=" Neo Banking iServeU">
+                                    <h5>BC Program Management</h5>
+                                </a>
+                                <a href="../switching-solution/">
+                                    <img src="../assets/img/lending.svg" class="img-fluid" alt="Lending iServeU" title=" Lending">
+                                    <h5>Switching Solutions</h5>
+                                </a>
+                                <a href="../neobanking">
+                                    <img src="../assets/img/transaction.svg" class="img-fluid" alt="transaction" title="transaction">
+                                    <h5>Neo Banking</h5>
+                                </a>
+                                <a href="../cards-program/">
+                                    <img src="../assets/img/icons/financial.png" class="img-fluid" alt="Issuance Solutions" title="Issuance Solutions">
+                                    <h5>Issuance Solutions</h5>
+                                </a>
+                                <a href="../crm">
+                                    <img src="../assets/img/icons/crm-isu.png" class="img-fluid" alt="CRM Solutions" title="CRM Solutions">
+                                    <h5>CRM Solutions</h5>
+                                </a>
+                            </div>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="../career/">Career <span class="sr-only">(current)</span></a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="https://blog.iserveu.in/">Blog <span class="sr-only">(current)</span></a>
+                          </li>
+                      </ul>
+                    </div>
+                    </div>
+                  </nav>
+                <!-- end new  -->
+            </div>
+       </div>
+        <!-- Header End -->
+    </header>
+
+
+    <main>
+        <!-- banner  -->
+        <div class="banner">
+            <img src="../dmt/imps-banner.png?ver=1.0" class="img-fluid" alt="IMPS iServeU" title="iserveu IMPS">
+        </div>
+        <section class="service-area section-padding2 pb-4 pt-4">
+            <div class="container">
+                <!-- Section Tittle -->
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-12">
+                        <div class="content">
+                            <div class="row separateCard align-items-center">
+                            <div class="col-md-5">
+                                    <div class="imgCard p-5">
+                                        <img src="../dmt/dmt-about.png" class="img-fluid wow animated fadeInLeft" alt="DMT " title="DMT ">
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="sep-card">
+                                        <h1 class="text-left wow animated fadeInUp">What is Cash to Account (IMPS)? </h1>
+                                        <p class="text-justify wow animated fadeInUp">Cash to Account or IMPS is a financial inclusion service that enables individuals to deposit cash electronically to any bank account within India. Customers can deposit cash by providing their bank details to our partner’s outlet.  </p>
+                                        </div>
+                                </div>
+                            </div>
+                            <!-- functionalities  -->
+                            <h1 class="text-center">IMPS Functionalities</h1>
+                            <div class="row mb-4 mt-5">
+                                <div class="col-md-4">
+                                    <div class="shadow-card d-block p-4">
+                                        <img src="../assets/img/deposit.svg" class="img-fluid" alt="Cash Deposit" title="Cash Deposit">
+                                        <div class="flx-right">
+                                            <h5>Cash to account through IMPS </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="shadow-card d-block p-4">
+                                        <img src="../assets/img/balancein.svg" class="img-fluid" alt="Balance Enquiry" title="Balance Enquiry">
+                                        <div class="flx-right">
+                                            <h5>Cash to account through NEFT </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="shadow-card d-block p-4">
+                                        <img src="../assets/img/statement.svg" class="img-fluid" alt="Mini Statement" title="Mini Statement">
+                                        <div class="flx-right">
+                                            <h5>Account verification</h5>
+                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <section class="service-area grey-bg pb-4 pt-5 mt-4">
+            <div class="container">
+                <h1 class="text-center">What we are offering? </h1>
+                <div class="row panelDesign mb-5">
+                    <div class="col-md-6">
+                        <div class="mt-4 text-left p-4 bg-white">
+                            <h4>IMPS API</h4>
+                        <p class="mb-4">Let your merchants offer a cash-to-account deposit experience through iServeU IMPS API. Develop your own IMPS app with our highly configurable IMPS API.  </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mt-4 text-left p-4 bg-white">
+                            <h4>IMPS Platform</h4>
+                            <p class="mb-4">Start your financial inclusion business from day 1 with iServeU’s ready-to-launch IMPS platform. Stay worry-free about development, compliance, and licenses.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+    </main>
+    
+    <footer>
+       <!-- Footer Start-->
+      <div class="footer-main">
+        <div class="footer-area footer-padding">
+            <div class="container">
+                <div class="row  justify-content-between">
+                    <div class="col-lg-3 col-md-4 col-sm-8">
+                         <div class="single-footer-caption mb-30">
+                              <!-- logo -->
+                             <div class="footer-logo">
+                                 <a href="/">
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="220" height="auto" viewBox="0 0 411.24 77.197">
+  <g id="isu-iserveu" transform="translate(-1667.957 -1417.303)">
+    <path id="Intersection_2" data-name="Intersection 2" d="M157.872-3524.941q-4.323-3.794-4.323-10.892v-24.546h9.963v23.978q0,4,1.678,5.962t5.447,1.961q3.717,0,5.433-1.884t1.716-6.04v-23.978h9.963v24.52q0,7.124-4.336,10.918t-12.776,3.794Q162.195-3521.146,157.872-3524.941ZM121-3525.1q-4.646-3.923-4.646-11.176,0-7.176,4.4-11.37t12.067-4.194q7.072,0,10.634,3.574t3.562,10.286v3.252H125.75a6.686,6.686,0,0,0,2.594,5.214q2.387,1.807,7.033,1.806a15.807,15.807,0,0,0,5.7-1.058,17.885,17.885,0,0,0,4.363-2.271h1.032v7.459a34.515,34.515,0,0,1-5.937,1.833,30.974,30.974,0,0,1-6.169.568q-8.724,0-13.37-3.923Zm6.659-19.538a5.946,5.946,0,0,0-1.936,4.465h12.054a6.5,6.5,0,0,0-1.445-4.388,5.558,5.558,0,0,0-4.259-1.471,6.81,6.81,0,0,0-4.414,1.394ZM25.269-3525.1q-4.646-3.923-4.646-11.176,0-7.176,4.4-11.37t12.067-4.194q7.072,0,10.634,3.574t3.562,10.286v3.252H30.018a6.686,6.686,0,0,0,2.594,5.214Q35-3527.7,39.645-3527.7a15.807,15.807,0,0,0,5.7-1.058,17.885,17.885,0,0,0,4.363-2.271h1.032v7.459a34.513,34.513,0,0,1-5.936,1.833,30.974,30.974,0,0,1-6.169.568q-8.724,0-13.37-3.923Zm6.659-19.538a5.946,5.946,0,0,0-1.936,4.465H42.046a6.5,6.5,0,0,0-1.445-4.388,5.558,5.558,0,0,0-4.259-1.471,6.81,6.81,0,0,0-4.414,1.394Zm-41.671,22.545a42.924,42.924,0,0,1-6.646-2.13v-9.214h1.084a22.961,22.961,0,0,0,6.879,3.769,22.367,22.367,0,0,0,7.317,1.316q1.19-.018,2.375-.155a9.5,9.5,0,0,0,2.4-.516,5.985,5.985,0,0,0,1.871-1.162,2.712,2.712,0,0,0,.736-2.065,2.786,2.786,0,0,0-1.071-2.181,7.434,7.434,0,0,0-3.136-1.406q-2.168-.516-4.581-.968a35.158,35.158,0,0,1-4.53-1.149q-4.852-1.574-6.982-4.271a10.474,10.474,0,0,1-2.129-6.7,10.307,10.307,0,0,1,4.814-8.763q4.814-3.394,12.376-3.394a38.407,38.407,0,0,1,7.5.736,35.083,35.083,0,0,1,6.414,1.846v8.853H13.886a20.439,20.439,0,0,0-5.691-3.11A19.6,19.6,0,0,0,1.317-3554a18.185,18.185,0,0,0-2.468.168,9.689,9.689,0,0,0-2.359.632,4.519,4.519,0,0,0-1.729,1.174,2.58,2.58,0,0,0-.723,1.794A2.678,2.678,0,0,0-4.8-3547.9a13,13,0,0,0,4.388,1.484q2.117.439,4.065.852a42.638,42.638,0,0,1,4.194,1.136,14.013,14.013,0,0,1,6.517,3.936,9.679,9.679,0,0,1,2.1,6.466,10.964,10.964,0,0,1-4.814,9.227q-4.814,3.549-13.073,3.549A36.519,36.519,0,0,1-9.743-3522.088Zm101.346.142-11.1-28.985h9.834l6.711,19.926,6.633-19.927h9.627l-11.175,28.986Zm-33.76,0v-28.985h9.292v4.259a19.4,19.4,0,0,1,5.343-3.5,11.837,11.837,0,0,1,4.181-.865q.49,0,1.11.026t1.084.078v8.853h-.826a8.351,8.351,0,0,0-1.91-.31q-1.316-.1-2.194-.1a21.2,21.2,0,0,0-3.51.258,19.915,19.915,0,0,0-3.278.877v19.41Zm-90.725,0v-28.985h9.292v28.985Zm-.258-33.115v-7.046h9.808v7.046Z" transform="translate(1855.116 5001.805)" fill="#00bed4" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1"/>
+    <line id="Line_1" data-name="Line 1" y2="42.403" transform="translate(1805.272 1439.061)" fill="none" stroke="#13abad" stroke-linecap="round" stroke-width="3"/>
+    <g id="isu" transform="translate(1667.957 1418.5)">
+      <g id="Group_2" data-name="Group 2" transform="translate(0 0)">
+        <g id="Component_1_11" data-name="Component 1 – 11" transform="translate(18.846)">
+          <text id="su" transform="translate(0 63)" fill="#109294" font-size="63" font-family="Verdana-Bold, Verdana" font-weight="700"><tspan x="0" y="0">su</tspan></text>
+        </g>
+        <path id="Path_1" data-name="Path 1" d="M2298.47,892.2v-1.3l12.97-3.884,2.156-.35-4.273,29.545s-.239,2.952.8,2.832a3.251,3.251,0,0,0,2.626-1.749c.836-1.276,2.544-4.529,2.544-4.529l1.238.467s-2.1,5.048-3.782,7.006a14.931,14.931,0,0,1-4.618,4.023c-1.547.73-4.6,1.065-6.354,0s-2.4-3.5-2.11-5.9,3.325-23.3,3.325-23.3.062-2.55-1.684-2.853A7.069,7.069,0,0,0,2298.47,892.2Z" transform="translate(-2298.47 -859.228)" fill="#109192"/>
+      </g>
+      <path id="Intersection_1" data-name="Intersection 1" d="M246.831,390.711c-1.754-1.065-2.4-3.5-2.11-5.9.062-.513.249-1.87.5-3.688,3.069-.782,6.3-1.485,9.673-2.1l-.526,3.64s-.239,2.952.8,2.832a3.25,3.25,0,0,0,2.626-1.749c.836-1.276,2.544-4.528,2.544-4.528l1.238.467s-2.1,5.048-3.782,7.006a14.938,14.938,0,0,1-4.618,4.022,8.548,8.548,0,0,1-3.421.679A5.76,5.76,0,0,1,246.831,390.711ZM308,387.033q-3.106-3.307-3.106-9.767v-.751c3.979.279,7.854.669,11.593,1.158a6.245,6.245,0,0,0,.554,1.478,3.55,3.55,0,0,0,1.777,1.669,8.441,8.441,0,0,0,3.323.526,10.941,10.941,0,0,0,3.152-.526,13.389,13.389,0,0,0,2.8-1.221c4.134.841,8.036,1.815,11.662,2.905v6.877H328.631V385.55a33.112,33.112,0,0,1-5.656,3.57,14.127,14.127,0,0,1-6.12,1.221Q311.107,390.341,308,387.033Zm-36.641,2.442a32.051,32.051,0,0,1-6.058-1.916V378.41h1.02q.835.587,1.932,1.283a19.566,19.566,0,0,0,3.106,1.5,25.621,25.621,0,0,0,3.925,1.221,20.717,20.717,0,0,0,4.7.51,12.219,12.219,0,0,0,4.852-.726,2.311,2.311,0,0,0,1.576-2.148,2,2,0,0,0-.927-1.839,12.094,12.094,0,0,0-3.524-1.1q-1.236-.278-3.354-.6-.487-.075-.954-.157C281.675,376.12,285.8,376,290,376q3.83,0,7.566.131a11.09,11.09,0,0,1,.219,2.248,10.06,10.06,0,0,1-4.822,8.67q-4.822,3.292-13.2,3.292A37.683,37.683,0,0,1,271.359,389.475Z" transform="translate(-243.52 -325.682)" fill="#004d4e" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1"/>
+      <g id="Group_1" data-name="Group 1" transform="translate(5.193 13.14)">
+        <path id="Subtraction_1" data-name="Subtraction 1" d="M4.665,24.531a4.684,4.684,0,0,1-.489-9.342,3.48,3.48,0,0,0,5.159,4.3c.009.12.013.241.013.36a4.68,4.68,0,0,1-4.684,4.684Z" transform="translate(0.021 -14.788)" fill="#075455"/>
+        <path id="Subtraction_2" data-name="Subtraction 2" d="M4.665,24.531a4.684,4.684,0,0,1-.489-9.342,3.48,3.48,0,0,0,5.159,4.3c.009.12.013.241.013.36a4.68,4.68,0,0,1-4.684,4.684Z" transform="translate(0.557 -15.189)" fill="#a5431c"/>
+      </g>
+    </g>
+    <g id="Group_5" data-name="Group 5" transform="translate(1701.415 1423.405) rotate(-3)">
+      <g id="Group_4" data-name="Group 4" transform="translate(54.191 0)">
+        <path id="Path_2" data-name="Path 2" d="M0,.056S22.45-2.106,31.471,20.4" transform="translate(0)" fill="none" stroke="#e4791b" stroke-width="3"/>
+        <path id="Path_3" data-name="Path 3" d="M0,.034S13.592-1.275,19.055,12.349" transform="translate(2.02 8.611)" fill="none" stroke="#a5431c" stroke-width="3"/>
+      </g>
+      <path id="Path_4" data-name="Path 4" d="M0,19.114,33.986,0,79.864,31.3l-4.4,1.866L33.986,5.818,10.507,20.249Z" transform="translate(0.105 0.328)" fill="#004d4e"/>
+    </g>
+    <g id="Group_10" data-name="Group 10" transform="translate(2047.48 1419.236)">
+      <path id="Intersection_3" data-name="Intersection 3" d="M-5.421-3910.175v-6.189l-1.713,4.017H-8.78l-1.713-4.017v6.189H-12.74v-9.243h2.769l2.079,4.637,2.073-4.637H-3.05v9.243Zm-14.023,0v-7.455h-2.887v-1.788h8.157v1.788h-2.886v7.455Z" transform="translate(28.072 3931.185)" fill="#606060" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1"/>
+      <g id="Ellipse_6" data-name="Ellipse 6" transform="translate(0 0)" fill="none" stroke="#606060" stroke-width="2">
+        <circle cx="15.858" cy="15.858" r="15.858" stroke="none"/>
+        <circle cx="15.858" cy="15.858" r="14.858" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>
+                                 </a>
+                             </div>
+                             <div class="footer-tittle">
+                                 <div class="footer-pera">
+                                     <p class="info1">The only full stack financial infrastructure company to be your one stop solution for providing innovative customer experience for payment acquiring, issuing, accounts, lending, withdrawal, deposit, remittance, insurance, customer KYC.</p>
+                                     <div class="secure mt-4"><img src="../assets/img/shape/secure-footer.png" class="img-fluid" title="secure iserveu" alt=""></div>
+                                </div>
+                             </div>
+                         </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-5">
+                        <div class="single-footer-caption mb-50">
+                            <div class="footer-tittle">
+                                <h4>Products</h4>
+                                <ul>
+                                    <li><a href="../virtual-account/">CASA</a></li>
+                                    <li><a href="../payout/">Payouts</a></li>
+                                    <li><a href="../micro-credit/">Collections</a></li>
+                                    <li><a href="../prepaid-card/">Prepaid Card</a></li>
+                                    <li><a href="../matm/">Devices</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-7">
+                        <div class="single-footer-caption mb-50">
+                            <div class="footer-tittle">
+                                <h4>Other Links</h4>
+                                <ul>
+                                    <li><a href="/">About</a></li>
+                                    <li><a href="https://iserveu.in/career/">Career</a></li>
+                                    <li><a href="https://iserveu.in/know-us/">Know Us</a></li>
+                                    <li><a href="https://iserveu.in/contact-us/">Contact</a></li>
+                                    <li><a href="https://blog.iserveu.in/">Blog</a></li>
+                                    <li class="accordion-menu">
+                                        <a href="#" id="toggle">Corporate Governance <i class="ti-angle-right"></i></a>
+                                        <div class="toggleMenu">
+                                          <h5>Annual Return</h5> 
+                                          <a href="../assets/annual-return2020-21.pdf" target="_blank"><img src="assets/img/pdf.svg" class="img-fluid" alt="" title=""> Annual Return 2020-21</a>
+                                          <a href="../assets/draft-annual_return_2021-22_Iserveu.pdf" target="_blank"><img src="assets/img/pdf.svg" class="img-fluid" alt="" title=""> Annual Return 2021-22</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-8">
+                        <div class="single-footer-caption mb-50">
+                            <div class="footer-tittle">
+                                <h4>Quick Contact</h4>
+                             <!-- Form -->
+                             <div class="footer-form">
+                                  <form action="../mail.php" method="post">
+                                    <input type="text" name="name" placeholder="Full Name" class="form-control" required>
+                                    <input type="email" name="email" placeholder="Email" class="form-control" required>
+                                    <input type="number" name="phone" placeholder="Phone" class="form-control" required>
+                                    <input type="text" name="message" placeholder="Message" class="form-control">
+                                    <button class="btn-custom w-100 mt-2">SUBMIT</button>
+                                  </form>
+                             </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Copy-Right -->
+                <div class="row align-items-center">
+                    <div class="col-xl-12 ">
+                        <div class="footer-copy-right flex-between text-center">
+                           <p class="m-0">Copyright © 2023. iServeU Technology Pvt. Ltd.(ITPL). All rights reserved |</p> 
+                           <ul class="m-0 p-0 d-flex">
+                               <li><a href="https://iserveu.in/privacy-policy/">Privacy Policy</a></li>
+                           </ul>
+                           <ul class="m-0 p-0 d-flex social_icons">
+                               <li><a href="https://www.facebook.com/iServeUIndia" target="_blank"><i class="ri-facebook-circle-fill"></i></a></li>
+                               <li><a href="https://twitter.com/iServeUIndia" target="_blank"><i class="ri-twitter-fill"></i></a></li>
+                               <li><a href="https://www.linkedin.com/company/iserveu/" target="_blank"><i class="ri-linkedin-box-fill"></i></a></li>
+                               <li><a href="https://www.instagram.com/iserveuindia/" target="_blank"><i class="ri-instagram-line"></i></a></li>
+                               <li><a href="https://www.youtube.com/channel/UC6nlUZKuBcSS5OPJBkk2LrA" target="_blank"><i class="ri-youtube-fill"></i></a></li>
+                           </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+       <!-- Footer End-->
+       <div class="modal fade" id="thankyouModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title" id="myModalLabel">Thank you for pre-registering!</h4>
+      </div>
+      <div class="modal-body">
+          <p>Thanks for getting in touch!</p>                     
+      </div>    
+    </div>
+  </div>
+</div>
+
+   </footer>
+    <!-- FOOTER -->
+    <!--social icons fixed-->
+   <div class="social-share" style="">
+       <div class="social_icons">
+           <ul class="list-unstyled">
+            <li><a href="https://www.facebook.com/iServeUIndia" target="_blank"><i class="ti-facebook"></i></a></li>
+            <li><a href="https://twitter.com/iServeUIndia" target="_blank"><i class="ti-twitter-alt"></i></a></li>
+            <li><a href="https://www.linkedin.com/company/iserveu/" target="_blank"><i class="ti-linkedin"></i></a></li>
+            <li><a href="https://www.instagram.com/iserveuindia/" target="_blank"><i class="ti-instagram"></i></a></li>
+            <li><a href="https://www.youtube.com/channel/UC6nlUZKuBcSS5OPJBkk2LrA" target="_blank"><i class="ti-youtube"></i></a></li>
+            </ul>
+       </div>
+   </div>
+   <!--facebook messenger -->
+   <!-- Messenger Chat plugin Code -->
+    <div id="fb-root"></div>
+   <!-- Your Chat plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+   <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "794439683966447");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+   <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v15.0'
+        });
+      };
+
+
+
+     (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <!-- JS here -->
+	
+		<!-- All JS Custom Plugins Link Here here -->
+        <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
+		
+		<!-- Jquery, Popper, Bootstrap -->
+		<script src="../assets/js/vendor/jquery-1.12.4.min.js"></script>
+        <script src="../assets/js/popper.min.js"></script>
+        <script src="../assets/js/bootstrap.min.js"></script>
+	    <!-- Jquery Mobile Menu -->
+        <script src="../assets/js/jquery.slicknav.min.js"></script>
+
+		<!-- Jquery Slick , Owl-Carousel Plugins -->
+        <script src="../assets/js/owl.carousel.min.js"></script>
+        <script src="../assets/js/slick.min.js"></script>
+        <!-- Date Picker -->
+        <script src="../assets/js/gijgo.min.js"></script>
+        <script src="../assets/js/wow.min.js"></script>
+
+		<!-- Scrollup, nice-select, sticky -->
+        <script src="../assets/js/jquery.scrollUp.min.js"></script>
+		<script src="../assets/js/jquery.sticky.js"></script>
+        
+		<!-- Jquery Plugins, main Jquery -->	
+        <script src="../assets/js/plugins.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
+        <script src="../assets/js/main.js"></script>
+        <script>
+            $(function() {
+                  // init the validator
+                  $("#contactForm").validator();
+                });
+
+        </script>
+        <script>
+  $('#toggle').addClass( "show" ).click(function() {
+        $('.toggleMenu').slideToggle('fast').addClass( "show" );
+        return false;
+    });
+  </script>
+        
+    </body>
+    
+    </html>
